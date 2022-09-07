@@ -19,6 +19,7 @@ import OurProducts from '../pages/our-products';
 import OurProudDivisions from '../pages/our-proud-divisions';
 import PageNotFound from '../pages/page-not-found';
 import PlumbingMain from '../pages/plumbing-main';
+import PlumbingSubPages from '../pages/plumbing-sub-pages';
 import ServicesMain from '../pages/services-main';
 import ServicesSubPages from '../pages/services-sub-pages';
 import AboutUs from "../pages/about-us";
@@ -34,21 +35,21 @@ class Routess extends Component {
 
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Accreditations" element={<Accreditations />} />
-          <Route path="/Accreditations" element={<Accreditations />} />
-          <Route path="/ContactUsDetailsPage" element={<ContactUsDetailsPage />} />
+          <Route path="/ContactUsDetailsPage/:id" element={<ContactUsDetailsPage />} />
           <Route path="/ContactUsForm" element={<ContactUsForm />} />
           <Route path="/ContactUsThankYou" element={<ContactUsThankYou />} />
           <Route path="/ElectricalMain" element={<ElectricalMain />} />
-          <Route path="/ElectricalSubPages" element={<ElectricalSubPages />} />
+          <Route path="/ElectricalSubPages/:id" element={<ElectricalSubPages />} />
           <Route path="/MechanicalMain" element={<MechanicalMain />} />
-          <Route path="/MechanicalSubPages" element={<MechanicalSubPages />} />
+          <Route path="/MechanicalSubPages/:id" element={<MechanicalSubPages />} />
           <Route path="/OurFactoriesMain" element={<OurFactoriesMain />} />
-          <Route path="/OurFactoriesSupPages" element={<OurFactoriesSupPages />} />
+          <Route path="/OurFactoriesSupPages/:id" element={<OurFactoriesSupPages />} />
           <Route path="/OurProducts" element={<OurProducts />} />
           <Route path="/OurProudDivisions" element={<OurProudDivisions />} />
           <Route path="/PlumbingMain" element={<PlumbingMain />} />
+          <Route path="/PlumbingSubPages/:id" element={<PlumbingSubPages />} />
           <Route path="/ServicesMain" element={<ServicesMain />} />
-          <Route path="/ServicesSubPages" element={<ServicesSubPages />} />
+          <Route path="/ServicesSubPages/:id" element={<ServicesSubPages />} />
 
           <Route path="" element={<Home />} />
           <Route path="/News" element={<News />} />
