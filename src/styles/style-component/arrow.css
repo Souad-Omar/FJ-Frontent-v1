@@ -1,0 +1,47 @@
+
+.arrow {
+    border: 1px solid #032A5E; 
+    background: #ffffff00;
+    margin:0.5vw;
+}
+
+.arrow:hover {
+    border: 1px solid #FFB536;
+}
+
+.arrow:active {
+    border: 1px solid #ffffff00;
+}
+
+.arrowStyleLeft {
+    transform: scaleX(-1);
+
+}
+
+@media (min-width: 1200px) {
+    .arrow{
+        width:50px;
+        height:50px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .arrow{
+        width:40px;
+        height:40px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .arrow{
+        width:35px;
+        height:30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arrow{
+        width:30px;
+        height:30px;
+    }
+}
