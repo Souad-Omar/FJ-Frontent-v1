@@ -1,3 +1,16 @@
+button{
+  float: "left";
+  border: 0px; 
+  background: #ffffff00;
+  margin-left: 80%;
+  margin-top: 18px;
+
+}
+nav{
+  float: left; 
+  margin-left: 11vw;
+}
+
 ul {
   color: #fff;
   text-decoration: inherit;
@@ -12,7 +25,7 @@ ul {
   color: #fff;
   text-decoration: inherit;
   font-family: "Montserrat";
-  margin: 1.5vw;
+  margin: 1vw;
 }
 .navbarHeader:hover {
   color: #ffb536;
@@ -21,7 +34,7 @@ ul {
 @media (min-width: 1200px) {
   ul {
     display: flex;
-    font-size: 20px;
+    font-size: 17px;
   }
   button{display: none;}
 }
@@ -29,7 +42,7 @@ ul {
 @media (min-width: 992px) and (max-width: 1200px) {
   ul {
     display: flex;
-    font-size: 18px;
+    font-size: 14px;
   }
   button{display: none;}
 }
