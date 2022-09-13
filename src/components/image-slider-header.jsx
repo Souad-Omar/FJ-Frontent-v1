@@ -38,8 +38,6 @@ const ImageSliderHeader = () => {
         <img className="imageSlider" src={ImageSliderArray[2]} />
       </div>
       <br />
-      <br />
-      <br />
 
 
 

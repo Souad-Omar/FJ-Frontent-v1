@@ -2,7 +2,7 @@ img{
     margin-top: 5%;
     margin-left: 30%;
 }
-p{
+.p0{
     font-family: "Montserrat";
     font-size: 45px;
     color: white;
@@ -10,13 +10,17 @@ p{
 }
 .p2{
     font-size: 28px;
+    margin-top: 0px;
+}
+.imageSlider{
+  margin-left: 60%;
 }
 @media (min-width: 1200px) {
     img{
         height: 160px;
     }
-    p{
-        font-size: 45px;
+    .p0{
+      font-size: 45px;
     margin-bottom: -12PX;
     }
     .p2{
@@ -27,8 +31,8 @@ p{
     img{
         height: 100px;
     }
-    p{
-        font-size: 30px;
+    .p0{
+      font-size: 30px;
         margin-bottom: -10PX;
     }
     .p2{
@@ -39,8 +43,8 @@ p{
     img{
         height: 100px;
     }
-    p{
-        font-size: 20px;
+    .p0{
+      font-size: 20px;
         margin-bottom: -5PX;
     }
     .p2{
@@ -51,8 +55,8 @@ p{
     img{
         height: 60px;
     }
-    p{
-        font-size: 15px;
+    .p0{
+      font-size: 15px;
         margin-bottom: -5PX;
     }
     .p2{
