@@ -1,0 +1,18 @@
+.paragraph1{
+    text-align: justify  ;
+    text-align-last: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+    color: black;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+        .paragraph1{
+          font-size: 15px;
+        }
+  }
+  @media (max-width: 768px) {
+        .paragraph1{
+          font-size: 10px;
+        }
+  }
+  
