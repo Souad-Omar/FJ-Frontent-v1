@@ -24,6 +24,7 @@ const BasicHeader = () => {
             <br />
             <br />
             <br />
+            <br />
             <p className="p0">STRONG <span style={{fontWeight: 'bold'}}>FOUNDATIONS</span></p>
             <p className="p0"><span style={{color:'#ffffff00'}}>........</span> HIGH <span style={{fontWeight: 'bold'}}>AMBITIONS</span></p>
             <br />

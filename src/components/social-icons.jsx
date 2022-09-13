@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import "../styles/style-component/social-icons.css";
 const SocialIcons = () => {
   return (
-    <Fragment>
+    <Fragment><br />
       <svg
         className="socialIcons"
         xmlns="http://www.w3.org/2000/svg"
@@ -16,6 +16,7 @@ const SocialIcons = () => {
       </svg>
       <br />
       <svg
+              className="socialIcons"
         xmlns="http://www.w3.org/2000/svg"
         width="20px"
         height="20px"
