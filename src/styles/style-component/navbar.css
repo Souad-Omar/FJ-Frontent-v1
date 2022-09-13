@@ -1,0 +1,47 @@
+ul {
+  color: #032a5e;
+  text-decoration: inherit;
+  font-family: "Montserrat";
+  margin-bottom: 1.5vw;
+
+  list-style: none;
+  flex-flow: row nowrap;
+}
+
+.navbarHeader {
+  color: #032a5e;
+  text-decoration: inherit;
+  font-family: "Montserrat";
+  margin: 1.5vw;
+}
+.navbarHeader:hover {
+  color: #ffb536;
+}
+
+@media (min-width: 1200px) {
+  ul {
+    display: flex;
+    font-size: 20px;
+  }
+  button{display: none;}
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  ul {
+    display: flex;
+    font-size: 18px;
+  }
+  button{display: none;}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  ul {display: none;}
+    li{margin: 3vw;}
+
+}
+
+@media (max-width: 768px) {
+  ul {display: none;}
+    li{margin: 3.5vw;}
+
+}
