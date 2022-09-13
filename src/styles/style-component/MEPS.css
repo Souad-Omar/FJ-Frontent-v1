@@ -1,0 +1,36 @@
+.MEPSDiv{
+    
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.MEPSStyle{
+    margin-bottom: 53px;
+    
+    font-family: "Montserrat";
+    width: 200px;
+    background-color: #032A5E;
+    font-weight: lighter;
+    color: white;
+    line-height: 70px;
+    height: 190px;
+    font-size:15px;
+    text-align: center;
+    
+}
+.titleLink{
+    margin-top: -40px;
+}
+.MPESChar{
+    font-size:120px;
+    margin: 40px;
+    color: #5A7496;
+}
+
+.MEPSStyle:hover {
+    background-color: #365989;
+    font-size:18px;
+    
+}
+.MEPSStyle:hover .MPESChar{
+    color: #032A5E;
+}
