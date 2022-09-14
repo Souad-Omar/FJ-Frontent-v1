@@ -14,12 +14,13 @@ const Footer = () => {
             <Col>
               <MEPS />
             </Col>
-          </Row>
-          <br />                <br />
+          </Row>        </Container>
+          <br />                <br /><br />
+          <Container style={{maxWidth: '2040px'}}>
           <Row>
             <Col lg={1}>
               <img style={{width:"164px", height:"90px"}} src={FJLogo} alt="this is car image" />
-            </Col><Col lg={5}></Col>
+            </Col><Col lg={7}></Col>
             <Col>
             <br />   <br />  
             <Link to="" className={"navbarFooter"}>Home</Link>
@@ -33,7 +34,7 @@ const Footer = () => {
 
             </Col>
           </Row><br /><br />
-          <Row><Col lg={3}><p className="footerText">Strong Foundations - High Ambitions </p></Col><Col lg={9}><p style={{textAlign:'right'}} className="footerText">Copyright©Papillon Communications, 2022. All rights reserved</p></Col></Row>
+          <Row><Col lg={4}><p className="footerText">Strong Foundations - High Ambitions </p></Col><Col lg={8}><p style={{textAlign:'right'}} className="footerText">Copyright©Papillon Communications, 2022. All rights reserved</p></Col></Row>
         </Container>
       </div>
     </Fragment>
