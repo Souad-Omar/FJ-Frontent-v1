@@ -19,7 +19,7 @@ const Footer = () => {
           <Container style={{maxWidth: '2040px'}}>
           <Row>
             <Col lg={1}>
-              <img style={{width:"164px", height:"90px"}} src={FJLogo} alt="this is car image" />
+              <img style={{width:"174px", height:"90px"}} src={FJLogo} alt="this is car image" />
             </Col><Col lg={7}></Col>
             <Col>
             <br />   <br />  

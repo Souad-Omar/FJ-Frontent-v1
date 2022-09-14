@@ -61,7 +61,7 @@ const message = [
   },
   {
     style: "",
-    text: "Raphael Khlat   ",
+    text: "Raphael Khlat",
   },
   {
     style: "",

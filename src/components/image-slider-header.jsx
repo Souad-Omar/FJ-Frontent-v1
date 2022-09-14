@@ -21,8 +21,7 @@ const ImageSliderHeader = () => {
         }}
       >
         <BasicHeader />
-        <img className="imageSlider" src={ImageSliderArray[2]} />
-      </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      </div>
       <br />
     </Fragment>
   );
