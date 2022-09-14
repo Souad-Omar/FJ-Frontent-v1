@@ -4,8 +4,8 @@ const MEPS = () => {
   return (
     <Fragment>
         <div className="row">
-        <div className="col-4"></div>
-        <div className="col-4">
+        <div className=" col-1 col-xl-4"></div>
+        <div className="col-11 col-xl-4">
 
         <div className="MEPSDiv">
         <div className="MEPSStyle">
@@ -25,7 +25,7 @@ const MEPS = () => {
         </div>
         </div>
         </div>
-        <div className="col-4"></div>
+        <div className="col-xl-4"></div>
 
         </div>
     </Fragment>

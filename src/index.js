@@ -8,6 +8,5 @@ import MEPS from './components/MEPS';
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(  <BrowserRouter>
     <Home />
-    <MEPS />
 </BrowserRouter>
     );

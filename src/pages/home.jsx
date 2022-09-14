@@ -1,9 +1,11 @@
 import React, { Fragment } from "react";
+import "bootstrap/dist/css/bootstrap.min.css ";
 import ImageSliderHeader from "../components/image-slider-header";
 import "../styles/style-component/image-slider-header.css";
 import TextBoxes from "../components/text-boxes";
 import TextTitle from "../components/title-type";
 import Arrow from './../components/arrow';
+import { Button } from 'react-bootstrap';
 
 const paragraphs = [
   {
@@ -73,46 +75,9 @@ const brands = [
 ];
 const Home = () => {
   return (
-    <Fragment>
-      <ImageSliderHeader />
-      <div className="row">
-        <div className="col-3"></div>
-        <div className="col-6">
-          <TextBoxes textParagraph={paragraphs} />
-        </div>
-        <div className="col-3"></div>
-      </div>
-      <div className="row">
-        <div className="col-4"></div>
-        <div className="col-4">
-          <br />
-          <TextTitle textTitle={titleMessage} />
-        </div>
-        <div className="col-4"></div>
-      </div>
-
-      <div className="row">
-        <div className="col-md-2 col-sm-2"></div>
-        <div className="col-md-4 col-sm-8">
-          <br />
-          <TextBoxes textParagraph={message} />
-        </div>
-        <div className="col-md-4">
-          
-        </div>
-        <div className="col-md-2 col-sm-2"></div>
-      </div>
-
-      <div className="row">
-        <div className="col-4"></div>
-        <div className="col-4">
-          <br />
-          <TextTitle textTitle={brands} />
-        </div>{" "}
-        <div className="col-4"></div>
-      </div>
-      <Arrow />
-    </Fragment>
+    <Button as="a" variant="primary">
+    Button as link
+  </Button>
   );
 };
 
