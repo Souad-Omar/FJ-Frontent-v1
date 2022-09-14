@@ -1,12 +1,11 @@
 import React, { Fragment } from "react";
-import "bootstrap/dist/css/bootstrap.min.css ";
 import ImageSliderHeader from "../components/image-slider-header";
 import "../styles/style-component/image-slider-header.css";
 import TextBoxes from "../components/text-boxes";
 import TextTitle from "../components/title-type";
-import Arrow from './../components/arrow';
-import { Button } from 'react-bootstrap';
-
+import Arrow from "./../components/arrow";
+import { Col, Row, Container } from "react-bootstrap";
+import Footer from "../components/footer";
 const paragraphs = [
   {
     style: "paragraphStyle1",
@@ -27,11 +26,11 @@ const paragraphs = [
 ];
 const titleMessage = [
   {
-    style: "",
+    style: "1",
     text: "MESSAGE OF THE",
   },
   {
-    style: "",
+    style: "1",
     text: "PRESIDENT",
   },
 ];
@@ -43,41 +42,88 @@ const message = [
   {
     style: "",
     text: "In a time where change is constant, where dynamism is key and innovation challenging us daily to cope, we are constantly reminded to realign our compass and sharpen our minds. The lower cost of renewable energies coupled with a new level of oil pricing has to date imposed new economic realities. The large international companies, hungry for ...growth and armed with new technologies, are expanding to new territories hence competing in our traditional businesses. Meanwhile, the demanding developer, imposing stricter specifications coupled with tough financial conditions is on the end of the spectrum always attempting to extract maximum value out of their investment.  Those are some new dynamics, that no matter how immune you think you are will put you and your corporation under the scope of a new reality, imposing constant vigilance, and a perpetual watchful eye on what’s around the corner from an expanding regional base to an environment of decreasing budgets armed with stricter controls and more deliverables.    ",
-  },{
-    style: "",
-    text: "Against this challenging backdrop of various variables, FJ Group has and is more than ever geared to face the demands of tomorrow. In fact, we have always been putting knowledge, initiatives, sustainability and partnerships at the core of our beliefs.  And it is exactly those beliefs that push us to invest constantly in our products, building our brands, adding local value to offer a clear differentiator in terms of reliability, competiveness and excellent service.    ",
-  },{
-    style: "",
-    text: "At FJ Group, we have set a clear mindset to lead as a preferred partner in the MEP industry. Strengthened by our presence in the UAE and inspired by its visionary leaders, we are keen to expand this partnership to the rest of the MENA Region. As we have made leaps of progress, we’re humbled to remind ourselves that the road is long, and tortuous still, and we strive on heedlessly.    ",
-  },{
-    style: "",
-    text: "This is our steadfast purpose. It is bold and it is clear. It takes roots in the strength of our many time-tested partnerships and the trust of our numerous customers that have – together – helped us build our robust foundations, and it is in our DNA to pursue our high ambitions, externally, but more importantly internally!     ",
-  },{
-    style: "",
-    text: "I’m reminded by what Henry Ford once said: “Coming together is a beginning, staying together is progress, and working together is success.\"  And it is with these words that I applaud our exceptional and dedicated teams at FJ Group.  Indeed, there is no success worth praising nor pride worth celebrating without acknowledging their consistent efforts matched by their unwavering commitment. The future only looks brighter due to them and because of them!     ",
-  },{
-    style: "",
-    text: "Raphael Khlat   ",
-  },{
-    style: "",
-    text: "President",
-  }
-];
-const brands = [
-  {
-    style: "",
-    text: "BRANDS",
   },
   {
     style: "",
+    text: "Against this challenging backdrop of various variables, FJ Group has and is more than ever geared to face the demands of tomorrow. In fact, we have always been putting knowledge, initiatives, sustainability and partnerships at the core of our beliefs.  And it is exactly those beliefs that push us to invest constantly in our products, building our brands, adding local value to offer a clear differentiator in terms of reliability, competiveness and excellent service.    ",
+  },
+  {
+    style: "",
+    text: "At FJ Group, we have set a clear mindset to lead as a preferred partner in the MEP industry. Strengthened by our presence in the UAE and inspired by its visionary leaders, we are keen to expand this partnership to the rest of the MENA Region. As we have made leaps of progress, we’re humbled to remind ourselves that the road is long, and tortuous still, and we strive on heedlessly.    ",
+  },
+  {
+    style: "",
+    text: "This is our steadfast purpose. It is bold and it is clear. It takes roots in the strength of our many time-tested partnerships and the trust of our numerous customers that have – together – helped us build our robust foundations, and it is in our DNA to pursue our high ambitions, externally, but more importantly internally!     ",
+  },
+  {
+    style: "",
+    text: 'I’m reminded by what Henry Ford once said: “Coming together is a beginning, staying together is progress, and working together is success."  And it is with these words that I applaud our exceptional and dedicated teams at FJ Group.  Indeed, there is no success worth praising nor pride worth celebrating without acknowledging their consistent efforts matched by their unwavering commitment. The future only looks brighter due to them and because of them!     ',
+  },
+  {
+    style: "",
+    text: "Raphael Khlat   ",
+  },
+  {
+    style: "",
+    text: "President",
+  },
+];
+const brands = [
+  {
+    style: "1",
+    text: "BRANDS",
+  },
+  {
+    style: "1",
     text: "& REPRESENTATIONS",
   },
 ];
 const Home = () => {
   return (
-    <Button as="a" variant="primary">
-    Button as link
-  </Button>
+    <Fragment>
+      <ImageSliderHeader />
+      <Container>
+        <Row>
+          <Col></Col>
+          <Col sm={9} lg={10}>
+            <br />
+            <br />
+            <TextBoxes textParagraph={paragraphs} />
+            <br />
+            <br />
+          </Col>
+          <Col></Col>
+        </Row>
+
+        <Row>
+          <Col lg={4}></Col>
+          <Col lg={4}>
+            <br />
+            <br />
+            <TextTitle textTitle={titleMessage} />
+          </Col>
+          <Col lg={4}></Col>
+        </Row>
+
+        <Row>
+          <Col lg={6}>
+            <TextBoxes textParagraph={message} />
+            <br />
+            <br />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <br />
+            <br />
+            <TextTitle textTitle={brands} />
+            <br />
+            <br />
+          </Col>
+        </Row>
+      </Container>
+      <Footer />
+    </Fragment>
   );
 };
 

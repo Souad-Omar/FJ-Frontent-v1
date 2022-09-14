@@ -1,33 +1,36 @@
 import React, { Fragment } from "react";
 import "../styles/style-component/MEPS.css";
+import { Col, Row, Container } from "react-bootstrap";
+
 const MEPS = () => {
   return (
     <Fragment>
-        <div className="row">
-        <div className=" col-1 col-xl-4"></div>
-        <div className="col-11 col-xl-4">
+<Container style={{maxWidth: '1040px'}}><Row><Col>
 
-        <div className="MEPSDiv">
-        <div className="MEPSStyle">
+<div className="MEPSStyle">
             <p  className="MPESChar">M</p>
             <p className="titleLink"> MECHANICAL</p>
         </div> 
+        </Col><Col>
         <div className="MEPSStyle">
             <p  className="MPESChar">E</p>
             <p className="titleLink"> ELECTRICAL</p>
-        </div><div className="MEPSStyle">
+        </div><br />
+        </Col>
+        
+        <Col>
+        <div className="MEPSStyle">
             <p  className="MPESChar">P</p>
             <p className="titleLink"> PLUMPING</p>
-        </div> 
+        </div> <br />
+        </Col><Col>
+        
         <div className="MEPSStyle">
             <p  className="MPESChar">S</p>
             <p className="titleLink">SERVICES</p>
         </div>
-        </div>
-        </div>
-        <div className="col-xl-4"></div>
+        </Col></Row></Container>
 
-        </div>
     </Fragment>
   );
 };

@@ -1,0 +1,24 @@
+.footer{
+    background-color: #EEF2F4;
+    padding: 4%;
+}
+
+
+  
+  .navbarFooter {
+    color: #365989;
+    text-decoration: inherit;
+    font-family: "Montserrat";
+    margin: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+  .navbarFooter:hover {
+    color: #ffb536;
+  }
+  .footerText{
+    color: #ABADAE;
+    font-family: "Montserrat";
+    font-size: 16px;
+    
+  }

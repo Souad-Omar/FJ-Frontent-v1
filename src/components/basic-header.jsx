@@ -20,7 +20,7 @@ const BasicHeader = () => {
           <div className="col-11 col-lg-10">
             <Navbar />
             <br />
-            <img src={FJWhiteLogo} alt="this is car image" />
+            <img src={FJWhiteLogo} alt="This is FJ logo white" />
             <br />
             <br />
             <br />
