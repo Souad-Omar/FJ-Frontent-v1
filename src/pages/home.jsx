@@ -1,12 +1,15 @@
 import React, { Fragment } from "react";
 import ImageSliderHeader from "../components/image-slider-header";
 import "../styles/style-component/image-slider-header.css";
+import "../styles/style-pages/home.css";
 import TextBoxes from "../components/text-boxes";
 import TextTitle from "../components/title-type";
 import Arrow from "./../components/arrow";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
 import RaphaelKhlatPresidentImage from "../assets/RaphaelKhlatPresidentImage.jpg";
+import RaphaelKhlatPresidentSmallImage from "../assets/RaphaelKhlatPresidentSmallImage.jpg";
+import ExploreMore from "../components/explore-more";
 
 const paragraphs = [
   {
@@ -36,7 +39,17 @@ const titleMessage = [
     text: "PRESIDENT",
   },
 ];
-const message = [
+const messageLess = [
+  {
+    style: "",
+    text: "At FJ Group, and as the MEP supplier of choice to many in the industry, I feel privileged and proud of our hard-earned legacy. It transcends credibility, experience and a feeling of strength. But one may argue if that is indeed enough.    ",
+  },
+  {
+    style: "",
+    text: "In a time where change is constant, where dynamism is key and innovation challenging us daily to cope, we are constantly reminded to realign our compass and sharpen our minds. The lower cost of renewable energies coupled with a new level of oil pricing has to date imposed new economic realities. The large international companies, hungry for ...growth and armed with new technologies, are expanding to new territories hence competing in our traditional businesses. Meanwhile, the demanding developer, imposing stricter specifications coupled with tough financial conditions is on the end of the spectrum always attempting to extract maximum value out of their investment...",
+  },
+];
+const messageMore = [
   {
     style: "",
     text: "At FJ Group, and as the MEP supplier of choice to many in the industry, I feel privileged and proud of our hard-earned legacy. It transcends credibility, experience and a feeling of strength. But one may argue if that is indeed enough.    ",
@@ -107,20 +120,44 @@ const Home = () => {
           <Col lg={4}></Col>
         </Row>
 
+          <div id="presidentMessageLess" >
         <Row>
-          <Col lg={6}>
-            <TextBoxes textParagraph={message} />
-            <br />
-            <br />
-          </Col>
-          <Col lg={6}>
-            <img
-              style={{ width: "700px", height: "100%", marginLeft: "60px" }}
-              src={RaphaelKhlatPresidentImage}
-              alt="Raphael Khlat President"
-            />
-          </Col>
+            <Col lg={6}>
+              <TextBoxes textParagraph={messageLess} />
+              <div style={{ marginLeft: "35%",}}>
+
+              <ExploreMore div1="presidentMessageLess" div2="presidentMessagMore" buutonText="EXPLORE MORE"/>
+              </div>
+              <br />
+              <br />
+            </Col>
+            <Col lg={6}>
+              <img
+                className="PresidentImg"
+                src={RaphaelKhlatPresidentSmallImage}
+                alt="Raphael Khlat President"
+              />
+            </Col>
+            </Row>
+          </div>
+          <div id="presidentMessagMore" style ={{display:"none"}}>
+          <Row>
+            <Col lg={6}>
+              <TextBoxes textParagraph={messageMore} />
+              <div style={{ marginLeft: "38%",}}>
+              <ExploreMore div1="presidentMessageLess" div2="presidentMessagMore" buutonText="SHOW LESS"/>
+              </div><br />
+              <br />
+            </Col>
+            <Col lg={6}>
+              <img
+                className="PresidentImg"
+                src={RaphaelKhlatPresidentImage}
+                alt="Raphael Khlat President"
+              />
+            </Col>
         </Row>
+          </div>
         <Row>
           <Col>
             <br />

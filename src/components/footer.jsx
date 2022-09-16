@@ -9,6 +9,7 @@ const Footer = () => {
   return (
     <Fragment>
       <div className="footer">
+      <br /><br /><br />
         <Container>
           <Row>
             <Col>

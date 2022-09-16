@@ -1,6 +1,6 @@
 .footer{
     background-color: #EEF2F4;
-    padding: 4%;
+    padding: 1%;
 }
 
 
@@ -11,7 +11,6 @@
     font-family: "Montserrat";
     margin: 10px;
     font-size: 13.5px;
-    text-align: center;
   }
   .navbarFooter:hover {
     color: #ffb536;
