@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/style-component/basic-header.css";
+import { Col, Row, Container } from "react-bootstrap";
 import Navbar from "./navbar";
 import QuickSearsh from "./quick-search";
 import SocialIcons from "./social-icons";
@@ -8,16 +9,15 @@ import FJWhiteLogo from"../assets/FJWhiteLogo.png";
 const BasicHeader = () => {
   return (
     <Fragment>
-      <div>
         <br />
-        <div className="row">
-        <div className="col-lg-1">
-          </div>
-          <div className="col-1">
-            <QuickSearsh />
+        <Container style={{maxWidth: '3040px'}}><Row>
+        <Col lg={1}>
+        </Col>
+        <Col lg={1}>
+        <QuickSearsh />
             <SocialIcons />
-          </div>
-          <div className="col-11 col-lg-10">
+        </Col>
+        <Col lg={9}>
             <Navbar />
             <br />
             <img src={FJWhiteLogo} alt="This is FJ logo white" />
@@ -26,13 +26,11 @@ const BasicHeader = () => {
             <br />
             <br />
             <p className="p0">STRONG <span style={{fontWeight: 'bold'}}>FOUNDATIONS</span></p>
-            <p className="p0"><span style={{color:'#ffffff00'}}>........</span> HIGH <span style={{fontWeight: 'bold'}}>AMBITIONS</span></p>
+            <p className="p0">HIGH <span style={{fontWeight: 'bold'}}>AMBITIONS</span></p>
             <br />
-            <p className="p2" ><span style={{color:'#ffffff00'}}>.....</span> THE REFERENCE POINT IN <span style={{fontWeight: 'bold'}}>MEP</span></p>
-
-          </div>
-        </div>
-      </div>
+            <p className="p2" >THE REFERENCE POINT IN <span style={{fontWeight: 'bold'}}>MEP</span></p>
+        </Col>
+        </Row></Container>
       
     </Fragment>
   );

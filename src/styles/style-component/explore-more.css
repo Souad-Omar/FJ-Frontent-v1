@@ -1,0 +1,14 @@
+.exploreMoreStyle{
+    border: 0px; 
+    border-bottom: 1px solid #032A5E;
+    background: #ffffff00;
+    font-family: "Montserrat";
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 15px;
+}
+
+.exploreMoreStyle:hover {
+    border-bottom: 1px solid #FFB536;
+    color: #ffb536;
+}

@@ -6,6 +6,8 @@ import TextTitle from "../components/title-type";
 import Arrow from "./../components/arrow";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
+import RaphaelKhlatPresidentImage from "../assets/RaphaelKhlatPresidentImage.jpg";
+
 const paragraphs = [
   {
     style: "paragraphStyle1",
@@ -111,9 +113,20 @@ const Home = () => {
             <br />
             <br />
           </Col>
+          <Col lg={6}>
+            <img
+              style={{ width: "700px", height: "100%", marginLeft: "60px" }}
+              src={RaphaelKhlatPresidentImage}
+              alt="Raphael Khlat President"
+            />
+          </Col>
         </Row>
         <Row>
           <Col>
+            <br />
+            <br />
+            <br />
+            <br />
             <br />
             <br />
             <TextTitle textTitle={brands} />
