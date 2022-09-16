@@ -20,7 +20,7 @@ const Navbar = () => {
       <nav className="navbar , justify-content-center">
       <ul id="nav">
         <li>
-        <Link to="" className={"navbarHeader"}>Home</Link>
+        <Link to="/" className={"navbarHeader"}>Home</Link>
             </li>
             <li>
         <Link to="/AboutUs" className={"navbarHeader"}>About us</Link>
