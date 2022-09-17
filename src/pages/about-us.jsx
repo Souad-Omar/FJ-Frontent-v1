@@ -13,7 +13,7 @@ const paragraphs = [
     text: "Today, FJ Group boasts a group of leading enterprises that have have interest in several diversified strategic business segments across the region, while upholding the same values and principles that the flagship entity was founded and built upon.",
   },
   {
-    style: "",
+    style: "paragraphStyle1",
     text: "We are relentlessly working on improving our services and expanding our portfolio of products to ensure a comprehensive coverage of the building services industry. In the meanwhile, our local manufacturing, production, and servicing capabilities have been significantly enhanced to cater to our increased market share across the MENA Region.",
   },
 ];
@@ -145,7 +145,7 @@ const AboutUs = () => {
             <img
                 style={{width: '100%',  height: '70%',marginLeft: '0px'            }}                
                 src={AboutUsVissionImg}
-                alt="Raphael Khlat President"
+                alt="About Us Vission Img"
               />
           </Col>
           <Col lg={6}>

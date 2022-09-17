@@ -2,7 +2,9 @@
 .arrow {
     border: 1px solid #032A5E; 
     background: #ffffff00;
-    margin:0.5vw;
+    padding: 3.5%;
+    margin-left: -17%;
+    
 }
 
 .arrow:hover {
@@ -15,27 +17,31 @@
 
 .arrowStyleLeft {
     transform: scaleX(-1);
+    
+}
+.arrowStyleRight{
+    margin-left: 100%;
 
 }
 
 @media (min-width: 1200px) {
+    .arrow{
+        width:60px;
+        height:60px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
     .arrow{
         width:50px;
         height:50px;
     }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-    .arrow{
-        width:40px;
-        height:40px;
-    }
-}
-
 @media (min-width: 768px) and (max-width: 992px) {
     .arrow{
-        width:35px;
-        height:30px;
+        width:45px;
+        height:40px;
     }
 }
 
