@@ -24,7 +24,7 @@ const Footer = () => {
             </Col><Col lg={7}></Col>
             <Col>
             <br />   <br />  
-            <Link to="" className={"navbarFooter"}>Home</Link>
+            <Link to="/" className={"navbarFooter"}>Home</Link>
         <Link to="/AboutUs" className={"navbarFooter"}>About us</Link>
         <Link to="/OurProudDivisions" className={"navbarFooter"}>Divisions</Link>
         <Link to="/OurProducts" className={"navbarFooter"}>Products</Link>
