@@ -4,12 +4,40 @@ import "../styles/style-component/image-slider-header.css";
 import "../styles/style-pages/home.css";
 import TextBoxes from "../components/text-boxes";
 import TextTitle from "../components/title-type";
-import Arrow from "./../components/arrow";
+import ArrowSlider from "../components/arrowSlider";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
 import RaphaelKhlatPresidentImage from "../assets/RaphaelKhlatPresidentImage.jpg";
 import RaphaelKhlatPresidentSmallImage from "../assets/RaphaelKhlatPresidentSmallImage.jpg";
 import ExploreMore from "../components/explore-more";
+
+
+import YorkLogo from "../assets/Logos/YorkLogo.png";
+import AcFirePumpLogo from "../assets/Logos/AcFirePumpLogo.png";
+import AlphaDuctsLogo from "../assets/Logos/AlphaDuctsLogo.png";
+import AquafloLogo from "../assets/Logos/AquafloLogo.png";
+import ArmacellLogo from "../assets/Logos/ArmacellLogo.png";
+import BellAndGossettLogo from "../assets/Logos/BellAndGossettLogo.png";
+import CleaverBrooksLogo from "../assets/Logos/CleaverBrooksLogo.png";
+import CraneLogo from "../assets/Logos/CraneLogo.png";
+import EuroclimaLogo from "../assets/Logos/EuroclimaLogo.png";
+import FJCareLogo from "../assets/Logos/FJCareLogo.png";
+import FlowTechLogo from "../assets/Logos/FlowTechLogo.png";
+import GFLogo from "../assets/Logos/GFLogo.png";
+import GlanDimplexLogo from "../assets/Logos/GlanDimplexLogo.png";
+import GouldsLogo from "../assets/Logos/GouldsLogo.png";
+import GreenheckLogo from "../assets/Logos/GreenheckLogo.png";
+import HoneywellHomeLogo from "../assets/Logos/HoneywellHomeLogo.png";
+import IMILogo from "../assets/Logos/IMILogo.png";
+import MutliplastDubaillcLogo from "../assets/Logos/MutliplastDubaillcLogo.png";
+import powerbarLogo from "../assets/Logos/powerbarLogo.png";
+import ProMasterLogo from "../assets/Logos/ProMasterLogo.png";
+import UponorLogo from "../assets/Logos/UponorLogo.png";
+import XylemLogo from "../assets/Logos/XylemLogo.png";
+import PumbsLogo from "../assets/Logos/PumbsLogo.png";
+import RadwantLogo from "../assets/Logos/RadwantLogo.png";
+import SamsungLogo from "../assets/Logos/SamsungLogo.png";
+import SondesLogo from "../assets/Logos/SondesLogo.png";
 
 const paragraphs = [
   {
@@ -126,6 +154,86 @@ const brands = [
     text: "& REPRESENTATIONS",
   },
 ];
+const brandsLogo = [
+  {
+    id:1,
+    logo:AcFirePumpLogo
+  },{
+    id:2,
+    logo:AlphaDuctsLogo
+  },{
+    id:3,
+    logo:AquafloLogo
+  },{
+    id:4,
+    logo:ArmacellLogo
+  },{
+    id:5,
+    logo:BellAndGossettLogo
+  },{
+    id:6,
+    logo:CleaverBrooksLogo
+  },{
+    id:7,
+    logo:CraneLogo
+  },{
+    id:8,
+    logo:EuroclimaLogo
+  },{
+    id:9,
+    logo:FJCareLogo
+  },{
+    id:10,
+    logo:FlowTechLogo
+  },{
+    id:12,
+    logo:GFLogo
+  },{
+    id:13,
+    logo:GlanDimplexLogo
+  },{
+    id:14,
+    logo:GouldsLogo
+  },{
+    id:15,
+    logo:GreenheckLogo
+  },{
+    id:16,
+    logo:HoneywellHomeLogo
+  },{
+    id:17,
+    logo:XylemLogo
+  },{
+    id:18,
+    logo:IMILogo
+  },{
+    id:19,
+    logo:MutliplastDubaillcLogo
+  },{
+    id:20,
+    logo:powerbarLogo
+  },{
+    id:21,
+    logo:ProMasterLogo
+  },{
+    id:22,
+    logo:PumbsLogo
+  },{
+    id:23,
+    logo:RadwantLogo
+  },{
+    id:24,
+    logo:SamsungLogo
+  },{
+    id:25,
+    logo:SondesLogo
+  },{
+    id:26,
+    logo:UponorLogo
+  },{
+    id:27,
+    logo:YorkLogo
+  },]
 const Home = () => {
   return (
     <Fragment>
@@ -211,6 +319,23 @@ const Home = () => {
             <br />
             <br />
           </Col>
+        </Row>
+        <Row>
+        <Col><img
+                className="brandLogo"
+                src={brandsLogo[2].logo}
+                alt=""
+              /></Col>
+        <Col><img
+                className="brandLogo"
+                src={brandsLogo[8].logo}
+                alt=""
+              /></Col>
+        <Col><img
+                className="brandLogo"
+                src={brandsLogo[9].logo}
+                alt=""
+              /></Col>
         </Row>
       </Container>
       <Footer />
