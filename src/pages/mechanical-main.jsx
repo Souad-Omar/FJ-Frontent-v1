@@ -25,25 +25,26 @@ const MInfo = [
   },
 ];
 
-const miniListVentilationEquipment = [{
-  mechanicalImg: VentilationEquipment,
-  mechanicalTitle: "VENTILATION EQUIPMENT",
-  list: "POLLRICH",
-  url: "/MechanicalSubPages/83",
-},
-{
-  mechanicalImg: VentilationEquipment,
-  mechanicalTitle: "VENTILATION EQUIPMENT",
-  list: "GREENHECK",
-  url: "/MechanicalSubPages/82",
-},
-{
-  mechanicalImg: VentilationEquipment,
-  mechanicalTitle: "VENTILATION EQUIPMENT",
-  list: "Flowtech Division ",
-  url: "/MechanicalSubPages/81",
-},
-]
+const miniListVentilationEquipment = [
+  {
+    mechanicalImg: VentilationEquipment,
+    mechanicalTitle: "VENTILATION EQUIPMENT",
+    list: "POLLRICH",
+    url: "/MechanicalSubPages/83",
+  },
+  {
+    mechanicalImg: VentilationEquipment,
+    mechanicalTitle: "VENTILATION EQUIPMENT",
+    list: "GREENHECK",
+    url: "/MechanicalSubPages/82",
+  },
+  {
+    mechanicalImg: VentilationEquipment,
+    mechanicalTitle: "VENTILATION EQUIPMENT",
+    list: "Flowtech Division ",
+    url: "/MechanicalSubPages/81",
+  },
+];
 
 const miniListAIRCONDITIONINGEquipment = [
   {
@@ -82,15 +83,16 @@ const miniListAIRCONDITIONINGEquipment = [
     list: "SAMSUNG (VRF & MINI SPLIT SYSTEMS)",
     url: "/MechanicalSubPages/16",
   },
-]
+];
 
-const miniListAIRHANDLING = [{
-  mechanicalImg: AIRHANDLING,
-  mechanicalTitle: "AIR HANDLING UNITS & FAN COIL UNITS",
-  list: "Euroclima",
-  url: "/MechanicalSubPages/71",
-},
-]
+const miniListAIRHANDLING = [
+  {
+    mechanicalImg: AIRHANDLING,
+    mechanicalTitle: "AIR HANDLING UNITS & FAN COIL UNITS",
+    list: "Euroclima",
+    url: "/MechanicalSubPages/71",
+  },
+];
 
 const miniListPumps = [
   {
@@ -98,98 +100,106 @@ const miniListPumps = [
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "AFTER SALES SERVICE & MAINTENANCE",
     url: "/MechanicalSubPages/011",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "PRODUCTION PLANNING & CONTROL",
     url: "/MechanicalSubPages/010",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "QUALITY ASSURANCE & CONTROL",
     url: "/MechanicalSubPages/009",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "xylem",
     url: "/MechanicalSubPages/008",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "flygt",
     url: "/MechanicalSubPages/007",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "Wedeco",
     url: "/MechanicalSubPages/006",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "A-C FIRE PUMP",
     url: "/MechanicalSubPages/005",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "BELL & GOSSETT",
     url: "/MechanicalSubPages/004",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "GOULDS",
     url: "/MechanicalSubPages/003",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "AQUAFLOW",
     url: "/MechanicalSubPages/002",
-  },{
+  },
+  {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "REFLEX",
     url: "/MechanicalSubPages/001",
   },
-]
+];
 
-const miniListAirDISTRIBUTION = [{
-  mechanicalImg: AirDISTRIBUTION,
-  mechanicalTitle: "AIR DISTRIBUTION",
-  list: "FLOWTECH",
-  url: "/MechanicalSubPages/41",
-},
-]
+const miniListAirDISTRIBUTION = [
+  {
+    mechanicalImg: AirDISTRIBUTION,
+    mechanicalTitle: "AIR DISTRIBUTION",
+    list: "FLOWTECH",
+    url: "/MechanicalSubPages/41",
+  },
+];
 
-const miniListDuctingInsulation = [ {
-  mechanicalImg: DuctingInsulation,
-  mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
-  list: "FLOWTECH",
-  url: "/MechanicalSubPages/31",
-},
-{
-  mechanicalImg: DuctingInsulation,
-  mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
-  list: "ARMACELL",
-  url: "/MechanicalSubPages/32",
-},
-{
-  mechanicalImg: DuctingInsulation,
-  mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
-  list: "PRODUCTION, PLANNING & CONTROL",
-  url: "/MechanicalSubPages/33",
-},
-{
-  mechanicalImg: DuctingInsulation,
-  mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
-  list: "OUR SERVICE TEAM",
-  url: "/MechanicalSubPages/34",
-},
-]
+const miniListDuctingInsulation = [
+  {
+    mechanicalImg: DuctingInsulation,
+    mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
+    list: "FLOWTECH",
+    url: "/MechanicalSubPages/31",
+  },
+  {
+    mechanicalImg: DuctingInsulation,
+    mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
+    list: "ARMACELL",
+    url: "/MechanicalSubPages/32",
+  },
+  {
+    mechanicalImg: DuctingInsulation,
+    mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
+    list: "PRODUCTION, PLANNING & CONTROL",
+    url: "/MechanicalSubPages/33",
+  },
+  {
+    mechanicalImg: DuctingInsulation,
+    mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
+    list: "OUR SERVICE TEAM",
+    url: "/MechanicalSubPages/34",
+  },
+];
 
 const miniListDISTRICTCOOLINGEQUIPMENT = [
-  
-  
-  
- 
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
@@ -264,12 +274,26 @@ const MechanicalMain = () => {
           </Row>
         </Container>
       </div>
-      <Container style={{ maxWidth: "1540px" }}>
+      <Container style={{ maxWidth: "3040px" }}>
         <Row>
-
           <Col style={{ display: "inline" }}>
             <div className="dropdown">
               <img className="Products" src={VentilationEquipment} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListVentilationEquipment[0].mechanicalTitle}
+              </p>
               <div className="dropdown-content">
                 <MiniDrobdownList miniList={miniListVentilationEquipment} />
               </div>
@@ -278,6 +302,21 @@ const MechanicalMain = () => {
           <Col style={{ display: "inline" }}>
             <div className="dropdown">
               <img className="Products" src={Pumps} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListPumps[0].mechanicalTitle}
+              </p>
               <div className="dropdown-content">
                 <MiniDrobdownList miniList={miniListPumps} />
               </div>
@@ -286,6 +325,21 @@ const MechanicalMain = () => {
           <Col style={{ display: "inline" }}>
             <div className="dropdown">
               <img className="Products" src={AIRCONDITIONINGEquipment} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListAIRCONDITIONINGEquipment[0].mechanicalTitle}
+              </p>
               <div className="dropdown-content">
                 <MiniDrobdownList miniList={miniListAIRCONDITIONINGEquipment} />
               </div>
@@ -294,8 +348,93 @@ const MechanicalMain = () => {
           <Col style={{ display: "inline" }}>
             <div className="dropdown">
               <img className="Products" src={AIRHANDLING} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListAIRHANDLING[0].mechanicalTitle}
+              </p>
               <div className="dropdown-content">
                 <MiniDrobdownList miniList={miniListAIRHANDLING} />
+              </div>
+            </div>
+          </Col>
+
+          <Col style={{ display: "inline" }}>
+            <div className="dropdown">
+              <img className="Products" src={AirDISTRIBUTION} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListAirDISTRIBUTION[0].mechanicalTitle}
+              </p>
+              <div className="dropdown-content">
+                <MiniDrobdownList miniList={miniListAirDISTRIBUTION} />
+              </div>
+            </div>
+          </Col>
+          <Col style={{ display: "inline" }}>
+            <div className="dropdown">
+              <img className="Products" src={DISTRICTCOOLINGEQUIPMENT} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListDISTRICTCOOLINGEQUIPMENT[0].mechanicalTitle}
+              </p>
+              <div className="dropdown-content">
+                <MiniDrobdownList miniList={miniListDISTRICTCOOLINGEQUIPMENT} />
+              </div>
+            </div>
+          </Col>
+          <Col style={{ display: "inline" }}>
+            <div className="dropdown">
+              <img className="Products" src={DuctingInsulation} alt="" />
+              <br />
+              <br />
+              <br />
+              <p
+                style={{
+                  textAlign: "justify",
+                  textAlignLast: "center",
+                  fontFamily: "Montserrat",
+                  fontSize: "20px",
+                  color: "black",
+                  fontWeight: "light",
+                }}
+              >
+                {miniListDuctingInsulation[0].mechanicalTitle}
+              </p>
+              <div className="dropdown-content">
+                <MiniDrobdownList miniList={miniListDuctingInsulation} />
               </div>
             </div>
           </Col>
