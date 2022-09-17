@@ -9,6 +9,17 @@
     font-size:15px;
     text-align: center;
      }
+     .MEPSMainPageStyle{
+    
+        font-family: "Montserrat";
+        font-weight: lighter;
+        color: #304F78;
+        height: 200px;
+        font-size:350px;
+        text-align: center; 
+           margin-top: -100px;
+
+         }
 .titleLink{
     margin-top: -50px;
 }

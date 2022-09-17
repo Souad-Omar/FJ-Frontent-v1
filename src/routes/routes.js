@@ -41,7 +41,11 @@ class Routess extends Component {
           <Route path="/ElectricalMain" element={<ElectricalMain />} />
           <Route path="/ElectricalSubPages/:id" element={<ElectricalSubPages />} />
           <Route path="/MechanicalMain" element={<MechanicalMain />} />
+
+
           <Route path="/MechanicalSubPages/:id" element={<MechanicalSubPages />} />
+
+          
           <Route path="/OurFactoriesMain" element={<OurFactoriesMain />} />
           <Route path="/OurFactoriesSupPages/:id" element={<OurFactoriesSupPages />} />
           <Route path="/OurProducts" element={<OurProducts />} />

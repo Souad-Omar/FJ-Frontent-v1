@@ -7,8 +7,18 @@
     text-align: center;
     padding: 5px 15px;
 }
+.exploreMoreMEPSStyle{
+    border: 0px; 
+    border-bottom: 1px solid #ffffff;
+    background: #ffffff00;
+    color:white;
+    font-family: "Montserrat";
+    font-size: 30px;
+    text-align: center;
+    padding: 5px 15px;
+}
 
-.exploreMoreStyle:hover {
+.exploreMoreStyle:hover, .exploreMoreMEPSStyle:hover {
     border-bottom: 1px solid #FFB536;
     color: #ffb536;
 }
