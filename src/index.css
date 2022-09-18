@@ -16,3 +16,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #365989; 
   }
+  a{
+    text-decoration: none;
+  }
+  button{
+    transition: all 0.5s;
+  }

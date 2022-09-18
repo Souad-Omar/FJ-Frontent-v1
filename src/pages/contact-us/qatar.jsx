@@ -1,0 +1,186 @@
+import React, { Fragment } from "react";
+import BasicHeader2 from "../../components/basic-header2";
+import AboutUsImg from "../../assets/AboutUsImg.jpg";
+import Footer from "../../components/footer";
+import { Col, Row, Container } from "react-bootstrap";
+import map from "../../assets/ContactUs/map.jpg";
+import FlagOfIndia from "../../assets/ContactUs/FlagOfIndia.jpg";
+import FlagOfIraq from "../../assets/ContactUs/FlagOfIraq.jpg";
+import FlagOfOman from "../../assets/ContactUs/FlagOfOman.jpg";
+import FlagOfQatar from "../../assets/ContactUs/FlagOfQatar.jpg";
+import FlagOfSouthAfrica from "../../assets/ContactUs/FlagOfSouthAfrica.jpg";
+import FlagOfSaudiArabia from "../../assets/ContactUs/FlagOfSaudiArabia.jpg";
+import FlagOfUnitedArabEmirates from "../../assets/ContactUs/FlagOfUnitedArabEmirates.jpg";
+import TextTitleBox from "../../components/text-title-box";
+import ExploreMoreLink from "../../components/explore-more copy";
+import { Link } from "react-router-dom";
+import a51 from "../../assets/ContactUs/51.png";
+import a52 from "../../assets/ContactUs/52.png";
+
+const Qatar = () => {
+  const contactUs = [
+    {
+      id: 1,
+      logo: a51,
+      text: "FJ Trading & Engineering Co. WLL      ",
+      fax: "P.O. Box: 31859, Doha, Qatar      ",
+      address: "Al Sayer Building, Block 08, Office C103 Barwa Commercial Avenue, East Industrial Area ",
+      tel: "T: +974 4001 8888      ",
+      email: "E: info@fjqatar.com      ",
+      map,
+    },{
+      id: 2,
+      logo: a52,
+      text: "FJ Trading & Engineering Co. WLL      ",
+      fax: "P.O. Box: 31859, Doha, Qatar      ",
+      address: "Al Sayer Building, Block 08, Office C103 Barwa Commercial Avenue, East Industrial Area        ",
+      tel: "T: +974 4001 8888      ",
+      email: "E: info@fjqatar.com      ",
+      map,
+    },
+  ];
+  const url = window.location.href.split("/");
+  const urlPage = parseInt(url[5]);
+  const details = contactUs.map(
+    ({ id, logo, text, fax, address, tel, email, map }, idx) => {
+      if (id === urlPage) {
+        let index = contactUs.findIndex((x) => x.id === id);
+        const contacts = [contactUs[index]];
+
+        const next = index + 1 < contactUs.length ? index + 2 : 1;
+        const previous = index + 1 > 1 ? index : 6;
+
+        return (
+          <>
+            <Container style={{ maxWidth: "2540px" }}>
+              <Row>
+                <Col>
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br />
+                  <br /> <img style={{ marginLeft: "22%" }} src={logo} alt="" />
+                  <br />
+                  <br />
+                  <TextTitleBox title={text} />
+                  <TextTitleBox title={fax} />
+                  <TextTitleBox title={address} />
+                  <TextTitleBox title={tel} />
+                  <TextTitleBox title={email} />
+                  <div
+                    style={{ marginLeft: "42%", width: "100%", height: "100%" }}
+                  >
+                    <ExploreMoreLink
+                      style="1"
+                      buutonText="Let's Talk"
+                      link={"/ContactUsForm"}
+                    />
+                  </div>
+                </Col>
+                <Col lg={9}>
+                  <img
+                    style={{ marginLeft: "3%", width: "90%", height: "100%" }}
+                    src={map}
+                    alt=""
+                  />
+                </Col>
+              </Row>
+            </Container>
+          </>
+        );
+      }
+    }
+  );
+
+  return (
+    <Fragment>
+      <BasicHeader2 backgroundImage={AboutUsImg} headerTitle={"CONTACT US"} />
+
+      <br />
+      <br />
+      <br />
+      <Container style={{ maxWidth: "2540px" }}>
+        <div style={{ marginLeft: "-120px", width: "100%" }}>
+        <Row>
+            <Col>
+              {" "}            <Link to="/ContactUsDetailsPage/UnitedArabEmirates/1">
+
+              <img
+                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                src={FlagOfUnitedArabEmirates}
+                alt=""
+              /></Link>
+            </Col>
+            <Col>
+            <Link to="/ContactUsDetailsPage/SaudiArabia/1">
+              <img
+                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                src={FlagOfSaudiArabia}
+                alt=""
+              /></Link>
+            </Col>
+            <Col>            <Link to="/ContactUsDetailsPage/Oman/1">
+
+              <img
+                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                src={FlagOfOman}
+                alt=""
+              /></Link>
+            </Col>
+            <Col>
+            <Link to="/ContactUsDetailsPage/Iraq/1">
+
+              <img
+                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                src={FlagOfIraq}
+                alt=""
+              /></Link>
+            </Col>
+            <Col>
+              {" "}            <Link to="/ContactUsDetailsPage/Qatar/1">
+
+              <img
+                src={FlagOfQatar}
+                alt=""
+                /></Link>
+            </Col>
+            <Col>
+              {" "}            <Link to="/ContactUsDetailsPage/SouthAfrica/1">
+
+              <img
+                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                src={FlagOfSouthAfrica}
+                alt=""
+              /></Link>
+            </Col>
+            <Col>            <Link to="/ContactUsDetailsPage/India/1">
+
+              <img
+                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                src={FlagOfIndia}
+                alt=""
+              /></Link>
+            </Col>
+          </Row>
+        </div>
+        {details}
+      </Container>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <Footer />
+    </Fragment>
+  );
+};
+export default Qatar;

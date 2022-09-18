@@ -5,6 +5,7 @@
     font-family: "Montserrat";
     font-size: 30px;
     text-align: center;
+    margin-left: -7%;
     padding: 5px 15px;
 }
 .exploreMoreMEPSStyle{
@@ -20,13 +21,14 @@
 
 .exploreMoreStyle:hover, .exploreMoreMEPSStyle:hover {
     border-bottom: 1px solid #FFB536;
-    color: #ffb536;
+    color: #ffb536;        font-size: 33px;
+
 }
 
 
 @media (min-width: 768px) and (max-width: 992px) {
     .exploreMoreStyle{
-        font-size: 15px;
+        font-size: 35px;
     }
 }
 @media (max-width: 768px) {

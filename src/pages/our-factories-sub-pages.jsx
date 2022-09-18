@@ -118,6 +118,7 @@ const OurFactoriesSupPages = ({}) => {
     },
   ];
 
+  
   const url = window.location.href.split("/");
   const urlPage = parseInt(url[4]);
   const OurFactoryPage = OurFactory.map(

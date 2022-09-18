@@ -1,0 +1,41 @@
+form{
+    text-align: center;
+}
+label{
+    text-align: justify  ;
+    text-align-last: center;
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+       color: #032A5E; 
+       
+}
+
+input, textarea{
+    border: 1px solid #032A5E; 
+    width: 600px;
+padding-bottom: 15px;
+}
+input:hover{
+    border: 1px solid #FFB536;
+
+}
+
+.submitButton{
+    border: 0px; 
+    border-bottom: 1px solid #032A5E;
+    background: #032A5E;
+    font-family: "Montserrat";
+    font-size: 20px;
+    text-align: center;
+    padding: 5px 15px;
+    color:white;
+    width: 200px;
+    transition: all 0.5s;
+
+}
+.submitButton:hover{
+    background: #304F78;
+  font-size: 23px;
+
+}

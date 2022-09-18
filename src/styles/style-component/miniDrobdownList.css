@@ -2,15 +2,19 @@
     width: 70%;
     height: auto;
     margin-left: 15%;
-    margin-top: 20%;
+    margin-top: 20%;    transition: all 0.5s;
+
+    
 }
   
   .dropdown-content {
     display: none;
     right: 0;
     background-color: #032A5E;
-    min-width: 100%;
-    text-align: center;
+    min-width: 100%;    transition: all 0.5s;
+
+    text-align: center; 
+    
   }
   
   .dropdown-content a {text-align-last: center;
@@ -18,17 +22,19 @@
     font-size: 20px;
     color: rgb(255, 255, 255);
     padding: 12px 16px;
-    text-decoration: none;
-    display: block;    text-align: center;
+    display: block;    text-align: center;    transition: all 0.5s;
+
 
   }
   
   .dropdown-content a:hover {background-color:#365989;        text-align: center;
-    font-size: 23px; 
+    font-size: 23px;     transition: all 0.5s;
+    display: block;  
   }
   
   .dropdown:hover .dropdown-content {
-    padding: 12px 16px;
+    padding: 12px 0px;
+    transition: all 0.5s;
 
     display: block;    text-align: center;
 

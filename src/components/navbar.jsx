@@ -41,7 +41,7 @@ const Navbar = () => {
         <Link to="/Accreditations" className={"navbarHeader"}>Accreditations</Link>
             </li>
             <li>
-        <Link to="/ContactUsDetailsPage" className={"navbarHeader"}>Contact us</Link>
+        <Link to="/ContactUsDetailsPage/1" className={"navbarHeader"}>Contact us</Link>
             </li>
             
         </ul>

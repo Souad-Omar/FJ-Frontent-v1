@@ -23,6 +23,13 @@ import PlumbingSubPages from '../pages/plumbing-sub-pages';
 import ServicesMain from '../pages/services-main';
 import ServicesSubPages from '../pages/services-sub-pages';
 import AboutUs from "../pages/about-us";
+import India from "../pages/contact-us/india";
+import UnitedArabEmirates from "../pages/contact-us/united-arab-emirates";
+import SaudiArabia from "../pages/contact-us/saudi-arabia";
+import Qatar from "../pages/contact-us/qatar";
+import Oman from "../pages/contact-us/oman";
+import Iraq from "../pages/contact-us/iraq";
+import SouthAfrica from "../pages/contact-us/SouthAfrica";
 class Routess extends Component {
   state = {
   };
@@ -35,7 +42,18 @@ class Routess extends Component {
 
           <Route path="/AboutUs" element={<AboutUs />} />
           <Route path="/Accreditations" element={<Accreditations />} />
-          <Route path="/ContactUsDetailsPage/:id" element={<ContactUsDetailsPage />} />
+          <Route path="/ContactUsDetailsPage/1" element={<UnitedArabEmirates />} />
+
+          <Route path="/ContactUsDetailsPage/Iraq/:id" element={<Iraq />} />
+          <Route path="/ContactUsDetailsPage/Oman/:id" element={<Oman />} />
+          <Route path="/ContactUsDetailsPage/Qatar/:id" element={<Qatar />} />
+          <Route path="/ContactUsDetailsPage/SaudiArabia/:id" element={<SaudiArabia />} />
+          <Route path="/ContactUsDetailsPage/UnitedArabEmirates/:id" element={<UnitedArabEmirates />} />
+          <Route path="/ContactUsDetailsPage/SouthAfrica/:id" element={<SouthAfrica />} />
+          <Route path="/ContactUsDetailsPage/India/:id" element={<India />} />
+
+
+          
           <Route path="/ContactUsForm" element={<ContactUsForm />} />
           <Route path="/ContactUsThankYou" element={<ContactUsThankYou />} />
           <Route path="/ElectricalMain" element={<ElectricalMain />} />
