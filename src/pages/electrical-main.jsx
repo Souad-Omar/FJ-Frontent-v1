@@ -34,12 +34,12 @@ const BUSBARPOWERBARGULFVERTIVinfo = [
         ELECTRICALImg: ELECTRICALSWITCHGEARCONTROLS,
       ELECTRICALTitle: "ELECTRICAL SWITCHGEAR & CONTROLS",
       list: "PROMASTER",
-      url: "/ElectricalSubPages/2",
+      url: "/ElectricalSubPages/5",
     },{
         ELECTRICALImg: ELECTRICALSWITCHGEARCONTROLS,
       ELECTRICALTitle: "ELECTRICAL SWITCHGEAR & CONTROLS",
       list: "PROMASTER AUTOMATION PANELS",
-      url: "/ElectricalSubPages/3",
+      url: "/ElectricalSubPages/6",
     },{
         ELECTRICALImg: ELECTRICALSWITCHGEARCONTROLS,
       ELECTRICALTitle: "ELECTRICAL SWITCHGEAR & CONTROLS",
@@ -49,12 +49,12 @@ const BUSBARPOWERBARGULFVERTIVinfo = [
         ELECTRICALImg: ELECTRICALSWITCHGEARCONTROLS,
       ELECTRICALTitle: "ELECTRICAL SWITCHGEAR & CONTROLS",
       list: "PRODUCTION PLANNING & CONTROL",
-      url: "/ElectricalSubPages/5",
+      url: "/ElectricalSubPages/3",
     },{
         ELECTRICALImg: ELECTRICALSWITCHGEARCONTROLS,
       ELECTRICALTitle: "ELECTRICAL SWITCHGEAR & CONTROLS",
       list: "AFTER SALES SUPPORT",
-      url: "/ElectricalSubPages/6",
+      url: "/ElectricalSubPages/2",
     },
   ];
   const PVCELECTRICALCONDUITACCESSORIESinfo = [

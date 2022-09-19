@@ -29,7 +29,7 @@ const PLUMBINGProductsSolutionsinfo = [
         ELECTRICALImg: PLUMBINGProductsSolutions,
         ELECTRICALTitle: "PLUMBING Products & Solutions",
         list: "RADIANT ECO Solution",
-        url: "/PlumbingSubPages/2",
+        url: "/PlumbingSubPages/5",
       },{
         ELECTRICALImg: PLUMBINGProductsSolutions,
         ELECTRICALTitle: "PLUMBING Products & Solutions",
@@ -68,8 +68,18 @@ const PLUMBINGProductsSolutionsinfo = [
       },{
         ELECTRICALImg: PLUMBINGProductsSolutions,
         ELECTRICALTitle: "PLUMBING Products & Solutions",
-        list: "SOLINOX ",
+        list: "GAS FIRED BOILERS  ",
         url: "/PlumbingSubPages/9",
+      },{
+        ELECTRICALImg: PLUMBINGProductsSolutions,
+        ELECTRICALTitle: "PLUMBING Products & Solutions",
+        list: "CHIMNEY SOLUTION ",
+        url: "/PlumbingSubPages/10",
+      },{
+        ELECTRICALImg: PLUMBINGProductsSolutions,
+        ELECTRICALTitle: "PLUMBING Products & Solutions",
+        list: "SOLINOX ",
+        url: "/PlumbingSubPages/11",
       },
   ];
 

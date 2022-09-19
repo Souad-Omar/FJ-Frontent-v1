@@ -6,95 +6,66 @@ import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
 
 import ELECTRICAL from "../assets/ELECTRICAL.jpg";
-import HVACProduct1 from "../assets/s/HVACProduct1.png";
-import HVACProduct2 from "../assets/s/HVACProduct2.png";
-import HVACProduct3 from "../assets/s/HVACProduct3.png";
-import PumpsProduct1 from "../assets/s/PumpsProduct1.png";
-import PumpsProduct2 from "../assets/s/PumpsProduct2.png";
-import PumpsProduct3 from "../assets/s/PumpsProduct3.png";
-import FJENERGYProduct3 from "../assets/s/FJENERGYProduct3.png";
-import FJENERGYProduct2 from "../assets/s/FJENERGYProduct2.png";
-import FJENERGYProduct1 from "../assets/s/FJENERGYProduct1.png";
-import FJENERGYlogo from "../assets/s/FJENERGYlogo.png";
-import FJCareLogo from "../assets/s/FJCarelogo.png";
-import DCServelogo from "../assets/s/DCServelogo.png";
-import DCServeProduct1 from "../assets/s/DCServeProduct1.png";
-import DCServeProduct2 from "../assets/s/DCServeProduct2.png";
-import DCServeProduct3 from "../assets/s/DCServeProduct3.png";
-import Pumps from "../assets/s/Pumps.png"
-import SERVICESOLUTIONS from "../assets/s/SERVICESOLUTIONS.png"
-import HVACPARTSACCESSORIES from "../assets/s/HVACPARTS&ACCESSORIES.png"
-import HVACPRODUCTS from "../assets/s/HVACPRODUCTS.png"
+import MutliplastDubaillcLogo from "../assets/Logos/MutliplastDubaillcLogo.png";
+import ELECTRICALSWITCHGEARCONTROLS from "../assets/e/ELECTRICALSWITCHGEAR&CONTROLS.png";
+import PowerBarlogo from "../assets/e/PowerBarlogo.png";
 
 import BasicHeader2 from "./../components/basic-header2";
 import Arrow from "../components/arrow";
 
 const ElectricalSubPages = ({}) => {
 
-  const MechanicalSub=[{
+  const MechanicalSub=[
+    {
     id:1,
-    mecanicalDivisionName:"SERVICESOLUTIONS",
-      logo:SERVICESOLUTIONS,
-    text:["FJCare provides high-end engineering services through standards for excellent maintenance and repair of the air conditioning systems.  Our service solutions include preventive and corrective maintenance, compressor rebuild and overhauling, rectification, replacement, upgrade and added value engineering services which are designed to ensure that the air conditioning system is periodically maintained to meet any site’s operational requirements while achieving high energy eﬃciency and system reliability, which in turn:"],
+    mecanicalDivisionName:" BUSBARPOWERBARGULF&VERTIV ",
+logo: PowerBarlogo,
+
+    text:["Established in 2011, Busbar Division is an integral part of FJ Group, which has been appointed as the authauthorized distributor of Powerbar Gulf–Vertiv to carry out the duties for the marketing, promoting and the coordination with the contractors, consultants, and clients regarding the Busbar products.PowerBar Gulf – Vertiv who are part of the E&I Engineering - Vertiv Group located in Ireland With over 30 years experience in delivering high quality integrated power solutions. The team are experts in providing technical services, project management services and unrivalled customer support for every client project.In 2009, following extensive research and development, E&I Engineering - Vertiv opened a new manufacturing facility in UAE. Powerbar Gulf - Vertiv currently has more than 600 employees working to serve the high-rise growth in the Middle East and Far East markets. Powerbar Gulf - Vertiv designs and manufactures a range of busbar trunking products, electrical conductors that provide an alternative to the use of electrical cabling for the transmission of electric current within commercial and high-rise properties. - PowerBar s Busbar Trunking Systems can manage the power supply in utility buildings and work particularly well in tower block constructions. - PowerBar s Busbar Trunking Systems is a patented range of busbar trunking utilized within building and industrial applications to deliver power to electrical loads. - The development of E&I Engineering s powerbar range complements the switchgear range to provide a complete power distribution solution. Clients can deal with us for all of their power distribution needs. - PowerBar products are built with patented processes that make it the most reliable form of busbar trunking in the market. The PowerBar range offers power distribution solutions from 160A up to 6600A with Ingress protection options available up to IP68. - The PowerBar range includes High PowerBar (HPB), Medium Powerbar (MPB), Cast Resin Powerbar (CRPB) and Intelligent Medium Powerbar (iMPB)."],
      
-    products:[],
-    },
-    {
-    id:2,
-    mecanicalDivisionName:"HVACPRODUCTS",
-      logo:HVACPARTSACCESSORIES,
-    text:["The FJCare HVAC project team handles system supply, installation and commissioning of the same.  The dedicated team is experienced and capable of undertaking all types of air conditioning designs & installations. FJCare is ready to deliver an optimum system to the highest industry standards. Our engineering team will provide alternative options and advice before a final proposal is made. Our Projects Division will manage the project right from design stage, installation and through final commissioning before handing over the project to the customer. The projects’ team will supervise the execution through all stages and at the time when commissioning takes place to ensure the system is set up correctly to the building requirements and design parameters. "],
-     
-    products:[HVACProduct1.png,HVACProduct2.png,HVACProduct3.png],
-    },
-    
-     
-    {
-    id:3,
-    mecanicalDivisionName:"Pumps",
-      logo:Pumps,
-    text:["FJ Group represents globally renowned brands from Xylem Inc, a world leader in providing innovative pumping solutions such as Bell & Gossett, Goulds water technology, Flygt, Steady, Texas Turbine and A-C Fire pump.     FJ Group’s Pump Division provides retrofitting, replacement and after sales support for Pumps, Air separators & Expansion Tanks etc."],
-     
-    products:[PumpsProduct1.png,PumpsProduct2.png,PumpsProduct3.png],
-    },
-    
-     
-    {
-    id:4,
-    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
-    logo:FJENERGYlogo,
-    text:["As an integral member of FJ Group, FJ ENERGY Solutions is a solid partner, established with the conviction of providing efficient and sustainable steam & hot water solutions for domestic, commercial, industrial applications, sourcing renewable, conventional and innovative energies from solar, gas, oil & electricity.     FJ Energy provides retrofitting, replacement and after-sales support for Boilers and Solar water heating systems, Photovoltaic systems, Heat Pumps, & Precision Cooling Systems."],
-     
-    products:[FJENERGYProduct1.png,FJENERGYProduct2.png,FJENERGYProduct3.png],
-    },
-     
-    {
-    id:5,
-    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
-    logo:DCServelogo,
-    text:["In the interest of district cooling providers and designers, DCServe a member of the FJ Group of companies is born out of integration of district cooling products and services under one umbrella.     DCServe provides retrofitting, replacement and after-sales support for Valves, Heat Exchangers, Cooling Towers, Air & Dirt Separators, Filtration, Pressurization Systems etc."],
-     
-    products:[DCServeProduct1.png,DCServeProduct2.png,DCServeProduct3.png],
-    },
-     
-    {
-    id:6,
-    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
-    logo:FJCareLogo,
-    text:["FJCare Technical Services LLC is a ‘Total Solution Provider’ launched by FJ GROUP in 2003, who are specialists in the HVAC field and well versed to oﬀer engineering services, including but not limited to Annual Maintenance Programs, compressor overhauling, replacements, HVAC Systems installation and supply of genuine HVAC and Refrigeration spare parts.    Evolving to keep up with the changing demands of time is intrinsic to the company. A commitment to quality, process orientation, flexibility, proven methodology, ability to establish engineering teams and a good understanding of various industry standards has been the basis of our long term relationship with our reputed clients."],
-     
-    products:[],
-    },
-     
-    {
-    id:7,
-    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
-      
-    text:["To reach out to its customers as a Total Solution Provider, FJCare has ventured into opening its own trading wing which comprises of genuine HVAC and refrigeration parts and accessories, representing premium products from reputed manufacturers like York, JCI and Danfoss. Our product range fits the requirement of your project, either, in the service field or for the execution of your HVAC installation projects.     We strongly believe that we can oﬀer you a prompt and professional product supply to the standard that you would expect. We always believe that, “The best part we have is your satisfaction”."],
-     
-    products:[],
-    },
-    
+    },{
+      id:2,
+      mecanicalDivisionName:" ELECTRICALSWITCHGEAR&CONTROLS ",
+logo: ELECTRICALSWITCHGEARCONTROLS,
+
+      text:["Customer service excellence has always been one of the critical competitive advantages for our business. Our experienced and dedicated service team is capable of attending and troubleshooting any critical issues efficiently. Our dedicated after-sales team in each region is capable of providing ‘rapid responses’ support to the clients. Our team is equipped with modern tools to conduct SAT and have the expertise to provide effective support to ensure timely hand over."],
+       
+      },{
+        id:3,
+        mecanicalDivisionName:" ELECTRICALSWITCHGEAR&CONTROLS ",
+logo: ELECTRICALSWITCHGEARCONTROLS,
+
+        text:["We have a well laid out, fully air conditioned, dust-free manufacturing facility having a shop floor area of 4,000 sqm and employees more than 200 skilled workers. Our sophisticated production facility incorporates pneumatic lines along with the required tools, fabrication machines, hand tools and other related machineries. Our team consists of well experienced designers and engineers capable of providing highly engineered and meticulously assembled electric switchgear and control panels. We use advanced software to assist the engineers in all the design aspects. The production line technicians are divided into several teams headed by team leaders, while the entire activity is coordinated by the production supervisor. Our efficient inventory management assists faster production output, as we keep large stock of components and consumables in our inventory. We define and control the sequence of LV Switchgear assembly, which includes the interface activities and the different activities leading to testing of the panels, in compliance with project specifications and final approved drawings. Our manufacturing process is in accordance with  ISO 9001:2008 quality standard.  We inspect the incoming materials at the receiving point to confirm the standards and specifications are complied. The stages of inspections and surveillance are in accordance with Inspection and Test Plans (ITP) to assure the quality of work as per the specification and installation procedures. The foolproof quality control system setup by the production supervisor and quality control engineers ensure top quality panels.  The testing of the panels is done with the latest and periodically calibrated testing tools and equipment."],
+         
+        },{
+          id:4,
+          mecanicalDivisionName:" ELECTRICALSWITCHGEAR&CONTROLS ",
+mecanicalDivisionImg: ELECTRICALSWITCHGEARCONTROLS,
+
+          text:["- Main Distribution Boards (MDB) upto 4000A - Sub Main Distribution Boards (SMDB) upto 1600A - Final Distribution Boards (FDB) - Synchronizing Panels - Motor Control Centres (MCCs) - Control Panels - Drawout Type Motor Control Centres - Power Factor Correction Panels (Capacitor Banks) - Automatic Transfer Switches (ATS) and Changeover Panels - Variable Frequency Drives (VFDs), Soft Starters and Thyristor Panels - Power Monitoring and Management Systems (PMMS) - Active Harmonic Filters (AHF) - Sewage Treatment Plants Motor Control Centres"],
+           
+          },{
+            id:5,
+            mecanicalDivisionName:" ELECTRICALSWITCHGEAR&CONTROLS ",
+            mecanicalDivisionImg: ELECTRICALSWITCHGEARCONTROLS,
+            
+            text:["Promaster brand electric switchgear division is an affiliated entity of FJ GROUP has evolved as a result of our 30 years experience in the design and manufacturing of low voltage power distribution system. We at FJ GROUP take big pride in the huge efforts that went into the development of Promaster, incorporating the latest technologies and complying with the world’s most stringent testing certificates.Today, Promaster offers one of the broadest portfolio in the gulf market, covering all applications in the industrial, water treatment, residential and commercial building sectorPromaster has a reputation for producing quality panels, a know-how earned through many years of experience, backed with sound engineering methodology.Promaster panels are full type tested in accordance with IEC 61439-2 by the following international certifying authorities: - ASTA: Promaster system with ABB Breaker full type tested on ratings from 2500A through 4000A. - KEMA: Promaster system with ABB Breaker full type tested on ratings from 250A through 1600A. -UL Type: Promaster system capacitor bank full type tested on ratings from 25KVAR through 450KVAR. - ASTA: ARC test on Promaster system. - KA Testing Facility: Mechanical impact (IK10) test on Promaster system.Promaster electric switchgear systems and control panels are approved by the UAE authorities in the following jurisdiction: - ADWEA (Abu Dhabi Water and Electricity Authorities) - ADDC (Abu Dhabi Distribution Company) -DEWA (Dubai Electricity and Water Authority) - ASTA: ARC test on Promaster system. - SEWA ( Sharjah Electricity and Water Authority)"],
+             
+            },{
+              id:6,
+              mecanicalDivisionName:" ELECTRICALSWITCHGEAR&CONTROLS ",
+mecanicalDivisionImg: ELECTRICALSWITCHGEARCONTROLS,
+
+              text:["FJ GROUP Switchgear Division is also engaged in the design, Engineering, testing, and the commissioning of Automation & control panels. We are specialized automation solution provider with PLC, SCADA, RTU, HMI, DCS systems from leading manufacturers and we are specialized in getting assembly, tested and commissioned as per end user requirements.- PLC, RTU, HMI and SCADA -Reputed Brands. - Field Instruments. - MCC-Motor control centre ( Form-IV, ASTA type tested, IEC61439).- Authorized system Integrator certificates from leading Automation product Manufacturers. - Specialized value automation provider for Water, Waste water, District Cooling plant, HVAC, Power & Energy, Infrastructure, Buildings, Oil & Gas, Metal, Cement and other industries. - Rugged system design for RTUs, Safety & Normal PLC & HMI applications. - Revamping & Emergency shutdown services at plants. - Migration of Obsolete PLC’s & HMIs. - Self-Engineered, Tested & Assembled Panels. - Around 120 Trained and experienced Engineers and Technicians. - State of Art Factory facility in an Area of 4,000m². - Complete pneumatic lines in the assembly section & Air conditioned FAT Area. - Trained & dedicated design, engineering, testing & commissioning team. - Dedicated Post commissioning site services & support."],
+               
+              },{
+                id:7,
+                mecanicalDivisionName:" PVCELECTRICALCONDUIT&ACCESSORIES ",
+logo: MutliplastDubaillcLogo,
+
+                text:["Multiplast Dubai LLC was established in the United Arab Emirates and located in Al Aweer Industrial Area, Dubai, on a land area of 100,000 sq. ft. It has a contemporary designed edifice, and it boasts of the latest and most technologically advanced machineries available in the market today. Multiplast Dubai LLC is a manufacturing company that produces superior quality products which complies with the requirement of international standards. It also focuses on developing a wide-range of electrical fittings and lightings using only the highest standard of uPVC raw materials. On top of this, it has qualified and dedicated staff which ensures that product quality and services are well-maintained. Products of Multiplast Dubai L.L.C. complies with the Saudi & Gulf standards and they are tested by Saudi Arabian Standards Organization general laboratory department and certified by SASO quality mark. The products of Multiplast Dubai LLC which are signed with Intek verification are vigorously tested and certified as type test by the Intek Laboratory in Italy. Meanwhile its products follow the European and British standards: (BS EN 61386-21-25 & IEC 60423 & UL 746).- Rigid Conduit System - Pliable Conduit– Corrugated - Mounting Boxes for Conduit Systems - Circular Junction Boxes for Conduits Systems - Accessories and Fittings for Conduit Systems- Rigid Conduit System and socketed pipe (LSF) - Pliable Conduit– Corrugated (LSF) - Mounting Boxes for Conduit Systems (LSF) - Circular Junction Boxes for Conduits Systems (LSF) - Accessories and Fittings for Conduit Systems (LSF)- Adaptable Boxes - Adaptable Boxes with Transparent Lid - Junction Boxes with Smooth Walls - Junction Boxes with Cable Glands- Rigid Conduit Systems / Rigid Socketed Conduit Systems, (2.9 meters long) - Pliable Conduit – Corrugated, Pliable Conduit Adaptor - Mounting Boxes for Conduit Systems, (filled with 3.5mm Brass Inserts) - Circular Junction Boxes for Conduits Systems, (fitted with 4mm Brass Inserts) - Accessories and fittings for Conduit Systems - Adaptable Boxes, (fitted with 4mm & 5mm Brass Inserts) - Adaptable Boxes with Transparent Lid, (fitted with 4mm & 5mm Brass Inserts) - Junction Boxes with Smooth Walls, (fitted with 4mm & 5mm Brass Inserts) - Junction Boxes with Cable Glands, (fitted with 4mm & 5mm Brass Inserts)"],
+                 
+                },
   ];    
   
   const url = window.location.href.split("/");

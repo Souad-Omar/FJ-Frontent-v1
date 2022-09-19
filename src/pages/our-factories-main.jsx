@@ -28,31 +28,31 @@ const info = [
     url: "/OurFactoriesSupPages/1",
   },
   {
-    logo: OurFactoryLogo2,
+    logo: OurFactoryLogo3,
     id: "2",
     title: "Multiplast Dubai LLC",
     text: "Manufacturing Company That Produces Superior Quality Products That Comply With...",
-    url: "/OurFactoriesSupPages/2",
-  },
-  {
-    logo: OurFactoryLogo3,
-    id: "3",
-    title: "Alpha Ducts LLC",
-    text: "Alpha ducts llc is one of the highly advanced and modernized manufacturers of polyisocyanurate... and phenolic insulation panels",
     url: "/OurFactoriesSupPages/3",
   },
   {
-    logo: OurFactoryLogo4,
+    logo: OurFactoryLogo2,
+    id: "3",
+    title: "Alpha Ducts LLC",
+    text: "Alpha ducts llc is one of the highly advanced and modernized manufacturers of polyisocyanurate... and phenolic insulation panels",
+    url: "/OurFactoriesSupPages/2",
+  },
+  {
+    logo: OurFactoryLogo5,
     id: "4",
     title: "FLOWTECH LLC (warehouse & service centre)",
     text: "Our layout of separate production lines for air terminal and air control devices equipped with state-of-the-art tools and machineries... ",
-    url: "/OurFactoriesSupPages/4",
+    url: "/OurFactoriesSupPages/5",
   }, {
-    logo: OurFactoryLogo5,
+    logo: OurFactoryLogo4,
     id: "5",
     title: "PROMASTER  (production planning & control)",
     text: " our sophisticated production facility incorporates pneumatic lines along with the required tools, fabrication machines,...",
-    url: "/OurFactoriesSupPages/5",
+    url: "/OurFactoriesSupPages/4",
   }, {
     logo: OurFactoryLogo6,
     id: "6",
@@ -75,7 +75,8 @@ const OurFactoriesMain = () => {
       />
       <div
         className={"division"}
-        style={{
+        style={{          height:"75%",
+
           backgroundImage: `url(${ourFactory1})`,
           fontFamily: "Montserrat",
           color: "black",
@@ -84,11 +85,7 @@ const OurFactoriesMain = () => {
       >
         <Container style={{ maxWidth: "2040px" }}>
           <Row>
-            <Col lg={3}>
-              {" "}         <br />
-              <br />
-              <br />
-              <br />
+            <Col lg={3}> 
               <img
                     style={{ marginLeft: "0%", width: "300px", height: "200px" }}
                     src={info[0].logo}
@@ -97,6 +94,7 @@ const OurFactoriesMain = () => {
               <p style={{ fontSize: "40px" }}>{info[0].title}</p>
               <p style={{ fontSize: "20px" }}>{info[0].text}</p>
               <ExploreMoreLink buutonText="EXPLORE MORE" link={info[0].url} style="1"/>
+              <br /><br /><br /><br />
             </Col>
             <Col lg={9}>
               {" "}
@@ -107,7 +105,8 @@ const OurFactoriesMain = () => {
       </div>
       <div
         className={"division"}
-        style={{
+        style={{          height:"75%",
+
           backgroundImage: `url(${ourFactory2})`,
           fontFamily: "Montserrat",
           color: "black",
@@ -117,21 +116,16 @@ const OurFactoriesMain = () => {
         <Container style={{ maxWidth: "2040px" }}>
           <Row>
             <Col lg={9}></Col>
-            <Col lg={3}>
-            <br />
-              <br />
-              <br />
-              <br />              <br />
-
+            <Col lg={3}> 
               <img
                     style={{ marginLeft: "0%", width: "300px", height: "200px" }}
                     src={info[1].logo}
                     alt={info[1].factoryMainTytle}
                   />   
-              <br />
-              <p style={{ fontSize: "40px" }}>{info[1].title}</p>
+               <p style={{ fontSize: "40px" }}>{info[1].title}</p>
               <p style={{ fontSize: "20px" }}>{info[1].text}</p>
               <ExploreMoreLink buutonText="EXPLORE MORE" link={info[1].url} style="1"/>
+              <br /><br /><br /><br />
 
             </Col>
           </Row>
@@ -139,7 +133,8 @@ const OurFactoriesMain = () => {
       </div>
       <div
         className={"division"}
-        style={{
+        style={{          height:"75%",
+
           backgroundImage: `url(${ourFactory3})`,
           fontFamily: "Montserrat",
           color: "black",
@@ -149,18 +144,16 @@ const OurFactoriesMain = () => {
         <Container style={{ maxWidth: "2040px" }}>
           <Row>
             <Col lg={3}>
-            <br />
-              <br />
+               <br />
               <img
                     style={{ marginLeft: "0%", width: "300px", height: "200px" }}
                     src={info[2].logo}
                     alt={info[2].factoryMainTytle}
-                  />   
-              <br />
-              <br />
+                  />    
               <p style={{ fontSize: "40px" }}>{info[2].title}</p>
               <p style={{ fontSize: "20px" }}>{info[2].text}</p>
               <ExploreMoreLink buutonText="EXPLORE MORE" link={info[2].url} style="1"/>
+              <br /><br /><br /><br />
 
             </Col>
             <Col lg={9}>
@@ -172,7 +165,8 @@ const OurFactoriesMain = () => {
       </div>
       <div
         className={"division"}
-        style={{
+        style={{          height:"75%",
+
           backgroundImage: `url(${ourFactory4})`,
           fontFamily: "Montserrat",
           color: "black",
@@ -193,6 +187,7 @@ const OurFactoriesMain = () => {
               <p style={{ fontSize: "40px" }}>{info[3].title}</p>
               <p style={{ fontSize: "20px" }}>{info[3].text}</p>
               <ExploreMoreLink buutonText="EXPLORE MORE" link={info[3].url} style="1"/>
+              <br /><br /><br /><br />
 
             </Col>
           </Row>
@@ -201,7 +196,8 @@ const OurFactoriesMain = () => {
         
       </div><div
         className={"division"}
-        style={{
+        style={{          height:"75%",
+
           backgroundImage: `url(${ourFactory5})`,
           fontFamily: "Montserrat",
           color: "black",
@@ -220,6 +216,7 @@ const OurFactoriesMain = () => {
               <p style={{ fontSize: "40px" }}>{info[4].title}</p>
               <p style={{ fontSize: "20px" }}>{info[4].text}</p>
               <ExploreMoreLink buutonText="EXPLORE MORE" link={info[4].url} style="1"/>
+              <br /><br /><br /><br />
 
             </Col>
             <Col lg={9}>
@@ -230,7 +227,8 @@ const OurFactoriesMain = () => {
         </Container>
       </div><div
         className={"division"}
-        style={{
+        style={{          height:"75%",
+
           backgroundImage: `url(${ourFactory6})`,
           fontFamily: "Montserrat",
           color: "black",
@@ -253,6 +251,7 @@ const OurFactoriesMain = () => {
               <p style={{ fontSize: "40px" }}>{info[5].title}</p>
               <p style={{ fontSize: "20px" }}>{info[5].text}</p>
               <ExploreMoreLink buutonText="EXPLORE MORE" link={info[5].url} style="1"/>
+              <br /><br /><br /><br />
 
             </Col>
           </Row>
