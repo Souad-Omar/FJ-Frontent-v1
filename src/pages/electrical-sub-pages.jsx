@@ -5,123 +5,101 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
 
-import OurFactoryImg from "../assets/OurFactoryImg.jpg";
-import OurFactory1 from "../assets/OurFactory1.jpg";
-import OurFactory2 from "../assets/OurFactory2.jpg";
-import OurFactory3 from "../assets/OurFactory3.jpg";
-import OurFactory4 from "../assets/OurFactory4.jpg";
-import OurFactory5 from "../assets/OurFactory5.jpg";
-import OurFactory6 from "../assets/OurFactory6.jpg";
-import OurFactoryLogo1 from "../assets/OurFactoryLogo1.png";
-import OurFactoryLogo2 from "../assets/OurFactoryLogo2.png";
-import OurFactoryLogo3 from "../assets/OurFactoryLogo3.png";
-import OurFactoryLogo4 from "../assets/OurFactoryLogo4.png";
-import OurFactoryLogo5 from "../assets/OurFactoryLogo5.png";
-import OurFactoryLogo6 from "../assets/OurFactoryLogo6.png";
+import ELECTRICAL from "../assets/ELECTRICAL.jpg";
+import HVACProduct1 from "../assets/s/HVACProduct1.png";
+import HVACProduct2 from "../assets/s/HVACProduct2.png";
+import HVACProduct3 from "../assets/s/HVACProduct3.png";
+import PumpsProduct1 from "../assets/s/PumpsProduct1.png";
+import PumpsProduct2 from "../assets/s/PumpsProduct2.png";
+import PumpsProduct3 from "../assets/s/PumpsProduct3.png";
+import FJENERGYProduct3 from "../assets/s/FJENERGYProduct3.png";
+import FJENERGYProduct2 from "../assets/s/FJENERGYProduct2.png";
+import FJENERGYProduct1 from "../assets/s/FJENERGYProduct1.png";
+import FJENERGYlogo from "../assets/s/FJENERGYlogo.png";
+import FJCareLogo from "../assets/s/FJCarelogo.png";
+import DCServelogo from "../assets/s/DCServelogo.png";
+import DCServeProduct1 from "../assets/s/DCServeProduct1.png";
+import DCServeProduct2 from "../assets/s/DCServeProduct2.png";
+import DCServeProduct3 from "../assets/s/DCServeProduct3.png";
+import Pumps from "../assets/s/Pumps.png"
+import SERVICESOLUTIONS from "../assets/s/SERVICESOLUTIONS.png"
+import HVACPARTSACCESSORIES from "../assets/s/HVACPARTS&ACCESSORIES.png"
+import HVACPRODUCTS from "../assets/s/HVACPRODUCTS.png"
+
 import BasicHeader2 from "./../components/basic-header2";
 import Arrow from "../components/arrow";
 
 const ElectricalSubPages = ({}) => {
-  const OurFactory = [
-    {
-      id: 1,
-      logo: OurFactoryLogo1,
-      factoryMainTytle: "AIR-CONDITIONING & AIR-HANDLING UNITS",
-      factoryImage: OurFactory1,
-      factoryName: "EUROCLIMA MIDDLE EAST",
-      text: [
-        "Euroclima has been a market and technology leader in the production and worldwide distribution of high-quality climate control units and fan convectors.      ",
-        "We develop, produce and market high-end ventilation products from simple convenient applications to solutions in hygiene, and air processing plants along with the use of highly efficient heat recovery systems.        ",
-        "Euroclima is an international industrial business operating across 5 production sites in Italy, Austria, India and the United Arab Emirates with over 40,000 squared metres of production sites, as well as an extensive global distribution network with sales and service branches.      ",
-      ],
-      tel: "+9714 802 4000",
-      web: "https://www.euroclima.com",
-      address: "Dubai Investment Park 1, Dubai, UAE",
-      map: "https://goo.gl/maps/kGT6urQRVMkkugD68",
-    },
-    {
-      id: 2,
-      logo: OurFactoryLogo2,
-      factoryMainTytle: "INSULATION PANELS & PRE-INSULATED AIR DUCT SYSTEMS  ",
-      factoryImage: OurFactory2,
-      factoryName: "ALPHA DUCTS LLC",
-      text: [
-        "ALPHA DUCTS LLC is one of the highly advanced and modernized manufacturers of polyisocyanurate and phenolic insulation panels, pre-insulated air duct systems and accessories in the Middle east and GCC Region.      ",
-        "Established in 2004 as a small manufacturing facility, Alpha Ducts LLC was upgraded in 2005 to a huge capacity manufacturing facility. It presently boasts fully automated machineries and qualified technicians boasting the highest production capacity among all other insulation foam panels manufacturers in the United Arab Emirates.      ",
-      ],
-      tel: "+9714 272 4715",
-      web: "http://alphaducts.com",
-      address: "X4PM+CFV, Mina Jebel Ali, Jebel Ali Industrial, Dubai, UAE",
-      map: "https://goo.gl/maps/UMkeQ5MR3Bcyxuv6A",
-    },
-    {
-      id: 3,
-      logo: OurFactoryLogo3,
-      factoryMainTytle: "PVC ELECTRICAL CONDUIT & ACCESSORIES",
-      factoryImage: OurFactory3,
-      factoryName: "MULTIPLAST DUBAI LLC",
-      text: [
-        "Multiplast Dubai LLC was established in United Arab Emirates and was founded on a land area of 100,000 sq.ft. in Ras Al Khor, Dubai. It presently boasts the latest and most technologically advanced machineries available in the market today.      ",
-        "Multiplast Dubai LLC is a manufacturing company that produces superior quality products that comply with international standards, focusing on developing a wide-range of electrical fittings and lightings using only the highest caliber of PVC raw materials.  Its products follow the European and British standards, as well as boasting international accreditations.      ",
-      ],
-      tel: "+9714 333 8666",
-      web: "",
-      address: "25A Street, Ras Al Khor Industrial Area 2, Dubai, UAE",
-      map: "https://goo.gl/maps/WSvcabw33qNpmY217",
-    },
-    {
-      id: 4,
-      logo: OurFactoryLogo4,
-      factoryMainTytle: "ELECTRICAL SWITCHGEAR",
-      factoryImage: OurFactory4,
-      factoryName: "PROMASTER (Production Planning & Control)",
-      text: [
-        "We have a well laid out, fully air conditioned, dust-free manufacturing facility boasting a shop floor area of 4,000 sqm and employees more than 200 skilled workers. Our sophisticated production facility incorporates pneumatic lines along with the required tools, fabrication machines, hand tools and other related machineries.      ",
-        "Our team consists of well experienced designers and engineers capable of providing highly engineered and meticulously assembled electric switchgear and control panels. We use advanced software to assist the engineers in all the design aspects.      ",
-      ],
-      tel: "+9714 810 5105",
-      web: "",
-      address:
-        "Faisal Jassim Trading Co, Dubai Investment Park-1, Plot: 598-1152, Dubai, UAE",
-      map: "https://www.google.com/maps/place....",
-    },
-    {
-      id: 5,
-      logo: OurFactoryLogo5,
-      factoryMainTytle: "Air Distribution Specialist",
-      factoryImage: OurFactory5,
-      factoryName: "FLOWTECH LLC (Warehouse & Service Centre)",
-      text: [
-        "Flowtech production facility consists of nearly 6,000 square meter of dedicated manufacturing space and has more than 260 qualified employees, has been at the forefront of manufacturing air distribution specialties for over 17 years.       ",
-        "Our layout of separate production lines for air terminal and air control devices equipped with state-of-the-art tools and machineries are based on creating an effective and efficient work flow and high standard production.  Meanwhile, our in-house powder coating plant has the flexibility to offer our customers standard or special coating as per the project needs.       ",
-      ],
-      tel: "+9714 810 5105",
-      web: "",
-      address: "X4PC+3WW - Mina Jebel Ali - Jebel Ali Industrial – Dubai, UAE",
-      map: "https://www.google.com/maps/place/FLOWTECH+LLC...",
-    },
-    {
-      id: 6,
-      logo: OurFactoryLogo6,
-      factoryMainTytle: "Pumps & Systems",
-      factoryImage: OurFactory6,
-      factoryName: "PUMPS (factory)",
-      text: [
-        "FJ Group represents globally renowned brands from Xylem Inc, a world leader in providing innovative pumping solutions such as Bell & Gossett, Goulds water technology, Flygt, Steady, Texas Turbine and A-C Fire Pump.       ",
-        "Today we are the leading supplier of Xylem’s technically advanced total line of pumping equipment and solutions suitable for chilled water, domestic water, sewage water and firefighting applications. Our flexibility to offer specific engineered products from an extensive portfolio and solutions for unique applications has allowed us to be at the forefront in the water pumping industry.      ",
-      ],
-      tel: "+9714 810 5105",
-      web: "",
-      address:
-        "Faisal Jassim Trading Co, Dubai Investment Park-1, Plot: 598-1152, Dubai, UAE",
-      map: "https://www.google.com/maps/place/faisal+jassim+trading...",
-    },
-  ];
 
+  const MechanicalSub=[{
+    id:1,
+    mecanicalDivisionName:"SERVICESOLUTIONS",
+      logo:SERVICESOLUTIONS,
+    text:["FJCare provides high-end engineering services through standards for excellent maintenance and repair of the air conditioning systems.  Our service solutions include preventive and corrective maintenance, compressor rebuild and overhauling, rectification, replacement, upgrade and added value engineering services which are designed to ensure that the air conditioning system is periodically maintained to meet any site’s operational requirements while achieving high energy eﬃciency and system reliability, which in turn:"],
+     
+    products:[],
+    },
+    {
+    id:2,
+    mecanicalDivisionName:"HVACPRODUCTS",
+      logo:HVACPARTSACCESSORIES,
+    text:["The FJCare HVAC project team handles system supply, installation and commissioning of the same.  The dedicated team is experienced and capable of undertaking all types of air conditioning designs & installations. FJCare is ready to deliver an optimum system to the highest industry standards. Our engineering team will provide alternative options and advice before a final proposal is made. Our Projects Division will manage the project right from design stage, installation and through final commissioning before handing over the project to the customer. The projects’ team will supervise the execution through all stages and at the time when commissioning takes place to ensure the system is set up correctly to the building requirements and design parameters. "],
+     
+    products:[HVACProduct1.png,HVACProduct2.png,HVACProduct3.png],
+    },
+    
+     
+    {
+    id:3,
+    mecanicalDivisionName:"Pumps",
+      logo:Pumps,
+    text:["FJ Group represents globally renowned brands from Xylem Inc, a world leader in providing innovative pumping solutions such as Bell & Gossett, Goulds water technology, Flygt, Steady, Texas Turbine and A-C Fire pump.     FJ Group’s Pump Division provides retrofitting, replacement and after sales support for Pumps, Air separators & Expansion Tanks etc."],
+     
+    products:[PumpsProduct1.png,PumpsProduct2.png,PumpsProduct3.png],
+    },
+    
+     
+    {
+    id:4,
+    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
+    logo:FJENERGYlogo,
+    text:["As an integral member of FJ Group, FJ ENERGY Solutions is a solid partner, established with the conviction of providing efficient and sustainable steam & hot water solutions for domestic, commercial, industrial applications, sourcing renewable, conventional and innovative energies from solar, gas, oil & electricity.     FJ Energy provides retrofitting, replacement and after-sales support for Boilers and Solar water heating systems, Photovoltaic systems, Heat Pumps, & Precision Cooling Systems."],
+     
+    products:[FJENERGYProduct1.png,FJENERGYProduct2.png,FJENERGYProduct3.png],
+    },
+     
+    {
+    id:5,
+    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
+    logo:DCServelogo,
+    text:["In the interest of district cooling providers and designers, DCServe a member of the FJ Group of companies is born out of integration of district cooling products and services under one umbrella.     DCServe provides retrofitting, replacement and after-sales support for Valves, Heat Exchangers, Cooling Towers, Air & Dirt Separators, Filtration, Pressurization Systems etc."],
+     
+    products:[DCServeProduct1.png,DCServeProduct2.png,DCServeProduct3.png],
+    },
+     
+    {
+    id:6,
+    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
+    logo:FJCareLogo,
+    text:["FJCare Technical Services LLC is a ‘Total Solution Provider’ launched by FJ GROUP in 2003, who are specialists in the HVAC field and well versed to oﬀer engineering services, including but not limited to Annual Maintenance Programs, compressor overhauling, replacements, HVAC Systems installation and supply of genuine HVAC and Refrigeration spare parts.    Evolving to keep up with the changing demands of time is intrinsic to the company. A commitment to quality, process orientation, flexibility, proven methodology, ability to establish engineering teams and a good understanding of various industry standards has been the basis of our long term relationship with our reputed clients."],
+     
+    products:[],
+    },
+     
+    {
+    id:7,
+    mecanicalDivisionName:"HVACPARTS&ACCESSORIES",
+      
+    text:["To reach out to its customers as a Total Solution Provider, FJCare has ventured into opening its own trading wing which comprises of genuine HVAC and refrigeration parts and accessories, representing premium products from reputed manufacturers like York, JCI and Danfoss. Our product range fits the requirement of your project, either, in the service field or for the execution of your HVAC installation projects.     We strongly believe that we can oﬀer you a prompt and professional product supply to the standard that you would expect. We always believe that, “The best part we have is your satisfaction”."],
+     
+    products:[],
+    },
+    
+  ];    
   
   const url = window.location.href.split("/");
   const urlPage = parseInt(url[4]);
-  const OurFactoryPage = OurFactory.map(
+  const MechanicalSubPage = MechanicalSub.map(
     (
       {
         id,
@@ -138,17 +116,17 @@ const ElectricalSubPages = ({}) => {
       idx
     ) => {
       if (id === urlPage) {
-        let index = OurFactory.findIndex((x) => x.id === id);
-        const factory = [OurFactory[index]];
+        let index = MechanicalSub.findIndex((x) => x.id === id);
+        const factory = [MechanicalSub[index]];
 
-        const next = index + 1 < OurFactory.length ? index + 2 : 1;
+        const next = index + 1 < MechanicalSub.length ? index + 2 : 1;
         const previous = index + 1 > 1 ? index : 6;
 
         return (
           <>
             <BasicHeader2
-              backgroundImage={OurFactoryImg}
-              headerTitle={"OUR FACTORIES"}
+              backgroundImage={ELECTRICAL}
+              headerTitle={"ELECTRICAL"}
             />
 
             <Container>
@@ -161,14 +139,14 @@ const ElectricalSubPages = ({}) => {
                   <br />
                   <br />
 
-                  <Arrow link={"/ElectricalSubPages/" + previous} />
+                  <Arrow link={"/ServicesSubPages/" + previous} />
                 </Col>
                 <Col>
                   <br />
                   <br />
                   <br />
                   <img
-                    style={{ marginLeft: "8%", width: "85%", height: "70%" }}
+                    style={{ marginLeft: "8%", width: "85%", height: "auto" }}
                     src={logo}
                     alt={factoryMainTytle}
                   />
@@ -184,54 +162,20 @@ const ElectricalSubPages = ({}) => {
                   <br />
                   <Arrow
                     directions={"."}
-                    link={"/ElectricalSubPages/" + next}
+                    link={"/ServicesSubPages/" + next}
                   />
                 </Col>{" "}
               </Row>
-              <Row>
-                <Col>
-                  <br />
-                  <br />
-                  <br />
-                  <img
-                    style={{ marginLeft: "0%", width: "100%", height: "100%" }}
-                    src={factoryImage}
-                    alt={factoryMainTytle}
-                  />
-                </Col>
-              </Row>
+             
               <Row>
                 <Col lg={1}></Col>
                 <Col lg={10}>
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <TextTitleBox title={factoryName} />
-                  <br />
+                 
                   {text.map((text) => (
                     <TextTitleBox text={text} />
                   ))}
                   <br />
-                  <br />
-                  <TextTitleBox title="CONTACT INFO" />
-                  <br />
-                  <TextTitleBox title="TEL" />
-                  <TextTitleBox text={tel} />
-                  <br />
-                  <TextTitleBox title="WEB" />
-                  <TextTitleBox text={web} />
-                  <br />
-                  <TextTitleBox title="ADDRESS" />
-                  <TextTitleBox text={address} />
-                  <br />
-                  <TextTitleBox title="MAP" />
-                  <TextTitleBox text={map} />
-                  <br />
+                  
                   <br />
                   <br />
                   <br />
@@ -245,7 +189,7 @@ const ElectricalSubPages = ({}) => {
       }
     }
   );
-  return <Fragment>{OurFactoryPage}</Fragment>;
+  return <Fragment>{MechanicalSubPage}</Fragment>;
 };
 
 export default ElectricalSubPages;

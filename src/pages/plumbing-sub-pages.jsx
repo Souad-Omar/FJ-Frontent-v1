@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
 
-import SERVICES from "../assets/SERVICES.jpg";
+import PLUMPING from "../assets/PLUMPING.jpg";
 import HVACProduct1 from "../assets/s/HVACProduct1.png";
 import HVACProduct2 from "../assets/s/HVACProduct2.png";
 import HVACProduct3 from "../assets/s/HVACProduct3.png";
@@ -125,8 +125,8 @@ const PlumbingSubPages = ({}) => {
         return (
           <>
             <BasicHeader2
-              backgroundImage={SERVICES}
-              headerTitle={"SERVICES"}
+              backgroundImage={PLUMPING}
+              headerTitle={"PLUMPING"}
             />
 
             <Container>
