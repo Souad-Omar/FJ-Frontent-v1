@@ -71,7 +71,7 @@ const News = () => {
   });
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={newsHeader} headerTitle={"ABOUT US"} />
+      <BasicHeader2 backgroundImage={newsHeader} headerTitle={"News"} />
       <Container>
         <Row>
           <Col></Col>
