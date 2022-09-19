@@ -69,12 +69,14 @@ const Oman = () => {
                     />
                   </div>
                 </Col>
-                <Col lg={9}>
-                  <img
-                    style={{ marginLeft: "3%", width: "90%", height: "100%" }}
-                    src={map}
-                    alt=""
-                  />
+                <Col></Col>
+                <Col lg={7}><br />
+      <br />
+      <br /><br />
+      <br />
+      <br />
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.381490058951!2d55.16617039999999!3d24.9871499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f7291468c6877%3A0xa2e8a061a45d9eb8!2sFaisal%20Jassim%20Trading%20Co.%20(L.L.C.)!5e0!3m2!1sen!2slb!4v1663600650074!5m2!1sen!2slb" width="90%" height="90%" style={{ border: 0 }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                 </Col>
               </Row>
             </Container>
@@ -98,7 +100,7 @@ const Oman = () => {
               {" "}            <Link to="/ContactUsDetailsPage/UnitedArabEmirates/1">
 
               <img
-                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                style={{ padding: '20px 20px 20px 20px', filter: "grayscale(100%)", opacity: "0.5" }}
                 src={FlagOfUnitedArabEmirates}
                 alt=""
               /></Link>
@@ -106,7 +108,7 @@ const Oman = () => {
             <Col>
             <Link to="/ContactUsDetailsPage/SaudiArabia/1">
               <img
-                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                style={{ padding: '20px 20px 20px 20px', filter: "grayscale(100%)", opacity: "0.5" }}
                 src={FlagOfSaudiArabia}
                 alt=""
               /></Link>
@@ -122,7 +124,7 @@ const Oman = () => {
             <Link to="/ContactUsDetailsPage/Iraq/1">
 
               <img
-                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                style={{ padding: '20px 20px 20px 20px', filter: "grayscale(100%)", opacity: "0.5" }}
                 src={FlagOfIraq}
                 alt=""
                 /></Link>
@@ -131,7 +133,7 @@ const Oman = () => {
               {" "}            <Link to="/ContactUsDetailsPage/Qatar/1">
 
               <img
-                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                style={{ padding: '20px 20px 20px 20px', filter: "grayscale(100%)", opacity: "0.5" }}
                 src={FlagOfQatar}
                 alt=""
                 /></Link>
@@ -140,7 +142,7 @@ const Oman = () => {
               {" "}            <Link to="/ContactUsDetailsPage/SouthAfrica/1">
 
               <img
-                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                style={{ padding: '20px 20px 20px 20px', filter: "grayscale(100%)", opacity: "0.5" }}
                 src={FlagOfSouthAfrica}
                 alt=""
               /></Link>
@@ -148,7 +150,7 @@ const Oman = () => {
             <Col>            <Link to="/ContactUsDetailsPage/India/1">
 
               <img
-                style={{ filter: "grayscale(100%)", opacity: "0.5" }}
+                style={{ padding: '20px 20px 20px 20px', filter: "grayscale(100%)", opacity: "0.5" }}
                 src={FlagOfIndia}
                 alt=""
               /></Link>

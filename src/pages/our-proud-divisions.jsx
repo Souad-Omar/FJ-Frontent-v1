@@ -32,23 +32,23 @@ const OurProudDivisions = () => {
             <br />
             <Container style={{ maxWidth: "2040px" }}>
             <Row><Col lg={3}>  
-                   <img src={FlagOfUnitedArabEmirates} alt="" />
+                   <img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfUnitedArabEmirates} alt="" />
               </Col><Col><img src={a11} alt="" /></Col><Col><img src={a12} alt="" /></Col><Col><img src={a13} alt="" /></Col></Row> <br />
             <br />
             <br />
-            <Row><Col lg={3}><img src={FlagOfSaudiArabia} alt="" /></Col><Col><img src={a21} alt="" /></Col><Col></Col><Col></Col></Row> <br />
+            <Row><Col lg={3}><img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfSaudiArabia} alt="" /></Col><Col><img src={a21} alt="" /></Col><Col></Col><Col></Col></Row> <br />
             <br />
             <br />
-            <Row><Col lg={3}><img src={FlagOfOman} alt="" /></Col><Col><img src={a41} alt="" /></Col><Col></Col><Col></Col></Row> <br />
+            <Row><Col lg={3}><img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfOman} alt="" /></Col><Col><img src={a41} alt="" /></Col><Col></Col><Col></Col></Row> <br />
             <br />
             <br />
-            <Row><Col lg={3}><img src={FlagOfIraq} alt="" /></Col><Col><img src={a41} alt="" /></Col><Col></Col><Col></Col></Row> <br />
+            <Row><Col lg={3}><img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfIraq} alt="" /></Col><Col><img src={a41} alt="" /></Col><Col></Col><Col></Col></Row> <br />
             <br />
             <br />
-            <Row><Col lg={3}><img src={FlagOfQatar} alt="" /></Col><Col><img src={a51} alt="" /></Col><Col><img src={a52} alt="" /></Col><Col></Col></Row> <br />
+            <Row><Col lg={3}><img            style={{ padding: '20px 20px 20px 20px'}} src={FlagOfQatar} alt="" /></Col><Col><img src={a51} alt="" /></Col><Col><img src={a52} alt="" /></Col><Col></Col></Row> <br />
             <br />
             <br />
-            <Row><Col lg={3}><img src={FlagOfIndia} alt="" /></Col><Col><img src={a61} alt="" /></Col><Col></Col><Col></Col></Row> <br />
+            <Row><Col lg={3}><img            style={{ padding: '20px 20px 20px 20px'}} src={FlagOfIndia} alt="" /></Col><Col><img src={a61} alt="" /></Col><Col></Col><Col></Col></Row> <br />
             <br />
             <br />
             
