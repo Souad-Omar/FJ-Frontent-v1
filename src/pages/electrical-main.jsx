@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import CustomHeader from "../components/custom-header";
 import ELECTRICAL from "../assets/ELECTRICAL.jpg";
 import E1 from "../assets/E1.jpg";
 import Footer from "../components/footer";
@@ -69,7 +69,7 @@ const BUSBARPOWERBARGULFVERTIVinfo = [
 const ElectricalMain = () => {
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={ELECTRICAL} headerTitle={"ELECTRICAL"} />
+      <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"ELECTRICAL"}  charHeader={"E"}  />
       <div className={"MEPSPage"} style={{ backgroundImage: `url(${E1})` }}>
       <Container style={{ maxWidth: "2040px" }}>
           <Row>
@@ -95,7 +95,7 @@ const ElectricalMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -118,7 +118,7 @@ const ElectricalMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -141,7 +141,7 @@ const ElectricalMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",

@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "../styles/style-component/image-slider-header.css";
-import BasicHeader from "./basic-header";
+import HomeHeader from "./home-header";
 import HeaderImg1 from "../assets/HeaderImg1.jpg";
 import HeaderImg2 from "../assets/HeaderImg2.jpg";
 import HeaderImg3 from "../assets/HeaderImg3.jpg";
@@ -20,7 +20,7 @@ const ImageSliderHeader = () => {
           backgroundImage: `url(${imageArray[0]})`,
         }}
       >
-        <BasicHeader />
+        <HomeHeader />
         <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />      </div>
       <br />
     </Fragment>

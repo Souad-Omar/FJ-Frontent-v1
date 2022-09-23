@@ -1,7 +1,35 @@
 .socialIcons{
-    margin: 21px;
-    margin-left: 35px;
-}
+    margin: 20px; 
+ }
 .socialIcons:hover {
     fill: #ffb536;
+  }
+
+  @media (min-width: 1500px) {
+    .socialIcons{
+        margin: 20px;
+        width:20px;
+            height:20px;
+     }
+  } @media (min-width: 992px) and (max-width: 1500px) {
+    .socialIcons{
+        margin: 20px;
+        width:15px;
+            height:15px;
+     }
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .socialIcons{
+        width:15px;
+            height:15px;       
+             margin: 10px 35px;
+
+     }
+  }
+  @media (max-width: 768px) {
+    .socialIcons{
+        margin: 10px 30px;
+        width:15px;
+            height:15px;
+     }
   }

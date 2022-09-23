@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../../components/basic-header2";
+import BasicHeader from "../../components/basic-header";
 import AboutUsImg from "../../assets/AboutUsImg.jpg";
 import Footer from "../../components/footer";
 import { Col, Row, Container } from "react-bootstrap";
@@ -89,7 +89,7 @@ const SaudiArabia = () => {
 
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={AboutUsImg} headerTitle={"CONTACT US"} />
+      <BasicHeader backgroundImage={AboutUsImg} headerTitle={["CONTACT US","Saudi Arabia"]} />
 
       <br />
       <br />

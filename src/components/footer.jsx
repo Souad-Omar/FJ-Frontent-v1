@@ -24,14 +24,30 @@ const Footer = () => {
             </Col><Col lg={7}></Col>
             <Col>
             <br />   <br />  
-            <Link to="/" className={"navbarFooter"}>Home</Link>
-        <Link to="/AboutUs" className={"navbarFooter"}>About us</Link>
-        <Link to="/OurProudDivisions" className={"navbarFooter"}>Divisions</Link>
-        <Link to="/OurProducts" className={"navbarFooter"}>Products</Link>
-        <Link to="/OurFactoriesMain" className={"navbarFooter"}>Factories</Link>
-        <Link to="/News" className={"navbarFooter"}>News</Link>
-        <Link to="/Accreditations" className={"navbarFooter"}>Accreditations</Link>
-        <Link to="/ContactUsDetailsPage" className={"navbarFooter"}>Contact us</Link>
+            <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/" className={"navbarFooter"}>Home</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/AboutUs" className={"navbarFooter"}>About us</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/OurProudDivisions" className={"navbarFooter"}>Divisions</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/OurProducts" className={"navbarFooter"}>Products</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/OurFactoriesMain" className={"navbarFooter"}>Factories</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/News" className={"navbarFooter"}>News</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/Accreditations" className={"navbarFooter"}>Accreditations</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/ContactUsDetailsPage" className={"navbarFooter"}>Contact us</Link>
 
             </Col>
           </Row><br /><br />

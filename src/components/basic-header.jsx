@@ -6,32 +6,34 @@ import QuickSearsh from "./quick-search";
 import SocialIcons from "./social-icons";
 import FJWhiteLogo from"../assets/FJWhiteLogo.png";
 
-const BasicHeader = () => {
+const BasicHeader = (props) => {
   return (
     <Fragment>
-        <br />
-        <Container style={{maxWidth: '3040px'}}><Row>
-        <Col lg={1}>
-        </Col>
-        <Col lg={1}>
-        <QuickSearsh />
+        <div
+        className="headerImageSlider"
+        style={{
+          backgroundImage: `url(${props.backgroundImage})`
+        }}
+      >
+<div className="iconsHeader">
+        <div className="headerSize">
+          <QuickSearsh />
             <SocialIcons />
-        </Col>
-        <Col lg={9}>
-            <Navbar />
-            <br />
-            <img src={FJWhiteLogo} alt="This is FJ logo white" />
-            <br />
-            <br />
-            <br />
-            <br />
-            <p className="p0">STRONG <span style={{fontWeight: 'bold'}}>FOUNDATIONS</span></p>
-            <p className="p0">HIGH <span style={{fontWeight: 'bold'}}>AMBITIONS</span></p>
-            <br />
-            <p className="p2" >THE REFERENCE POINT IN <span style={{fontWeight: 'bold'}}>MEP</span></p>
-        </Col>
-        </Row></Container>
+          </div> </div>
+          <div className="header">
+             <Navbar />
+
+             <img className="logoImg" src={FJWhiteLogo} alt="This is FJ logo white" />
+             <br />
+              <br />
+              {props.headerTitle.map((text) => (<>
+              <p className="p00">{text}</p>
+              </>
+                  ))}
+ 
+          </div>
       
+      </div>
     </Fragment>
   );
 };

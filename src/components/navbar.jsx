@@ -20,28 +20,44 @@ const Navbar = () => {
       <nav className="navbar , justify-content-center">
       <ul id="nav">
         <li>
-        <Link to="/" className={"navbarHeader"}>Home</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/" className={"navbarHeader"}>Home</Link>
             </li>
             <li>
-        <Link to="/AboutUs" className={"navbarHeader"}>About us</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/AboutUs" className={"navbarHeader"}>About us</Link>
             </li>
             <li>
-        <Link to="/OurProudDivisions" className={"navbarHeader"}>Divisions</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/OurProudDivisions" className={"navbarHeader"}>Divisions</Link>
             </li>
             <li>
-        <Link to="/OurProducts" className={"navbarHeader"}>Products</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/OurProducts" className={"navbarHeader"}>Products</Link>
             </li>
             <li>
-        <Link to="/OurFactoriesMain" className={"navbarHeader"}>Factories</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/OurFactoriesMain" className={"navbarHeader"}>Factories</Link>
             </li>
             <li>
-        <Link to="/News" className={"navbarHeader"}>News</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/News" className={"navbarHeader"}>News</Link>
             </li>
             <li>
-        <Link to="/Accreditations" className={"navbarHeader"}>Accreditations</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/Accreditations" className={"navbarHeader"}>Accreditations</Link>
             </li>
             <li>
-        <Link to="/ContactUsDetailsPage/1" className={"navbarHeader"}>Contact us</Link>
+        <Link onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} to="/ContactUsDetailsPage/1" className={"navbarHeader"}>Contact us</Link>
             </li>
             
         </ul>

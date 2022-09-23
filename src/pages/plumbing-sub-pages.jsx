@@ -27,7 +27,7 @@ import LacazeEnergieslogo from "../assets/p/LacazeEnergieslogo.png";
 import FUTUREJOURNEYEnergylogo from "../assets/p/FUTUREJOURNEYEnergylogo.png";
 import Radiantlogo from "../assets/p/Radiantlogo.png";
 
-import BasicHeader2 from "./../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 
 const PlumbingSubPages = ({}) => {
@@ -173,7 +173,7 @@ logo:Solinoxlogo,
 
         return (
           <>
-            <BasicHeader2 backgroundImage={PLUMPING} headerTitle={"PLUMPING"} />
+            <BasicHeader backgroundImage={PLUMPING} headerTitle={["PLUMPING"]} />
 
             <Container>
               <Row>

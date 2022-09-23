@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import CustomHeader from "../components/custom-header";
 import PLUMPING from "../assets/PLUMPING.jpg";
 import P1 from "../assets/P1.jpg";
 import Footer from "../components/footer";
@@ -86,7 +86,7 @@ const PLUMBINGProductsSolutionsinfo = [
 const PlumbingMain = () => {
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={PLUMPING} headerTitle={"PLUMPING"} />
+      <CustomHeader backgroundImage={PLUMPING} headerTitle={"PLUMPING"}  charHeader={"P"} />
       <div className={"MEPSPage"} style={{ backgroundImage: `url(${P1})` }}>
       <Container style={{ maxWidth: "2040px" }}>
           <Row>
@@ -114,7 +114,7 @@ const PlumbingMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",

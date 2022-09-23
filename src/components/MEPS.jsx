@@ -9,7 +9,9 @@ const MEPS = () => {
       <Container style={{ maxWidth: "1040px" }}>
         <Row>
           <Col>
-            <Link to="/MechanicalMain" style={{ textDecoration: "inherit" }}>
+            <Link to="/MechanicalMain" onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} style={{ textDecoration: "inherit" }}>
               <div className="MEPSStyle">
                 <p className="MPESChar">M</p>
                 <p className="titleLink"> MECHANICAL</p>
@@ -17,7 +19,9 @@ const MEPS = () => {
             </Link>
           </Col>
           <Col>
-            <Link to="/ElectricalMain" style={{ textDecoration: "inherit" }}>
+            <Link to="/ElectricalMain" onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} style={{ textDecoration: "inherit" }}>
               <div className="MEPSStyle">
                 <p className="MPESChar">E</p>
                 <p className="titleLink"> ELECTRICAL</p>
@@ -29,7 +33,9 @@ const MEPS = () => {
 
           <Col>
             {" "}
-            <Link to="/PlumbingMain" style={{ textDecoration: "inherit" }}>
+            <Link to="/PlumbingMain" onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} style={{ textDecoration: "inherit" }}>
               <div className="MEPSStyle">
                 <p className="MPESChar">P</p>
                 <p className="titleLink"> PLUMPING</p>
@@ -39,7 +45,9 @@ const MEPS = () => {
           </Col>
           <Col>
             {" "}
-            <Link to="/ServicesMain" style={{ textDecoration: "inherit" }}>
+            <Link to="/ServicesMain" onClick={() => {
+          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        }} style={{ textDecoration: "inherit" }}>
               <div className="MEPSStyle">
                 <p className="MPESChar">S</p>
                 <p className="titleLink">SERVICES</p>

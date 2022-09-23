@@ -18,7 +18,7 @@ import OurFactoryLogo3 from "../assets/OurFactoryLogo3.png";
 import OurFactoryLogo4 from "../assets/OurFactoryLogo4.png";
 import OurFactoryLogo5 from "../assets/OurFactoryLogo5.png";
 import OurFactoryLogo6 from "../assets/OurFactoryLogo6.png";
-import BasicHeader2 from "./../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 
 const OurFactoriesSupPages = ({}) => {
@@ -146,9 +146,9 @@ const OurFactoriesSupPages = ({}) => {
 
         return (
           <>
-            <BasicHeader2
+            <BasicHeader
               backgroundImage={OurFactoryImg}
-              headerTitle={"OUR FACTORIES"}
+              headerTitle={["OUR","FACTORIES"]}
             />
 
             <Container>

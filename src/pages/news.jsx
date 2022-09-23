@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import newsHeader from "../assets/newsHeader.jpg";
 import Footer from "../components/footer";
 import { Col, Row, Container } from "react-bootstrap";
@@ -71,7 +71,7 @@ const News = () => {
   });
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={newsHeader} headerTitle={"News"} />
+      <BasicHeader backgroundImage={newsHeader} headerTitle={["News"]} />
       <Container>
         <Row>
           <Col></Col>

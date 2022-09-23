@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import OurProudDivisionsImg from "../assets/OurProudDivisionsImg.png";
 import Footer from "../components/footer";
 import { Col, Row, Container } from "react-bootstrap";
@@ -25,7 +25,7 @@ import { Link } from "react-router-dom";
 const OurProudDivisions = () => {
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={OurProudDivisionsImg} headerTitle={"OUR PROUD DIVISIONS"} />
+      <BasicHeader backgroundImage={OurProudDivisionsImg} headerTitle={["OUR","PROUD DIVISIONS"]} />
       
       <br />
             <br />

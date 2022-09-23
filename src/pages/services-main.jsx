@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import CustomHeader from "../components/custom-header";
 import SERVICES from "../assets/SERVICES.jpg";
 import S1 from "../assets/S1.jpg";
 import Footer from "../components/footer";
@@ -68,7 +68,7 @@ url: "/ServicesSubPages/6",
 const ServicesMain = () => {
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={SERVICES} headerTitle={"SERVICES"} />
+      <CustomHeader backgroundImage={SERVICES} headerTitle={"SERVICES"}  charHeader={"S"} />
       <div className={"MEPSPage"} style={{ backgroundImage: `url(${S1})` }}>
       <Container style={{ maxWidth: "2040px" }}>
           <Row>
@@ -95,7 +95,7 @@ const ServicesMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -118,7 +118,7 @@ const ServicesMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -141,7 +141,7 @@ const ServicesMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -163,7 +163,7 @@ const ServicesMain = () => {
               <p
                 style={{
                   textAlign: "justify",
-                  textAlignLast: "center",
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",

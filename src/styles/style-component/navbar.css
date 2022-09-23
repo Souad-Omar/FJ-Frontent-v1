@@ -2,21 +2,18 @@
   float: "left";
   border: 0px; 
   background: #ffffff00;
-  margin-left: 80%;
-  margin-top: 18px;    
+  margin-left: 100%;
+  margin-top: 40px;    
 
 
-}
-nav{
-  float: left; 
-  margin-left: 11vw;
-}
+} 
 
 ul {
   color: #fff;
   text-decoration: inherit;
   font-family: "Montserrat";
-  margin-bottom: 1.5vw;
+  font-weight: 450;
+  margin-top: 20px;    
 
   list-style: none;
   flex-flow: row nowrap;
@@ -26,7 +23,7 @@ ul {
   color: #fff;
   text-decoration: inherit;
   font-family: "Montserrat";
-  margin: 1vw;
+  margin: 0.9vw;
 }
 .navbarHeader:hover {
   color: #ffb536;
@@ -35,27 +32,27 @@ ul {
 @media (min-width: 1200px) {
   ul {
     display: flex;
-    font-size: 17px;
+    font-size: 15px;
   }
   .navButton{display: none;}
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 1005px) and (max-width: 1200px) {
   ul {
     display: flex;
-    font-size: 14px;
+    font-size: 13px;
   }
   .navButton{display: none;}
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 1005px) {
   ul {display: none;}
-    li{margin: 3vw;}
+    li{margin: 1vw; transition: all 0.5s;}
 
 }
 
 @media (max-width: 768px) {
   ul {display: none;}
-    li{margin: 3.5vw;}
+    li{margin: 1.5vw; transition: all 0.5s;}
 
 }

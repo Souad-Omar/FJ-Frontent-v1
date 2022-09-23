@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import CustomHeader from "../components/custom-header";
 import Mechanical from "../assets/Mechanical.jpg";
 import M1 from "../assets/M1.jpg";
 import Footer from "../components/footer";
@@ -15,6 +15,7 @@ import DISTRICTCOOLINGEQUIPMENT from "../assets/Mechanical/DISTRICTCOOLINGEQUIPM
 import DuctingInsulation from "../assets/Mechanical/DuctingInsulation.png";
 import AirDISTRIBUTION from "../assets/Mechanical/AirDISTRIBUTION.png";
 import MiniDrobdownList from "../components/miniDrobdownList";
+import ELECTRICAL from "../assets/Group779.jpg";
 
 const MInfo = [
   {
@@ -258,8 +259,8 @@ const miniListDISTRICTCOOLINGEQUIPMENT = [
 const MechanicalMain = () => {
   return (
     <Fragment>
-      <BasicHeader2 backgroundImage={Mechanical} headerTitle={"MECHANICAL"} />
-      <div className={"MEPSPage"} style={{ backgroundImage: `url(${M1})` }}>
+      <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"MECHANICAL" }  charHeader={"M"} />
+      <div className={"MEPSPage"} style={{ backgroundImage: `url(${M1})`}}>
         <Container style={{ maxWidth: "2040px" }}>
           <Row>
             <Col></Col>
@@ -284,8 +285,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -307,8 +308,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -330,8 +331,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -353,8 +354,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -377,8 +378,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -400,8 +401,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",
@@ -423,8 +424,8 @@ const MechanicalMain = () => {
               <br />
               <p
                 style={{
-                  textAlign: "justify",
-                  textAlignLast: "center",
+                   
+                  textAlign: 'center',
                   fontFamily: "Montserrat",
                   fontSize: "20px",
                   color: "black",

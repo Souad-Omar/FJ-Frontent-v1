@@ -26,7 +26,7 @@ import SERVICESOLUTIONS from "../assets/s/SERVICESOLUTIONS.png"
 import HVACPARTSACCESSORIES from "../assets/s/HVACPARTS&ACCESSORIES.png"
 import HVACPRODUCTS from "../assets/s/HVACPRODUCTS.png"
 
-import BasicHeader2 from "./../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 
 const ServicesSubPages = ({}) => {
@@ -124,9 +124,9 @@ const ServicesSubPages = ({}) => {
 
         return (
           <>
-            <BasicHeader2
+            <BasicHeader
               backgroundImage={SERVICES}
-              headerTitle={"SERVICES"}
+              headerTitle={["SERVICES"]}
             />
 
             <Container>

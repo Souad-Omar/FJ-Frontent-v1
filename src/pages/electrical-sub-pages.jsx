@@ -10,7 +10,7 @@ import MutliplastDubaillcLogo from "../assets/Logos/MutliplastDubaillcLogo.png";
 import ELECTRICALSWITCHGEARCONTROLS from "../assets/e/ELECTRICALSWITCHGEAR&CONTROLS.png";
 import PowerBarlogo from "../assets/e/PowerBarlogo.png";
 
-import BasicHeader2 from "./../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 
 const ElectricalSubPages = ({}) => {
@@ -95,9 +95,9 @@ logo: MutliplastDubaillcLogo,
 
         return (
           <>
-            <BasicHeader2
+            <BasicHeader
               backgroundImage={ELECTRICAL}
-              headerTitle={"ELECTRICAL"}
+              headerTitle={["ELECTRICAL"]}
             />
 
             <Container>

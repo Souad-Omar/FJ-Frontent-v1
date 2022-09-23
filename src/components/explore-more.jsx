@@ -6,10 +6,12 @@ function toggleDiv(div1, div2, buutonText) {
   } else if (buutonText === "SHOW LESS") {
     document.getElementById(`${div2}`).style.display = "none";
     document.getElementById(`${div1}`).style.display = "block";
+   
   } else if (buutonText === "EXPLORE MORE") {
     document.getElementById(`${div2}`).style.display = "block";
 
     document.getElementById(`${div1}`).style.display = "none";
+   
   }
 }
 

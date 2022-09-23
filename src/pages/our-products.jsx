@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import BasicHeader2 from "../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 import OurProductsHeader from "../assets/OurProductsHeader.jpg";
 import OurProductsMain1 from "../assets/OurProductsMain1.jpg";
 import OurProductsMain2 from "../assets/OurProductsMain2.jpg";
@@ -51,9 +51,9 @@ const text1 =
 const OurProducts = () => {
   return (
     <Fragment>
-      <BasicHeader2
+      <BasicHeader
         backgroundImage={OurProductsHeader}
-        headerTitle={"OUR PRODUCTS"}
+        headerTitle={["OUR","PRODUCTS"]}
       />
       <div
         className={"division"}

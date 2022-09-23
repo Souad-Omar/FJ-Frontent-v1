@@ -9,7 +9,7 @@ import Environment from "../assets/Environment.png";
 import Safety from "../assets/Safety.png";
 import Health from "../assets/Health.png";
 import QUALITY from "../assets/QUALITY.png";
-import BasicHeader2 from "./../components/basic-header2";
+import BasicHeader from "../components/basic-header";
 
 const Accreditations = ({}) => {
   const OurFactory = [
@@ -31,9 +31,9 @@ const Accreditations = ({}) => {
 
   return (
     <Fragment>
-      <BasicHeader2
+      <BasicHeader
         backgroundImage={ACCREDITATIONSImg}
-        headerTitle={"ACCREDITATIONS"}
+        headerTitle={["ACCREDITATIONS"]}
       />
       <br /><br /><br /><br />
       <Container style={{ maxWidth: "1540px" }}>
