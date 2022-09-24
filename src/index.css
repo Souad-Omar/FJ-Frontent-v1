@@ -22,3 +22,6 @@
   button{
     transition: all 0.5s;
   }
+  .bodyContent{
+    padding:8% 0px 8% 0px;
+  }

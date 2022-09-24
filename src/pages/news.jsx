@@ -21,7 +21,7 @@ const newsData = [
     imges: [news1],
   },
   {
-    title: "FJ GROUP- IFTAR EVENING ",
+    title: "FJ GROUP- IFTAR EVENING",
     city: "ABU DHABI",
     style: "paragraphStyle1",
     text: [
@@ -34,21 +34,14 @@ const newsData = [
 const News = () => {
   const news = newsData.map(({ title, city, style, text, imges }, idx) => {
     return (
-      <>
         <Container>
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
           <Row>
-            <Col>
-              <p className="pBlack">
-                <span style={{ fontWeight: "bold" }}>{title}</span>
+            <Col style={{margin:"0px 0px 0px 5%"}}>
+              <p style={{padding:"5% 0px 0px 0px", textAlign:'center'}} className="pBlack">
+                <span style={{ fontWeight: "bold" }}>{title}</span><br />
                 {city}
               </p>
-              <br />
-              {text.map((el) => {
+               {text.map((el) => {
                 return <TextTitleBox className="" text={el} />;
               })}
             </Col>
@@ -56,7 +49,7 @@ const News = () => {
               {imges.map((el) => {
                 return (
                   <img
-                    style={{ width: "80%", height: "80%" }}
+                    style={{margin:"0px 0px 0px 20%", padding:"5% 0px 50px 0px", width: "70%", height: "90%" }}
                     src={el}
                     alt={title}
                   />
@@ -66,8 +59,7 @@ const News = () => {
           </Row>
           <hr />
         </Container>
-      </>
-    );
+     );
   });
   return (
     <Fragment>
@@ -75,20 +67,16 @@ const News = () => {
       <Container>
         <Row>
           <Col></Col>
-          <Col sm={9} lg={10}>
-            <br />
-            <br />
-            <TextBoxes textParagraph={news} />
-            <br />
-            <br />
+          <Col sm={9} lg={10}> 
+            <TextBoxes textParagraph={news} /> 
           </Col>
           <Col></Col>
         </Row>
       </Container>
-      {news}
-      <br />
-      <br />
-      <br />
+      <div className="bodyContent">
+      {news} 
+
+      </div>
       <Footer />
     </Fragment>
   );
