@@ -31,15 +31,8 @@ import Arrow from "../components/arrow";
 
 const MechanicalSubPages = ({}) => {
 
-  const MechanicalSub=[{
-    id:1,
-    mecanicalDivisionName:"",
-      logo:Pumps,
-    text:[{title:"",text:""},{title:"",text:""}],
-    products:[],
-    },
-    
-  ];    
+  const MechanicalSub=[{  },];
+      
   
   const url = window.location.href.split("/");
   const urlPage = parseInt(url[4]);

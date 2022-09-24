@@ -1,14 +1,14 @@
 .footer{
     background-color: #EEF2F4;
-    padding: 1%;
+    padding: 100px 0% 200px 0%;
 }
   
   .navbarFooter {
     color: #365989;
     text-decoration: inherit;
     font-family: "Montserrat";
-    margin: 10px;
-    font-size: 13.5px;
+    margin: 0px 0px 0px 30px;
+    font-size: 15px;
   }
   .navbarFooter:hover {
     color: #ffb536;
@@ -16,6 +16,146 @@
   .footerText{
     color: #ABADAE;
     font-family: "Montserrat";
+    
+  }
+
+
+  .fotterNav{    float:left;
+    width: 90%;
+     display: flex;
+      justify-content: right; 
+    padding:30px 7% 30px 40px;
+  }
+
+  .footerTitle{
+    float:left; 
+    padding:15px 0px 0px 5.5%; 
+   }
+  .cc{
+    float:left;
+    padding:15px 7% 30px 0px;
+   }
+
+
+
+
+  
+@media (min-width: 1050px) {
+  
+  .fotterNav{   
+      justify-content: right; 
+   }
+
+  .footerTitle{ 
+    width: 40%;
+   }
+  .cc{  width: 60%;
+   }
+   .footerText{ 
     font-size: 16px;
     
   }
+  .footerLogo{  
+      float:left;
+   padding:0px 0px 0px 5.5%;
+       width: 10%;
+  }
+}
+@media (min-width: 950px) and (max-width: 1050px) { 
+
+  .fotterNav{   
+        justify-content: right; 
+   }
+
+  .footerTitle{
+        width: 40%;
+  }
+  .cc{
+         width: 60%;
+  }.footerText{ 
+    font-size: 14px;
+    
+  }
+  .navbarFooter{
+    font-size: 12px;
+    
+  
+}
+.footerLogo{  
+    float:left;
+ padding:0px 0px 0px 5.5%;
+     width: 10%;
+}
+}
+@media (min-width: 750px) and (max-width: 950px) { 
+
+  .fotterNav{    float:left;
+    width: 90%;
+     display: flex;
+      justify-content: right; 
+    padding:30px 7% 30px 40px;
+  }
+
+  .footerTitle{
+    float:left; 
+       width: 40%;
+  }
+  .cc{
+    float:left;
+        width: 60%;
+  }.footerText{ 
+    font-size: 12px;
+    
+  }
+  .navbarFooter{
+    display: none;
+  }
+  
+ 
+.footerLogo{   
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+          width: 20%;
+ }
+}@media (max-width: 750px)  { 
+
+  .fotterNav{    float:left;
+    width: 90%;
+     display: flex;
+      justify-content: right; 
+    padding:30px 7% 30px 40px;
+  }
+
+  .footerTitle{
+    float:left; 
+    padding:15px 0px 0px 5.5%; 
+      width: 100%;
+  }
+  .cc{
+    float:left;
+    padding:15px 7% 30px 0px;
+       width: 100%;
+  }.footerText{ 
+    font-size: 12px;
+    
+  }
+  .navbarFooter{
+    display: none;
+  }
+  .footerLogo{   
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+            width: 40%;
+   }
+   .footerLogo{   
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+            width: 30%;
+   }
+}

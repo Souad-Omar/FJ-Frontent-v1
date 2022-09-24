@@ -8,22 +8,20 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <Fragment>
-      <div className="footer">
-      <br /><br /><br />
-        <Container>
-          <Row>
-            <Col>
-              <MEPS />
-            </Col>
-          </Row>        </Container>
-          <br />                <br /><br />
-          <Container style={{maxWidth: '2040px'}}>
-          <Row>
-            <Col lg={1}>
-              <img style={{width:"174px", height:"90px"}} src={FJLogo} alt="this is car image" />
-            </Col><Col lg={7}></Col>
-            <Col>
-            <br />   <br />  
+        
+
+
+
+      <div className="footer" >
+        <MEPS />
+        <br /><br />
+            <div className="footerLogo">
+
+              <img style={{width:"130px", height:"auto"}} src={FJLogo} alt="this is car image" />
+          </div>
+             
+             <div className="fotterNav">
+
             <Link onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         }} to="/" className={"navbarFooter"}>Home</Link>
@@ -48,13 +46,18 @@ const Footer = () => {
         <Link onClick={() => {
           window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
         }} to="/ContactUsDetailsPage" className={"navbarFooter"}>Contact us</Link>
+            </div>
+             <div className="footerTitle">
 
-            </Col>
-          </Row><br /><br />
-          <Row><Col lg={4}><p className="footerText">Strong Foundations - High Ambitions </p></Col><Col lg={8}><p style={{textAlign:'right'}} className="footerText">Copyright©Papillon Communications, 2022. All rights reserved</p></Col></Row>
-        </Container>
-      </div>
-    </Fragment>
+ <p className="footerText">Strong Foundations - High Ambitions </p>
+</div>
+<div className="cc">
+
+ <p style={{textAlign:'right'}} className="footerText">Copyright©Papillon Communications, 2022. All rights reserved</p>
+</div>
+             </div>
+ 
+     </Fragment>
   );
 };
 

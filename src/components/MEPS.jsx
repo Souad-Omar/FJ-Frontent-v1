@@ -3,57 +3,56 @@ import "../styles/style-component/MEPS.css";
 import { Col, Row, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
+
+const MEPDinfo =[
+  {id:1,
+    url:"/MechanicalMain",
+    char:"M",
+    title:"MECHANICAL"
+
+},{id:2,
+  url:"/ElectricalMain",
+  char:"E",
+  title:"ELECTRICAL"
+
+},{id:3,
+  url:"/PlumbingMain",
+  char:"P",
+  title:"PLUMPING"
+
+},{id:4,
+  url:"/ServicesMain",
+  char:"S",
+  title:"SERVICES"
+
+},
+]
 const MEPS = () => {
   return (
     <Fragment>
-      <Container style={{ maxWidth: "1040px" }}>
+      
+      <Container>
         <Row>
-          <Col>
-            <Link to="/MechanicalMain" onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }} style={{ textDecoration: "inherit" }}>
-              <div className="MEPSStyle">
-                <p className="MPESChar">M</p>
-                <p className="titleLink"> MECHANICAL</p>
-              </div>
-            </Link>
+          <Col lg={2}></Col>
+          <Col lg={8}>
+            <div className="MEPSDiv">
+              {MEPDinfo.map((MEPDInfo) => (
+                <div className="MEPSStyle">
+                  <Link
+                    to={MEPDInfo.url}
+                    onClick={() => {
+                      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    }}
+                    style={{ textDecoration: "inherit" }}
+                  >
+                    <p className="MPESChar">{MEPDInfo.char}</p>
+                    <p className="titleLink">{MEPDInfo.title}</p>
+                  </Link>
+                </div>
+              ))}
+            </div>
           </Col>
-          <Col>
-            <Link to="/ElectricalMain" onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }} style={{ textDecoration: "inherit" }}>
-              <div className="MEPSStyle">
-                <p className="MPESChar">E</p>
-                <p className="titleLink"> ELECTRICAL</p>
-              </div>
-            </Link>
-
-            <br />
-          </Col>
-
-          <Col>
-            {" "}
-            <Link to="/PlumbingMain" onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }} style={{ textDecoration: "inherit" }}>
-              <div className="MEPSStyle">
-                <p className="MPESChar">P</p>
-                <p className="titleLink"> PLUMPING</p>
-              </div>
-            </Link>
-            <br />
-          </Col>
-          <Col>
-            {" "}
-            <Link to="/ServicesMain" onClick={() => {
-          window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-        }} style={{ textDecoration: "inherit" }}>
-              <div className="MEPSStyle">
-                <p className="MPESChar">S</p>
-                <p className="titleLink">SERVICES</p>
-              </div>{" "}
-            </Link>
-          </Col>
+          <Col lg={2}></Col>
         </Row>
       </Container>
     </Fragment>

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9cdb8c06.css",
-    "main.js": "/static/js/main.07cd5aa3.js",
+    "main.css": "/static/css/main.eef058cd.css",
+    "main.js": "/static/js/main.37465be2.js",
     "static/media/HeaderImg1.jpg": "/static/media/HeaderImg1.ffa1119f8de3baf7b4c8.jpg",
     "static/media/OurProudDivisionsImg.png": "/static/media/OurProudDivisionsImg.75771f9f668513ccb07f.png",
     "static/media/OurFactory3.jpg": "/static/media/OurFactory3.f279237b8867ec7a2eff.jpg",
@@ -16,6 +16,7 @@
     "static/media/newsHeader.jpg": "/static/media/newsHeader.3d1b6777a9f061d09aa0.jpg",
     "static/media/RaphaelKhlatPresidentImage.jpg": "/static/media/RaphaelKhlatPresidentImage.f29531749cb1814388a8.jpg",
     "static/media/HeaderImg2.jpg": "/static/media/HeaderImg2.976fbe5ae093fd26cc07.jpg",
+    "static/media/Group779.jpg": "/static/media/Group779.841aeb7878c9c5b45e63.jpg",
     "static/media/RaphaelKhlatPresidentSmallImage.jpg": "/static/media/RaphaelKhlatPresidentSmallImage.8c7b40dc849c69b9e03c.jpg",
     "static/media/ACCREDITATIONS.jpg": "/static/media/ACCREDITATIONS.37b9d7609c64187d9e59.jpg",
     "static/media/OurProductsHeader.jpg": "/static/media/OurProductsHeader.2033abf6f4e4f4df0aeb.jpg",
@@ -121,11 +122,11 @@
     "static/media/Environment.png": "/static/media/Environment.44b0c160f0c8cd7b28ce.png",
     "static/media/52.png": "/static/media/52.8e33ad07c2b838ada06c.png",
     "index.html": "/index.html",
-    "main.9cdb8c06.css.map": "/static/css/main.9cdb8c06.css.map",
-    "main.07cd5aa3.js.map": "/static/js/main.07cd5aa3.js.map"
+    "main.eef058cd.css.map": "/static/css/main.eef058cd.css.map",
+    "main.37465be2.js.map": "/static/js/main.37465be2.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cdb8c06.css",
-    "static/js/main.07cd5aa3.js"
+    "static/css/main.eef058cd.css",
+    "static/js/main.37465be2.js"
   ]
 }
