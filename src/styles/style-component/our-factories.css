@@ -1,0 +1,46 @@
+.logoSupPage { 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.5s;
+
+}
+
+@media (min-width: 3000px) {
+    .logoSupPage{
+        height: 160px;
+    } 
+}@media (min-width: 2200px) and (max-width: 3000px) {
+    .logoSupPage{
+        height: 160px;
+    } 
+}
+@media (min-width: 1500px) and (max-width: 2200px) {
+    .logoSupPage{
+        height: 140px; margin-top: 10px;
+    } 
+}
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .logoSupPage{
+        height: 120px;        margin-top: 20px;
+
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .logoSupPage{
+        height: 100px;        margin-top: 20px;
+
+    }
+ }
+@media (min-width: 768px) and (max-width: 992px) {
+    .logoSupPage{
+        height: 100px;        margin-top: 20px;
+
+    }
+}
+@media (max-width: 768px) {
+    .logoSupPage{
+        height: 80px;        margin-top: 25px;
+
+     }
+}

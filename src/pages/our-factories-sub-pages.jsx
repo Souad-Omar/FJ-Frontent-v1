@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import TextTitleBox from "../components/text-title-box";
 import "../styles/style-component/text-boxes.css";
+import "../styles/style-component/our-factories.css";
 import { Link } from "react-router-dom";
 import { Col, Row, Container } from "react-bootstrap";
 import Footer from "../components/footer";
@@ -150,38 +151,28 @@ const OurFactoriesSupPages = ({}) => {
               backgroundImage={OurFactoryImg}
               headerTitle={["OUR","FACTORIES"]}
             />
+      <div style={{padding:'8% 20px 8% 20px'}}>
 
             <Container>
               <Row>
                 <Col>
                   <br />
                   <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-
+ 
                   <Arrow link={"/OurFactoriesSupPages/" + previous} />
                 </Col>
-                <Col>
-                  <br />
-                  <br />
-                  <br />
+                <Col> 
                   <img
-                    style={{ marginLeft: "8%", width: "85%", height: "70%" }}
+                    className="logoSupPage"
                     src={logo}
                     alt={factoryMainTytle}
                   />
-                  <br />
+                  <br /><br />
                   <TextTitleBox title={factoryMainTytle} />
                 </Col>
                 <Col>
                   <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+                  <br /> 
                   <Arrow
                     directions={"."}
                     link={"/OurFactoriesSupPages/" + next}
@@ -189,10 +180,7 @@ const OurFactoriesSupPages = ({}) => {
                 </Col>{" "}
               </Row>
               <Row>
-                <Col>
-                  <br />
-                  <br />
-                  <br />
+                <Col> 
                   <img
                     style={{ marginLeft: "0%", width: "100%", height: "100%" }}
                     src={factoryImage}
@@ -204,21 +192,13 @@ const OurFactoriesSupPages = ({}) => {
                 <Col lg={1}></Col>
                 <Col lg={10}>
                   <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+                  <br /> 
                   <TextTitleBox title={factoryName} />
-                  <br />
-                  {text.map((text) => (
+                   {text.map((text) => (
                     <TextTitleBox text={text} />
                   ))}
                   <br />
-                  <br />
-                  <TextTitleBox title="CONTACT INFO" />
+                   <TextTitleBox title="CONTACT INFO" />
                   <br />
                   <TextTitleBox title="TEL" />
                   <TextTitleBox text={tel} />
@@ -230,15 +210,12 @@ const OurFactoriesSupPages = ({}) => {
                   <TextTitleBox text={address} />
                   <br />
                   <TextTitleBox title="MAP" />
-                  <TextTitleBox text={map} />
-                  <br />
-                  <br />
-                  <br />
-                  <br />
+                  <TextTitleBox text={map} /> 
                 </Col>
                 <Col lg={1}></Col>
               </Row>
             </Container>
+            </div>
             <Footer />
           </>
         );
