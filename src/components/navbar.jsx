@@ -13,6 +13,8 @@ const Navbar = () => {
   useEffect(() => {
     function handleWindowResize() {
       setWindowSize(getWindowSize());
+      LiveNav(windowSize);
+
     }
 
     window.addEventListener('resize', handleWindowResize);
@@ -24,13 +26,7 @@ const Navbar = () => {
 
 
   
-  var headerNavbar = document.getElementById("nav");
-  var headerInfo = document.getElementById("header");
-  if(windowSize.innerWidth >= 1005){
-    headerNavbar.style.display = "none";
-    headerInfo.style.display = "block";
-  }
-
+   
 
   function burgerNavIcon() {
     
@@ -45,6 +41,7 @@ const Navbar = () => {
     }
     
   }
+
   return (
     <Fragment>
         <button className="navButton" onClick={burgerNavIcon} >
@@ -142,7 +139,7 @@ const Navbar = () => {
             
         </ul>
       </nav>
-    </Fragment>
+     </Fragment>
   );
 };
 
@@ -152,3 +149,11 @@ function getWindowSize() {
   const {innerWidth, innerHeight} = window;
   return {innerWidth, innerHeight};
 }
+
+function LiveNav(windowSize){
+  var headerNavbar2 = document.getElementById("nav");
+  var headerInfo2 = document.getElementById("header");
+    headerNavbar2.style.display = "none";
+    headerInfo2.style.display = "block";
+    
+ }
