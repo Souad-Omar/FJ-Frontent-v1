@@ -8,7 +8,7 @@
 
 } 
 
-ul {
+.navUl, .mobileNavUl{
   color: #fff;
   text-decoration: inherit;
   font-family: "Montserrat";
@@ -30,29 +30,33 @@ ul {
 }
 
 @media (min-width: 1200px) {
-  ul {
+  .mobileNavUl {
     display: flex;
     font-size: 15px;
   }
-  .navButton{display: none;}
+  .navButton{display: none;}  .navUl {display: none;}
+
 }
 
 @media (min-width: 1005px) and (max-width: 1200px) {
-  ul {
+  .mobileNavUl {
     display: flex;
     font-size: 13px;
   }
-  .navButton{display: none;}
+  .navButton{display: none;}  .navUl {display: none;}
+
 }
 
 @media (min-width: 768px) and (max-width: 1005px) {
-  ul {display: none;}
+  .mobileNavUl{display: none;}
+  .navUl {display: none;}
     li{margin: 1vw; transition: all 0.5s;}
 
 }
 
 @media (max-width: 768px) {
-  ul {display: none;}
-    li{margin: 1.5vw; transition: all 0.5s;}
+  .mobileNavUl{display: none;}
+  .navUl {display: none;}
+    li{margin: 1vw; transition: all 0.5s;}
 
 }

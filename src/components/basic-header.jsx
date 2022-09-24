@@ -7,6 +7,7 @@ import SocialIcons from "./social-icons";
 import FJWhiteLogo from"../assets/FJWhiteLogo.png";
 
 const BasicHeader = (props) => {
+  
   return (
     <Fragment>
         <div
@@ -20,9 +21,9 @@ const BasicHeader = (props) => {
           <QuickSearsh />
             <SocialIcons />
           </div> </div>
-          <div className="header">
+          <div className="header"> 
              <Navbar />
-
+             <div id="header">
              <img className="logoImg" src={FJWhiteLogo} alt="This is FJ logo white" />
              <br />
               <br />
@@ -30,7 +31,7 @@ const BasicHeader = (props) => {
               <p className="p00">{text}</p>
               </>
                   ))}
- 
+ </div>
           </div>
       
       </div>

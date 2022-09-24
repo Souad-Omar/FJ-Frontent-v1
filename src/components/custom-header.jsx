@@ -7,6 +7,7 @@ import FJWhiteLogo from"../assets/FJWhiteLogo.png";
  import "../styles/style-component/custom-header.css";
 
 const CustomHeader = (props) => {
+  
   return (
     <Fragment>
         <div
@@ -26,14 +27,15 @@ const CustomHeader = (props) => {
           <QuickSearsh />
             <SocialIcons />
           </div>
-          <div className="header">
+          <div className="header"> 
              <Navbar />
+             <div id="header">
 
              <img className="logoImg" src={FJWhiteLogo} alt="This is FJ logo white" />
              <br />
               <br />
              <p className="p00">{props.headerTitle}</p>
- 
+ </div>
           </div>
       
       </div>
