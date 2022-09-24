@@ -29,10 +29,13 @@ const Navbar = () => {
    
 
   function burgerNavIcon() {
+    var toggleBurgerIconButton = document.getElementById("burgerIconButton");
+    toggleBurgerIconButton.classList.toggle("change");
     
-  var headerNavbar = document.getElementById("nav");
-  var headerInfo = document.getElementById("header");
-    if (headerNavbar.style.display === "none") {
+    var headerNavbar = document.getElementById("nav");
+    var headerInfo = document.getElementById("header");
+    
+    if (headerNavbar.style.display === "none" || headerNavbar.style.display === "") {
       headerNavbar.style.display = "block";
       headerInfo.style.display = "none";
     } else {
@@ -44,9 +47,11 @@ const Navbar = () => {
 
   return (
     <Fragment>
-        <button className="navButton" onClick={burgerNavIcon} >
-            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" fill="#fff" width="25px" height="25px"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/></svg></button>
-<br />
+        <button id="burgerIconButton" className="navButton" onClick={burgerNavIcon} >
+        <div className="bar1"></div>
+  <div className="bar2"></div>
+  <div className="bar3"></div>            </button>
+  <br />
       <nav className="navbar , justify-content-center">
       <ul className="mobileNavUl">
         <li>
@@ -154,6 +159,6 @@ function LiveNav(windowSize){
   var headerNavbar2 = document.getElementById("nav");
   var headerInfo2 = document.getElementById("header");
     headerNavbar2.style.display = "none";
-    headerInfo2.style.display = "block";
+    headerInfo2.style.display = "block"; 
     
  }
