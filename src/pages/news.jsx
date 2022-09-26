@@ -49,7 +49,7 @@ const News = () => {
               {imges.map((el) => {
                 return (
                   <img
-                    style={{margin:"0px 0px 0px 20%", padding:"5% 0px 50px 0px", width: "70%", height: "90%" }}
+                    style={{margin:"0px 0px 0px 20%", padding:"5% 0px 50px 0px", width: "70%", height: "auto" }}
                     src={el}
                     alt={title}
                   />

@@ -82,7 +82,7 @@ const character = [
 const continousImrovemen = [
   {
     style: "1",
-    text: "CONTINOUS",
+    text: "CONTINUOUS",
   },{style: "1",
   text: "IMPROVEMENT",}
 ];

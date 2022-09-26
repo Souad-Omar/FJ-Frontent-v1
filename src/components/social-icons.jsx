@@ -7,7 +7,7 @@ const SocialIcons = () => {
         className="socialIcons"
         xmlns="http://www.w3.org/2000/svg"
         fill="#fff"
-        style={{marginTop: "10vw" }}
+        style={{marginTop: "9vw" }}
          
         viewBox="0 0 24 24"
       >

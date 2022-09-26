@@ -1,0 +1,100 @@
+.LogoTitleDiv{
+    padding: 5px; 
+     text-align: center;
+    width: 25%;
+    display: inline-block;     transition: all 0.5s;
+margin-block-end: 10%;
+ }
+
+.LogoTitle{
+    font-family: "Montserrat";
+    font-size: 35px;
+    color: black;
+    font-weight: light;
+    text-align: center;
+    margin-top: -100px;    transition: all 0.5s;
+
+ }
+.backgroungimg{
+    width:150px;
+}
+.cerificate1{
+    width: 100%; height: auto;
+}
+.cerificate2{
+    width: 100%; height: auto;
+
+}
+.cerificate3{
+    width: 100%; height: auto;
+
+}
+
+.cerificateRow{
+    padding:5%;
+    margin-top:-350px;
+}
+
+
+
+@media (max-width: 1290px) {
+    .LogoTitleDiv{
+        padding: 5px; 
+         text-align: center;
+        width: 25%;
+        display: inline-block; 
+     }
+     .backgroungimg{
+        width:120px;
+    }
+    .LogoTitle{
+        font-family: "Montserrat";
+        font-size: 30px;
+        margin-top: -70px;
+
+     }
+
+  }
+@media (max-width: 990px) {
+    .LogoTitleDiv{
+        padding: 5px; 
+         text-align: center;
+        width: 25%;
+        display: inline-block; 
+     }
+     .backgroungimg{
+        width:100px;
+    }
+    .LogoTitle{
+        font-family: "Montserrat";
+        font-size: 20px;
+        margin-top: -60px;
+
+     }
+
+    .cerificate1{
+        display: none; 
+    }
+    .cerificate3{
+        display: none; 
+    }
+    .cerificate2{
+        padding: 10%;
+    }
+  }
+  @media (max-width: 690px) {
+      .LogoTitleDiv{
+        text-align: center;
+          width: 25%;
+          display: inline-block; 
+       }
+       .backgroungimg{
+          width:70px;
+      }
+      .LogoTitle{
+          font-family: "Montserrat";
+          font-size: 15px;
+          margin-top: -45px;
+  
+       }
+    }

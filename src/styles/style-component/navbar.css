@@ -37,15 +37,25 @@
 
 
 
-.navUl, .mobileNavUl{
+.navUl{
+  color: #fff;
+  text-decoration: inherit;
+  font-family: "Montserrat";
+  font-weight: 450;
+   text-align: center;
+  list-style: none;
+  flex-flow: row nowrap;
+  margin-left: -10%;
+}.mobileNavUl{
   color: #fff;
   text-decoration: inherit;
   font-family: "Montserrat";
   font-weight: 450;
   margin-top: 20px;    
-
+  text-align: center;
   list-style: none;
   flex-flow: row nowrap;
+  margin-left: -10%;
 }
 
 .navbarHeader {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+
 /* width */
 ::-webkit-scrollbar {
     width: 20px;
@@ -24,4 +26,8 @@
   }
   .bodyContent{
     padding:8% 0px 8% 0px;
+  }
+  .bodyContentTexts{
+    padding:8% 20px 8% 20px;
+
   }

@@ -33,8 +33,8 @@ const MEPS = () => {
       
       <Container>
         <Row>
-          <Col lg={2}></Col>
-          <Col lg={8}>
+          <Col lg={1}></Col>
+          <Col lg={10}>
             <div className="MEPSDiv">
               {MEPDinfo.map((MEPDInfo) => (
                 <div className="MEPSStyle">
@@ -52,7 +52,7 @@ const MEPS = () => {
               ))}
             </div>
           </Col>
-          <Col lg={2}></Col>
+          <Col lg={1}></Col>
         </Row>
       </Container>
     </Fragment>
