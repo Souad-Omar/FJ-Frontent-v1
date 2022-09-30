@@ -21,6 +21,12 @@ const TextBoxes = ({ textParagraph }) => {
         <p className="paragraph2">{address}</p>
         </div>
         ;
+    }else if (style === "paragraph3") {
+      return <div>
+        <p className="paragraph3" >{text}</p>
+        <p className="paragraph3">{address}</p>
+        </div>
+        ;
     }
   });
 

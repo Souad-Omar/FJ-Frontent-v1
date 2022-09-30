@@ -10,11 +10,11 @@ import TextTitleBox from "../components/text-title-box";
 
 const paragraphs = [
   {
-    style: "paragraph2",
+    style: "paragraph3",
     text: "Today, FJ Group boasts a group of leading enterprises that have have interest in several diversified strategic business segments across the region, while upholding the same values and principles that the flagship entity was founded and built upon.",
   },
   {
-    style: "paragraph2",
+    style: "paragraph3",
     text: "We are relentlessly working on improving our services and expanding our portfolio of products to ensure a comprehensive coverage of the building services industry. In the meanwhile, our local manufacturing, production, and servicing capabilities have been significantly enhanced to cater to our increased market share across the MENA Region.",
   },
 ];
@@ -77,8 +77,7 @@ const commitmentParagraph = [
 const character = [
   {
     style: "3",    text: "CHARACTER",
-  },,{style: "3",
-  text: ".",}
+  },
 ];
 const continousImrovemen = [
   {
@@ -89,14 +88,12 @@ const continousImrovemen = [
 const partnership = [
   {
     style: "3",    text: "PARTNERSHIP",
-  },,{style: "3",
-  text: ".",}
+  },
 ];
 const commitment = [
   {
     style: "3",    text: "COMMITMENT",
-  },,{style: "3",
-  text: ".",}
+  },
 ];
 const vision = [
   {
@@ -124,15 +121,17 @@ const AboutUs = () => {
   return (
     <Fragment>
       <BasicHeader backgroundImage={AboutUsImg} headerTitle={["ABOUT US"]} />
-      <div className="bodyContentTexts">
-      <Container style={{ maxWidth: "1540px" }}>
-        <Row>
+      <Container style={{ maxWidth: "100%" }}>
+        <Row style={{backgroundColor:"#F7F9FA"}}>
           <Col></Col>
-          <Col sm={9} lg={10} >
-             <TextTitleBox textParagraph={paragraphs} />
+          <Col sm={9} lg={8} style={{padding:'8% 20px 8% 20px'}} >
+             <TextBoxes textParagraph={paragraphs} />
            </Col>
           <Col></Col>
-        </Row>
+        </Row></Container>
+      <div className="bodyContentTexts">
+      <Container style={{ maxWidth: "100%" }}>
+        
         <Row>
           <Col lg={6} style={{padding:'0px 2%'}}>
              <TextTitle textTitle={vision} />
@@ -143,32 +142,32 @@ const AboutUs = () => {
                 alt="About Us Vission Img"
               />
           </Col>
-          <Col lg={6} style={{padding:'0px 2%'}}><br />
+          <Col lg={6} style={{padding:'0px 2%'}}>
              <TextTitle textTitle={mission} />
             <TextBoxes textParagraph={missionParagraphs} />
           </Col>
         </Row>
         <Row>
           <Col> 
-            <br /> <TextTitle textTitle={ourCoreValue} /> <br />
+            <br /> <TextTitle textTitle={ourCoreValue} /> <br /><br />
           </Col>
         </Row>
         <Row>
           <Col lg={3} style={{padding:'0px 2%'}}>
-            <TextTitle textTitle={character} />
-            <TextBoxes textParagraph={characyerParagraph} />
+            <TextTitle textTitle={character} /><br />
+            <TextBoxes textParagraph={characyerParagraph} /><br />
           </Col>
           <Col lg={3} style={{padding:'0px 2%'}}>
             <TextTitle textTitle={continousImrovemen} />
-            <TextBoxes textParagraph={continousImrovemenParagraph} />
+            <TextBoxes textParagraph={continousImrovemenParagraph} /><br />
           </Col>
           <Col lg={3} style={{padding:'0px 2%'}}>
-            <TextTitle textTitle={partnership} />
-            <TextBoxes textParagraph={partnershipParagraph} />
+            <TextTitle textTitle={partnership} /><br />
+            <TextBoxes textParagraph={partnershipParagraph} /><br />
           </Col>
           <Col lg={3} style={{padding:'0px 2%'}}>
-            <TextTitle textTitle={commitment} />
-            <TextBoxes textParagraph={commitmentParagraph} />
+            <TextTitle textTitle={commitment} /><br />
+            <TextBoxes textParagraph={commitmentParagraph} /><br />
           </Col>
         </Row>
       </Container></div>
