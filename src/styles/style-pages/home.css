@@ -1,7 +1,8 @@
+
 .PresidentImg {
   width: 90%;
-  height: 80%;
-  margin-left: 60px;
+  height: auto; 
+ padding: 5%;
 }
 .brandLogo {
   width: 70%;
@@ -32,8 +33,6 @@
 @media (min-width: 992px) and (max-width: 1200px) {
     .PresidentImg {
         width: 450px;
-        height: 50%;
-        margin-left: 60px;
       }
       .loglRow{
         margin-top: -60px;
@@ -47,9 +46,8 @@
 }
 @media (min-width: 768px) and (max-width: 992px) {
 .PresidentImg {
-    width: 70%;
-    height:100%;
-    margin-left: 120px;
+    width: 70%;        margin-left: 15%;
+
   }
   .loglRow{
     margin-top: -60px;
@@ -64,7 +62,7 @@
 @media (max-width: 768px) {
     .PresidentImg {
         width: 80%;
-        height: 100%;
+        margin-left: 10%;
       }
       .loglRow{
         margin-top: -60px;

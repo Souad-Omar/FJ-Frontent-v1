@@ -311,7 +311,7 @@ const Home = () => {
 
         <div id="presidentMessageLess">
           <Row>
-            <Col lg={6}>
+            <Col  xs={{ span: 12, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }}>
               <TextBoxes textParagraph={messageLess} />
               <div style={{ textAlign:'center' }}>
                 <ExploreMore
@@ -323,7 +323,7 @@ const Home = () => {
               <br />
               <br />
             </Col>
-            <Col lg={6}>
+            <Col xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }}>
               <img
                 className="PresidentImg"
                 src={RaphaelKhlatPresidentSmallImage}
@@ -334,9 +334,9 @@ const Home = () => {
         </div>
         <div id="presidentMessagMore" style={{ display: "none" }}>
           <Row>
-            <Col lg={6}>
+            <Col xs={{ span: 12, order: 2 }} md={{ span: 12, order: 2 }} lg={{ span: 6, order: 1 }}>
               <TextBoxes textParagraph={messageMore} />
-              <div style={{ marginLeft: "38%" }}>
+              <div style={{ textAlign:'center' }}>
                 <ExploreMore
                   div1="presidentMessageLess"
                   div2="presidentMessagMore"
@@ -344,7 +344,7 @@ const Home = () => {
                 />
               </div> 
             </Col>
-            <Col lg={6}>
+            <Col xs={{ span: 12, order: 1 }} md={{ span: 12, order: 1 }} lg={{ span: 6, order: 2 }}>
               <img
                 className="PresidentImg"
                 src={RaphaelKhlatPresidentImage}
