@@ -4,12 +4,11 @@
 }
 
 .divisionLogo{
-    width: 300px; height: auto;
+    width: 250px; height: auto;
     align-items: center;
     padding: 0% 10% 0% 10%;
     transition: all 0.5s;
-    transition: all 0.5s;
-
+  
 }
 .divisionLogoRow{
     display: flex;
@@ -23,7 +22,8 @@
 .divisionLogoCol{
     padding: 0% 11%;
     transition: all 0.5s;
-
+width: 0%;
+padding: -5%;
 }
 .divisionLogoRow1{
   display: flex;
@@ -37,6 +37,7 @@
     height: 170px;
     margin-left: 0%;
     transition: all 0.5s;
+    padding: 3%;
 
   }
   .arrowLogos{
@@ -62,7 +63,7 @@
      
        }
        .divisionLogo{
-         width: 150px;
+         width: 170px;
          margin-left: 12px;
        
      }
@@ -147,7 +148,7 @@
     
       }
       .divisionLogo{
-        width: 100px;
+        width: 80px;
         margin-left: 12px;
       
     }
