@@ -8,11 +8,41 @@
   height: 60%;
   margin-left: 60px;
 }
+
+
+.logo1img, .logo2img, .logo3img{
+  width: 250px; height: auto;
+  align-items: center;
+  padding: 0% 10% 0% 10%;
+  transition: all 0.5s;
+
+}
+
+.loglRow{
+  margin-top: -6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+.logoCol{
+  padding: 0% 4%;
+}
+
 @media (min-width: 992px) and (max-width: 1200px) {
     .PresidentImg {
         width: 450px;
         height: 50%;
         margin-left: 60px;
+      }
+      .loglRow{
+        margin-top: -60px;
+      }
+      .logo1img, .logo2img, .logo3img{
+        width: 250px;
+      
+      }.logoCol{
+        padding: 0% 1%;
       }
 }
 @media (min-width: 768px) and (max-width: 992px) {
@@ -21,10 +51,28 @@
     height:100%;
     margin-left: 120px;
   }
+  .loglRow{
+    margin-top: -60px;
+  }
+  .logo1img, .logo2img, .logo3img{
+    width: 200px;
+  
+  }.logoCol{
+    padding: 0% 1%;
+  }
 }
 @media (max-width: 768px) {
     .PresidentImg {
         width: 80%;
         height: 100%;
+      }
+      .loglRow{
+        margin-top: -60px;
+      }
+      .logo1img, .logo2img, .logo3img{
+        width: 120px;
+      
+      }.logoCol{
+        padding: 0% 1%;
       }
     }

@@ -38,6 +38,17 @@ import PumbsLogo from "../assets/Logos/PumbsLogo.png";
 import RadwantLogo from "../assets/Logos/RadwantLogo.png";
 import SamsungLogo from "../assets/Logos/SamsungLogo.png";
 import SondesLogo from "../assets/Logos/SondesLogo.png";
+import DCServe from "../assets/Logos/DCServe.png";
+import FJEnergy from "../assets/Logos/FJEnergy.png";
+import FJENGINEERINGTRADING from "../assets/Logos/FJENGINEERINGTRADING.png";
+import FJGroupMain from "../assets/Logos/FJGroupMain.png";
+
+
+
+import {useEffect, useState} from 'react';
+import ArrowArray from "../components/arrowArray";
+
+
 
 const paragraphs = [
   {
@@ -154,7 +165,7 @@ const brands = [
     text: "& REPRESENTATIONS",
   },
 ];
-const brandsLogo = [
+const brandsLogos = [
   {
     id:1,
     logo:AcFirePumpLogo
@@ -235,18 +246,55 @@ const brandsLogo = [
     logo:YorkLogo
   },]
 const Home = () => {
+  
+  const [state, setState] = useState(7);
+  const brandsLogo = [
+    AcFirePumpLogo,
+    AlphaDuctsLogo,
+    AquafloLogo,
+    ArmacellLogo,
+    BellAndGossettLogo,
+    CleaverBrooksLogo,
+    CraneLogo,
+    EuroclimaLogo,
+    FJCareLogo,
+    FlowTechLogo,
+    GFLogo,
+    GlanDimplexLogo,
+    GouldsLogo,
+    GreenheckLogo,
+    HoneywellHomeLogo,
+    XylemLogo,
+    IMILogo,
+    MutliplastDubaillcLogo,
+    powerbarLogo,
+    ProMasterLogo,
+    RadwantLogo,
+    SamsungLogo,
+    SondesLogo,
+    UponorLogo,
+    YorkLogo];
+  function arrowArrayRight(){
+    setState((prevState)=>{
+         return prevState=prevState >=brandsLogo.length ? 1: prevState+1;
+
+    });}
+    function arrowArrayLeft(){
+      setState((prevState)=>{
+           return prevState=prevState <= 1 ? brandsLogo.length-1: state-1;
+  
+      });}
+
+
   return (
     <Fragment>
-      <ImageSliderHeader />
+      <ImageSliderHeader />      <div className="bodyContentTexts">
       <Container>
         <Row>
           <Col></Col>
-          <Col sm={9} lg={10}>
-            <br />
-            <br />
+          <Col sm={9} lg={10}> 
             <TextBoxes textParagraph={paragraphs} />
-            <br />
-            <br />
+            
           </Col>
           <Col></Col>
         </Row>
@@ -265,7 +313,7 @@ const Home = () => {
           <Row>
             <Col lg={6}>
               <TextBoxes textParagraph={messageLess} />
-              <div style={{ marginLeft: "35%" }}>
+              <div style={{ textAlign:'center' }}>
                 <ExploreMore
                   div1="presidentMessageLess"
                   div2="presidentMessagMore"
@@ -294,9 +342,7 @@ const Home = () => {
                   div2="presidentMessagMore"
                   buutonText="SHOW LESS"
                 />
-              </div>
-              <br />
-              <br />
+              </div> 
             </Col>
             <Col lg={6}>
               <img
@@ -308,36 +354,45 @@ const Home = () => {
           </Row>
         </div>
         <Row>
-          <Col>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+          <Col  style={{padding:"2%"}} >
+            <br /> 
             <TextTitle textTitle={brands} />
             <br />
             <br />
           </Col>
         </Row>
-        <Row>
-        <Col><img
-                className="brandLogo"
-                src={brandsLogo[2].logo}
-                alt=""
-              /></Col>
-        <Col><img
-                className="brandLogo"
-                src={brandsLogo[8].logo}
-                alt=""
-              /></Col>
-        <Col><img
-                className="brandLogo"
-                src={brandsLogo[9].logo}
-                alt=""
-              /></Col>
-        </Row>
+ 
+        <Row style={{ marginTop:'0px'}}>
+    <Col> 
+      <ArrowArray  arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
+    </Col> <Col>
+    </Col>
+    <Col> 
+      <ArrowArray  directions={"."} arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
+    </Col>
+  </Row> 
+        <div className="loglRow">
+    <div className='logoCol'>
+    <img
+    className="logo1img"
+    src={state >= brandsLogo.length ? brandsLogo[0]: brandsLogo[state]}
+            />
+    </div>
+    <div lg={3}   className='logoCol'>
+    <img
+    className="logo2img"
+    src={brandsLogo[state-1]}
+            />
+     </div>
+    <div lg={3}   className='logoCol'>
+    <img
+    className="logo3img"
+    src={state <= 1 ? brandsLogo[brandsLogo.length-1]: brandsLogo[state-2]}
+            />
+    </div>
+  </div>
       </Container>
+      </div>
       <Footer />
     </Fragment>
   );

@@ -32,7 +32,7 @@ const newsData = [
   },
 ];
 const News = () => {
-  const news = newsData.map(({ title, city, style, text, imges }, idx) => {
+  const news = newsData.map(({ title, city, text, imges }, idx) => {
     return (
         <Container>
           <Row>

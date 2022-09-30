@@ -12,6 +12,10 @@ const TextTitle = ({ textTitle }) => {
       return (
           <p >{text}</p>
       ) }
+      else if (style==='3'){
+        return (
+            <p className="title2">{text}</p>
+        ) }
 });
 
   return <Fragment>{textTitle1}</Fragment>;
