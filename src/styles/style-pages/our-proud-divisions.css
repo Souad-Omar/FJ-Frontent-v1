@@ -1,0 +1,154 @@
+.flag{
+    padding: 0% 8% 0% 8%;
+    transition: all 0.5s;
+}
+
+.divisionLogo{
+    width: 300px; height: auto;
+    align-items: center;
+    padding: 0% 10% 0% 10%;
+    transition: all 0.5s;
+    transition: all 0.5s;
+
+}
+.divisionLogoRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50%;
+    height: 100px;
+    transition: all 0.5s;
+
+}
+.divisionLogoCol{
+    padding: 0% 11%;
+    transition: all 0.5s;
+
+}
+.divisionLogoRow1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+
+}
+.vl {
+    border-left: 1px solid #a3a3a3;
+    height: 170px;
+    margin-left: 0%;
+    transition: all 0.5s;
+
+  }
+  .arrowLogos{
+    margin-top: -11%;
+    padding-bottom: 6%;
+    transition: all 0.5s;
+
+  }
+  @media (min-width: 1300px) and (max-width: 1400px) {
+    .flag{
+         
+     width: 150px;
+     margin-left: 50%;
+     }
+     .vl {
+         border-left: 1px solid #a3a3a3;
+         height: 100px;
+         margin-left: 15%;
+       }
+     .arrowLogos{
+         margin-top: -9%;
+         padding-bottom: 3%;
+     
+       }
+       .divisionLogo{
+         width: 150px;
+         margin-left: 12px;
+       
+     }
+   }  @media (min-width: 1200px) and (max-width: 1300px) {
+    .flag{
+         
+     width: 150px;
+     margin-left: 50%;
+     }
+     .vl {
+         border-left: 1px solid #a3a3a3;
+         height: 100px;
+         margin-left: 15%;
+       }
+     .arrowLogos{
+         margin-top: -9%;
+         padding-bottom: 3%;
+     
+       }
+       .divisionLogo{
+         width: 170px;
+         margin-left: 12px;
+       
+     }
+   }
+   @media (min-width: 992px) and (max-width: 1200px) {
+    .flag{
+         
+     width: 150px;
+     margin-left: 50%;
+     }
+     .vl {
+         border-left: 1px solid #a3a3a3;
+         height: 100px;
+         margin-left: 15%;
+       }
+     .arrowLogos{
+         margin-top: -10%;
+         padding-bottom: 5%;
+     
+       }
+       .divisionLogo{
+         width: 150px;
+         margin-left: 12px;
+       
+     }
+   }
+  @media (min-width: 768px) and (max-width: 992px) {
+    .flag{
+        width: 120px;
+        margin-left: 0px;
+        }
+    .vl {
+        border-left: 1px solid #a3a3a3;
+        height: 100px;
+        margin-left: 10%;
+      }
+    .arrowLogos{
+        margin-top: -13%;
+        padding-bottom: 8%;
+    
+      }
+      .divisionLogo{
+        width: 120px;
+        margin-left: 12px;
+      
+    }
+  }
+  @media (max-width: 768px) {
+    .flag{
+        width: 80px;
+        margin-left: -30px;
+        }
+    .vl {
+        border-left: 1px solid #a3a3a3;
+        height: 100px;     
+
+      }
+    .arrowLogos{
+        margin-top: -85px;
+        padding-bottom: 50px;
+    
+      }
+      .divisionLogo{
+        width: 100px;
+        margin-left: 12px;
+      
+    }
+  }

@@ -3,6 +3,7 @@ import BasicHeader from "../components/basic-header";
 import OurProudDivisionsImg from "../assets/OurProudDivisionsImg.png";
 import Footer from "../components/footer";
 import { Col, Row, Container } from "react-bootstrap";
+import "../styles/style-pages/our-proud-divisions.css";
 import TextBoxes from "../components/text-boxes";
 import TextTitle from "../components/title-type";
 import FlagOfIndia from "../assets/ContactUs/FlagOfIndia.jpg";
@@ -21,42 +22,149 @@ import a51 from "../assets/ContactUs/51.png";
 import a52 from "../assets/ContactUs/52.png";
 import a61 from "../assets/ContactUs/61.png";
 import { Link } from "react-router-dom";
+import ArrowArray from "../components/arrowArray";
 
 const OurProudDivisions = () => {
   return (
     <Fragment>
-      <BasicHeader backgroundImage={OurProudDivisionsImg} headerTitle={["OUR","PROUD DIVISIONS"]} />
-      
-      <br />
-            <br />
-            <br />
-            <Container style={{ maxWidth: "2040px" }}>
-            <Row><Col lg={3}>  
-                   <img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfUnitedArabEmirates} alt="" />
-              </Col><Col><img src={a11} alt="" /></Col><Col><img src={a12} alt="" /></Col><Col><img src={a13} alt="" /></Col></Row> <br />
-            <br />
-            <br />
-            <Row><Col lg={3}><img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfSaudiArabia} alt="" /></Col><Col><img src={a21} alt="" /></Col><Col></Col><Col></Col></Row> <br />
-            <br />
-            <br />
-            <Row><Col lg={3}><img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfOman} alt="" /></Col><Col><img src={a41} alt="" /></Col><Col></Col><Col></Col></Row> <br />
-            <br />
-            <br />
-            <Row><Col lg={3}><img           style={{ padding: '20px 20px 20px 20px'}} src={FlagOfIraq} alt="" /></Col><Col><img src={a41} alt="" /></Col><Col></Col><Col></Col></Row> <br />
-            <br />
-            <br />
-            <Row><Col lg={3}><img            style={{ padding: '20px 20px 20px 20px'}} src={FlagOfQatar} alt="" /></Col><Col><img src={a51} alt="" /></Col><Col><img src={a52} alt="" /></Col><Col></Col></Row> <br />
-            <br />
-            <br />
-            <Row><Col lg={3}><img            style={{ padding: '20px 20px 20px 20px'}} src={FlagOfIndia} alt="" /></Col><Col><img src={a61} alt="" /></Col><Col></Col><Col></Col></Row> <br />
-            <br />
-            <br />
-            
-            
-            </Container>
-            <br />
-            <br />
-            <br />
+      <BasicHeader
+        backgroundImage={OurProudDivisionsImg}
+        headerTitle={["OUR", "PROUD DIVISIONS"]}
+      />
+
+  <div className="bodyContentTexts">
+
+      <div style={{ padding:'20px' }} className="divisionLogoRow1" >
+
+        <div  style={{ width: "20%" }}>
+          <img className="flag" src={FlagOfUnitedArabEmirates} alt="" />
+</div>
+          <div className="vl" style={{ width: "5%" }}></div>
+        <div  style={{ width: "60%" }}>
+        <div className="divisionLogoRow">
+          <div className="divisionLogoCol" style={{ width: "20%" }}>
+            <img className="divisionLogo" src={a12} alt="" />
+          </div>
+          <div  className="divisionLogoCol" style={{ width: "20%" }}>
+            <img className="divisionLogo" src={a12} alt="" />
+          </div>
+          <div className="divisionLogoCol" style={{ width: "20%" }}>
+            <img className="divisionLogo" src={a12} alt="" />
+          </div>
+          </div>
+        </div>   
+           </div>
+
+        <Container>
+        <Row className="arrowLogos">
+    <Col> 
+    </Col> <Col>
+    </Col>
+    <Col> 
+    <ArrowArray  directions={"."} />
+    </Col>
+  </Row> 
+   
+        </Container>
+        <div style={{ padding:'20px' }} className="divisionLogoRow1" >
+
+<div  style={{ width: "20%" }}>
+  <img className="flag" src={FlagOfSaudiArabia} alt="" />
+</div>
+  <div className="vl" style={{ width: "5%" }}></div>
+<div  style={{ width: "60%" }}>
+<div className="divisionLogoRow">
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+    <img className="divisionLogo" src={a21} alt="" />
+  </div>
+  <div  className="divisionLogoCol" style={{ width: "20%" }}>
+  </div>
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+   </div>
+  </div>
+</div>   
+   </div>
+   <div style={{ padding:'20px' }} className="divisionLogoRow1" >
+
+<div  style={{ width: "20%" }}>
+  <img className="flag" src={FlagOfOman} alt="" />
+</div>
+  <div className="vl" style={{ width: "5%" }}></div>
+<div  style={{ width: "60%" }}>
+<div className="divisionLogoRow">
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+    <img className="divisionLogo" src={a31} alt="" />
+  </div>
+  <div  className="divisionLogoCol" style={{ width: "20%" }}>
+   </div>
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+   </div>
+  </div>
+</div>   
+   </div>
+
+
+        <div style={{ padding:'20px' }} className="divisionLogoRow1" >
+
+<div  style={{ width: "20%" }}>
+  <img className="flag" src={FlagOfIraq} alt="" />
+</div>
+  <div className="vl" style={{ width: "5%" }}></div>
+<div  style={{ width: "60%" }}>
+<div className="divisionLogoRow">
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+    <img className="divisionLogo" src={a41} alt="" />
+  </div>
+  <div  className="divisionLogoCol" style={{ width: "20%" }}>
+   </div>
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+   </div>
+  </div>
+</div>   
+   </div>
+
+
+        <div style={{ padding:'20px' }} className="divisionLogoRow1" >
+
+<div  style={{ width: "20%" }}>
+  <img className="flag" src={FlagOfQatar} alt="" />
+</div>
+  <div className="vl" style={{ width: "5%" }}></div>
+<div  style={{ width: "60%" }}>
+<div className="divisionLogoRow">
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+    <img className="divisionLogo" src={a51} alt="" />
+  </div>
+  <div  className="divisionLogoCol" style={{ width: "20%" }}>
+    <img className="divisionLogo" src={a52} alt="" />
+  </div>
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+  </div>
+  </div>
+</div>   
+   </div>
+
+        <div style={{ padding:'20px' }} className="divisionLogoRow1" >
+
+<div  style={{ width: "20%" }}>
+  <img className="flag" src={FlagOfIndia} alt="" />
+</div>
+  <div className="vl" style={{ width: "5%" }}></div>
+<div  style={{ width: "60%" }}>
+<div className="divisionLogoRow">
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+    <img className="divisionLogo" src={a61} alt="" />
+  </div>
+  <div  className="divisionLogoCol" style={{ width: "20%" }}>
+  </div>
+  <div className="divisionLogoCol" style={{ width: "20%" }}>
+  </div>
+  </div>
+</div>   
+   </div>
+
+      </div>
+
       <Footer />
     </Fragment>
   );

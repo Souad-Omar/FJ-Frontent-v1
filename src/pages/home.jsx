@@ -247,7 +247,7 @@ const brandsLogos = [
   },]
 const Home = () => {
   
-  const [state, setState] = useState(7);
+  const [state, setState] = useState(8);
   const brandsLogo = [
     AcFirePumpLogo,
     AlphaDuctsLogo,
