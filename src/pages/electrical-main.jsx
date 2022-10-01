@@ -11,13 +11,14 @@ import BUSBARPOWERBARGULFVERTIV from "../assets/e/BUSBARPOWERBARGULF&VERTIV.png"
 import ELECTRICALSWITCHGEARCONTROLS from "../assets/e/ELECTRICALSWITCHGEAR&CONTROLS.png"
 import PVCELECTRICALCONDUITACCESSORIES from "../assets/e/PVCELECTRICALCONDUIT&ACCESSORIES.png"
 import TextBoxes from "../components/text-boxes";
+import CustomSubHeader from "../components/custom-sub-header";
 
 
 const MInfo = [
     {
       id: "",
   
-      style: "paragraphStyle1",
+      style: "paragraph3",
       text: "FJ Group specializes in the engineering, manufacturing, and trading of products and systems, in the electrical and mechanical fields related to the building services industry. Today, we have earned a respected reputation of expertise and excellence, employing in excess of 1,000 qualified staff with facilities exceeding 25,000 m2. Our organization continues to expand and grow, driven by our vision, as we invest into our diverse specializations in the MEP industry, we have ensured that we bring in the world’s best manufacturers to the Region. Today, we are a group of enterprises having interest in several diversified strategic business segments across the region while upholding the same values and principles of our flagship entity.  Below is a listing of our product-lines in the electrical sector.",
     },
   ];
@@ -65,25 +66,18 @@ const BUSBARPOWERBARGULFVERTIVinfo = [
       url: "/ElectricalSubPages/7",
     },
   ];
-
+  const MTitle = [
+    {
+      style: "1",
+      text: "",
+    },
+  ];
 const ElectricalMain = () => {
   return (
     <Fragment>
       <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"ELECTRICAL"}  charHeader={"E"}  />
-      <div className={"MEPSPage"} style={{ backgroundImage: `url(${E1})` }}>
-      <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col></Col>
-            <Col lg={8}>
-              <br />
-              <br />
-              <br />
-              <br />
-              <TextBoxes textParagraph={MInfo} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <CustomSubHeader backgroundImage={ELECTRICAL} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
+
       <Container style={{ maxWidth: "3040px" }}>
         <Row><Col></Col><Col></Col>
           <Col style={{ display: "inline" }}>

@@ -98,7 +98,7 @@ const messageLess = [
     id: "8",
 
     style: "paragraphStyle1",
-    text: "In a time where change is constant, where dynamism is key and innovation challenging us daily to cope, we are constantly reminded to realign our compass and sharpen our minds. The lower cost of renewable energies coupled with a new level of oil pricing has to date imposed new economic realities. The large international companies, hungry for ...growth and armed with new technologies, are expanding to new territories hence competing in our traditional businesses. Meanwhile, the demanding developer, imposing stricter specifications coupled with tough financial conditions is on the end of the spectrum always attempting to extract maximum value out of their investment...",
+    text: "In a time where change is constant, where dynamism is key and innovation challenging us daily to cope, we are constantly reminded to realign our compass and sharpen our minds. The lower cost of renewable energies coupled with a new level of oil pricing has to date imposed new economic realities. The large international companies, hungry for ...growth and armed with new technologies, are expanding to new territories hence competing in our traditional businesses. Meanwhile, the demanding developer, imposing stricter specifications coupled with tough financial conditions is on the end of the spectrum always attempting to extract maximum value out of their investment. Those are some new dynamics...",
   },
 ];
 const messageMore = [
@@ -292,7 +292,7 @@ const Home = () => {
       <Container>
         <Row>
           <Col></Col>
-          <Col sm={9} lg={10}> 
+          <Col sm={9} lg={11}> 
             <TextBoxes textParagraph={paragraphs} />
             
           </Col>

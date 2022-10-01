@@ -13,12 +13,13 @@ import "../styles/style-component/page-info.css";
  import TextTitleBox from "../components/text-title-box";
  import ExploreMoreLink from './../components/explore-more copy';
 
- import OurFactoryLogo1 from "../assets/OurFactoryLogo1.png";
- import OurFactoryLogo2 from "../assets/OurFactoryLogo2.png";
- import OurFactoryLogo3 from "../assets/OurFactoryLogo3.png";
- import OurFactoryLogo4 from "../assets/OurFactoryLogo4.png";
- import OurFactoryLogo5 from "../assets/OurFactoryLogo5.png";
- import OurFactoryLogo6 from "../assets/OurFactoryLogo6.png";
+ import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.png";
+ import OurFactoryLogo2 from "../assets/Logos/AlphaDuctsLogo.png";
+ import OurFactoryLogo3 from "../assets/Logos/MutliplastDubaillcLogo.png";
+ import OurFactoryLogo4 from "../assets/Logos/ProMasterLogo.png";
+ import OurFactoryLogo5 from "../assets/Logos/FlowTechLogo.png";
+ import OurFactoryLogo6 from "../assets/Logos/PumbsLogo.png";
+import DivSubHeader from "../components/div-sub-header";
 const info = [
   {
     logo: OurFactoryLogo1,
@@ -26,6 +27,8 @@ const info = [
     title: "Euroclima Middle East",
     text: "Euroclima has been a market and technology leader in the production and worldwide distribution...",
     url: "/OurFactoriesSupPages/1",
+    backgroundDivImage:ourFactory1,
+    factoryMainTytle:"Euroclima Middle East",style:'1'
   },
   {
     logo: OurFactoryLogo3,
@@ -33,6 +36,8 @@ const info = [
     title: "Multiplast Dubai LLC",
     text: "Manufacturing Company That Produces Superior Quality Products That Comply With...",
     url: "/OurFactoriesSupPages/3",
+    backgroundDivImage:ourFactory2,
+    factoryMainTytle:"Euroclima Middle East",style:'2'
   },
   {
     logo: OurFactoryLogo2,
@@ -40,6 +45,9 @@ const info = [
     title: "Alpha Ducts LLC",
     text: "Alpha ducts llc is one of the highly advanced and modernized manufacturers of polyisocyanurate... and phenolic insulation panels",
     url: "/OurFactoriesSupPages/2",
+        backgroundDivImage:ourFactory3,
+
+    factoryMainTytle:"Euroclima Middle East",style:'1'
   },
   {
     logo: OurFactoryLogo5,
@@ -47,21 +55,44 @@ const info = [
     title: "FLOWTECH LLC (warehouse & service centre)",
     text: "Our layout of separate production lines for air terminal and air control devices equipped with state-of-the-art tools and machineries... ",
     url: "/OurFactoriesSupPages/5",
+        backgroundDivImage:ourFactory4,
+
+    factoryMainTytle:"Euroclima Middle East",
+    style:'2'
   }, {
     logo: OurFactoryLogo4,
     id: "5",
     title: "PROMASTER  (production planning & control)",
     text: " our sophisticated production facility incorporates pneumatic lines along with the required tools, fabrication machines,...",
     url: "/OurFactoriesSupPages/4",
+        backgroundDivImage:ourFactory5,
+
+    factoryMainTytle:"Euroclima Middle East",style:'1'
   }, {
     logo: OurFactoryLogo6,
     id: "6",
     title: "PUMPS",
     text: "FJ group represents globally renowned brands from xylem inc, a world leader in providing innovative pumping solutions...",
     url: "/OurFactoriesSupPages/6",
+        backgroundDivImage:ourFactory6,
+
+    factoryMainTytle:"Euroclima Middle East",style:'2'
   },
 ];
+const MTitle = [
+  {
+    style: "1",
+    text: "",
+  },
+];
+const MInfo = [
+  {
+    id: "",
 
+    style: "paragraphStyle1",
+    text: "We are constantly working on improving our diverse services through our rich portfolio that encompasses anything and everything having to do with the MEP industry. With that in mind, and what’s integral to FJ Group is providing turnkey solutions for steam, water-heating and plumbing systems from supporting clients with design, supply, installation, testing, commissioning, training, and after-sales services. FJ Group is partnered with globally renowned brands who are the pioneers in this field and are capable of providing customized engineering solutions for residential, commercial and industrial water heating and plumbing applications.",
+  },
+];
 const title1 =
   "With laurels and numerous commercial touchpoints and projects accomplished in the building services industry, FJ Group’s strive continues to be in strategic partnerships and leading in all fronts in regard to MEP.";
 const text1 =
@@ -72,192 +103,14 @@ const OurFactoriesMain = () => {
       <BasicHeader
         backgroundImage={OurFactoryImg}
         headerTitle={["OUR", "FACTORIES"]}
-      />
+      /> 
       <div
-        className={"division"}
-        style={{          height:"75%",
-
-          backgroundImage: `url(${ourFactory1})`,
-          fontFamily: "Montserrat",
-          color: "black",
+        style={{       
           textAlign: "center",
         }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={3}> 
-              <img
-                    style={{ marginLeft: "0%", width: "300px", height: "200px" }}
-                    src={info[0].logo}
-                    alt={info[0].factoryMainTytle}
-                  />     
-              <p style={{ fontSize: "40px" }}>{info[0].title}</p>
-              <p style={{ fontSize: "20px" }}>{info[0].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[0].url} style="1"/>
-              <br /><br /><br /><br />
-            </Col>
-            <Col lg={9}>
-              {" "}
-              <br />
-            </Col>
-          </Row>{" "}
-        </Container>
-      </div>
-      <div
-        className={"division"}
-        style={{          height:"75%",
+      > 
 
-          backgroundImage: `url(${ourFactory2})`,
-          fontFamily: "Montserrat",
-          color: "black",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={9}></Col>
-            <Col lg={3}> 
-              <img
-                    style={{ marginLeft: "0%", width: "300px", height: "200px" }}
-                    src={info[1].logo}
-                    alt={info[1].factoryMainTytle}
-                  />   
-               <p style={{ fontSize: "40px" }}>{info[1].title}</p>
-              <p style={{ fontSize: "20px" }}>{info[1].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[1].url} style="1"/>
-              <br /><br /><br /><br />
-
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div
-        className={"division"}
-        style={{          height:"75%",
-
-          backgroundImage: `url(${ourFactory3})`,
-          fontFamily: "Montserrat",
-          color: "black",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={3}>
-               <br />
-              <img
-                    style={{ marginLeft: "0%", width: "300px", height: "200px" }}
-                    src={info[2].logo}
-                    alt={info[2].factoryMainTytle}
-                  />    
-              <p style={{ fontSize: "40px" }}>{info[2].title}</p>
-              <p style={{ fontSize: "20px" }}>{info[2].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[2].url} style="1"/>
-              <br /><br /><br /><br />
-
-            </Col>
-            <Col lg={9}>
-              {" "}
-              <br />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div
-        className={"division"}
-        style={{          height:"75%",
-
-          backgroundImage: `url(${ourFactory4})`,
-          fontFamily: "Montserrat",
-          color: "black",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={9}></Col>
-            <Col lg={3}>
-              {" "}
-              <br />
-              <img
-                    style={{ marginLeft: "0%", width: "300px", height: "200px" }}
-                    src={info[3].logo}
-                    alt={info[3].factoryMainTytle}
-                  />   
-              <p style={{ fontSize: "40px" }}>{info[3].title}</p>
-              <p style={{ fontSize: "20px" }}>{info[3].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[3].url} style="1"/>
-              <br /><br /><br /><br />
-
-            </Col>
-          </Row>
-        </Container>
-
-        
-      </div><div
-        className={"division"}
-        style={{          height:"75%",
-
-          backgroundImage: `url(${ourFactory5})`,
-          fontFamily: "Montserrat",
-          color: "black",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={3}>
-            <br />
-              <img
-                    style={{ marginLeft: "0%", width: "300px", height: "200px" }}
-                    src={info[4].logo}
-                    alt={info[4].factoryMainTytle}
-                  />   
-              <p style={{ fontSize: "40px" }}>{info[4].title}</p>
-              <p style={{ fontSize: "20px" }}>{info[4].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[4].url} style="1"/>
-              <br /><br /><br /><br />
-
-            </Col>
-            <Col lg={9}>
-              {" "}
-              <br />
-            </Col>
-          </Row>
-        </Container>
-      </div><div
-        className={"division"}
-        style={{          height:"75%",
-
-          backgroundImage: `url(${ourFactory6})`,
-          fontFamily: "Montserrat",
-          color: "black",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={9}></Col>
-            <Col lg={3}>
-            <br />
-              <br />
-              <br />
-              <br />
-              <img
-                    style={{ marginLeft: "0%", width: "300px", height: "200px" }}
-                    src={info[5].logo}
-                    alt={info[5].factoryMainTytle}
-                  />  
-              <p style={{ fontSize: "40px" }}>{info[5].title}</p>
-              <p style={{ fontSize: "20px" }}>{info[5].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[5].url} style="1"/>
-              <br /><br /><br /><br />
-
-            </Col>
-          </Row>
-        </Container>
-
-        
+        <DivSubHeader divProps={info}/>
       </div>
       <Footer />
     </Fragment>

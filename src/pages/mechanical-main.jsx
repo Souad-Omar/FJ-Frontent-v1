@@ -16,12 +16,13 @@ import DuctingInsulation from "../assets/Mechanical/DuctingInsulation.png";
 import AirDISTRIBUTION from "../assets/Mechanical/AirDISTRIBUTION.png";
 import MiniDrobdownList from "../components/miniDrobdownList";
 import ELECTRICAL from "../assets/Group779.jpg";
+import CustomSubHeader from "../components/custom-sub-header";
 
 const MInfo = [
   {
     id: "",
 
-    style: "paragraphStyle1",
+    style: "paragraph3",
     text: "FJ GROUP is organized into multiple divisions according to the line of products and services we offer. Our experienced engineering and sales team, along with technicians and support staff, are well qualified in providing solutions that are customized to client needs. Through the years we have built strong relationships with our principals and partners, who have contributed to our team innovations and latest technology breakthroughs. We encourage a customer-focused culture and believe in going the extra mile to deliver against our promises and exceeding customer expectations.  Below is a rundown of our rich portfolio of brands in the mechanical field.",
   },
 ];
@@ -256,25 +257,18 @@ const miniListDISTRICTCOOLINGEQUIPMENT = [
     url: "/MechanicalSubPages/36",
   },
 ];
+const MTitle = [
+  {
+    style: "1",
+    text: "",
+  },
+];
 const MechanicalMain = () => {
   return (
     <Fragment>
       <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"MECHANICAL" }  charHeader={"M"} />
-      <div className={"MEPSPage"} style={{ backgroundImage: `url(${M1})`}}>
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col></Col>
-            <Col lg={8}>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <TextBoxes textParagraph={MInfo} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <CustomSubHeader backgroundImage={ELECTRICAL} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
+
       <Container style={{ maxWidth: "3040px" }}>
         <Row>
           <Col style={{ display: "inline" }}>

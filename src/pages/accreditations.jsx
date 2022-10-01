@@ -123,11 +123,11 @@ const Accreditations = ({}) => {
       <TextTitleBox text="We are committed to maintaining high quality products and services, protecting and improving the environment, and ensuring employee health and safety.  At FJ Group, we believe that the relentless pursuit of quality and continuous improvement is the only long-term route to success.  This is affirmed through the periodic review of our management policies and objectives as they relate to our operations." />
       <TextTitleBox text="Our Quality system is as per ISO 9001:2015 international standards and certified by Gabriel Registrar. We conduct routine internal and external Quality Audits to ensure that our Quality Management System is strictly followed, respected and updated." />
 
-
+      <br />
       <TextTitleBox title="HEALTH, SAFETY & ENVIRONMENT" />
       <TextTitleBox text="FJ Group incorporates Health, Safety and Environmental (HSE) measures under the form of a mutual objective for the management and employees at all levels and is indeed considered to be a shared responsibility and a duty for each and every one to uphold under the flagship of the Company." />
       <TextTitleBox text="FJ Group has implemented the health, safety, and environment management system at all the facilities that were developed to conform to the ISO 14001:2015 Standard for Environmental Management, as well as to the OHSAS 18001:2007 standards for Occupational Health and Safety. " />
-    
+      <br />
       <TextTitleBox title="HSE System Certified by Gabriel Registrar" />
       <TextTitleBox text="Safety responsibilities are clearly defined in employees’ job descriptions, and measured regularly and independently, with rewards for outstanding performance.  FJ Group is committed to building a culture of accountability and a safer work environment for employees, staff, and personnel." />
 

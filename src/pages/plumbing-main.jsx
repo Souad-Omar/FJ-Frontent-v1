@@ -9,13 +9,14 @@ import "../styles/style-component/miniDrobdownList.css";
 import MiniDrobdownList from "../components/miniDrobdownList";
 import PLUMBINGProductsSolutions from "../assets/p/PLUMBINGProducts&Solutions.png"
 import TextBoxes from "../components/text-boxes";
+import CustomSubHeader from "../components/custom-sub-header";
 
 const MInfo = [
     {
       id: "",
   
-      style: "paragraphStyle1",
-      text: "We are constantly working on improving our diverse services through our rich portfolio that encompasses anything and everything having to do with the MEP industry.  With that in mind, and what’s integral to FJ Group is providing turnkey solutions for steam, water-heating and plumbing systems from supporting clients with design, supply, installation, testing, commissioning, training, and after-sales services. FJ Group is partnered with globally renowned brands who are the pioneers in this field and are capable of providing customized engineering solutions for residential, commercial and industrial water heating and plumbing applications.",
+      style: "paragraph3",
+      text: "We are constantly working on improving our diverse services through our rich portfolio that encompasses anything and everything having to do with the MEP industry. With that in mind, and what’s integral to FJ Group is providing turnkey solutions for steam, water-heating and plumbing systems from supporting clients with design, supply, installation, testing, commissioning, training, and after-sales services. FJ Group is partnered with globally renowned brands who are the pioneers in this field and are capable of providing customized engineering solutions for residential, commercial and industrial water heating and plumbing applications.",
     },
   ];
 
@@ -82,33 +83,32 @@ const PLUMBINGProductsSolutionsinfo = [
         url: "/PlumbingSubPages/11",
       },
   ];
-
+  const MTitle = [
+    {
+      style: "1",
+      text: "",
+    },
+  ];
 const PlumbingMain = () => {
   return (
     <Fragment>
       <CustomHeader backgroundImage={PLUMPING} headerTitle={"PLUMPING"}  charHeader={"P"} />
-      <div className={"MEPSPage"} style={{ backgroundImage: `url(${P1})` }}>
-      <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col></Col>
-            <Col lg={8}>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <TextBoxes textParagraph={MInfo} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <Container style={{ maxWidth: "3040px" }}>
+
+
+      
+      <CustomSubHeader backgroundImage={PLUMPING} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
+
+
+
+      
+
+      <br /><br /><br />
+      <Container>
         <Row><Col></Col>
         <Col></Col>
           <Col style={{ display: "inline" }}>
             <div className="dropdown">
               <img className="Products" src={PLUMBINGProductsSolutions} alt="" />
-              <br />
               <br />
               <br />
               <p

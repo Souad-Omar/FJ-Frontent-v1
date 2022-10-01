@@ -13,12 +13,13 @@ import OurFactory3 from "../assets/OurFactory3.jpg";
 import OurFactory4 from "../assets/OurFactory4.jpg";
 import OurFactory5 from "../assets/OurFactory5.jpg";
 import OurFactory6 from "../assets/OurFactory6.jpg";
-import OurFactoryLogo1 from "../assets/OurFactoryLogo1.png";
-import OurFactoryLogo2 from "../assets/OurFactoryLogo2.png";
-import OurFactoryLogo3 from "../assets/OurFactoryLogo3.png";
-import OurFactoryLogo4 from "../assets/OurFactoryLogo4.png";
-import OurFactoryLogo5 from "../assets/OurFactoryLogo5.png";
-import OurFactoryLogo6 from "../assets/OurFactoryLogo6.png";
+
+import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.png";
+import OurFactoryLogo2 from "../assets/Logos/AlphaDuctsLogo.png";
+import OurFactoryLogo3 from "../assets/Logos/MutliplastDubaillcLogo.png";
+import OurFactoryLogo4 from "../assets/Logos/ProMasterLogo.png";
+import OurFactoryLogo5 from "../assets/Logos/FlowTechLogo.png";
+import OurFactoryLogo6 from "../assets/Logos/PumbsLogo.png";
 import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 

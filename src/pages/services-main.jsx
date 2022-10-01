@@ -12,15 +12,8 @@ import HVACPRODUCTS from "../assets/s/HVACPRODUCTS.png"
 import Pumps from "../assets/s/Pumps.png"
 import SERVICESOLUTIONS from "../assets/s/SERVICESOLUTIONS.png"
 import TextBoxes from "../components/text-boxes";
+import CustomSubHeader from "../components/custom-sub-header";
 
-const MInfo = [
-    {
-      id: "",
-  
-      style: "paragraphStyle1",
-      text: "We are committed to deliver high quality mechanical, electrical and plumbing equipment with its services in a timely manner to the agreed specifications. We understand the importance of having excellent service backup and workshop facilities. We have also ensured that our technicians are experienced and well-equipped with tools and machinery to execute quality work, time and again.      We keep adequate spares, enabling us to attend to after-sales service and guarantee the quality of our supplied equipment. We are also committed to continuously measure, review, and improve our working and quality objectives to maximize our customers’ satisfaction, with optimal utilization of resources. ",
-    },
-  ];
 
 const HVACPARTSACCESSORIESinfo = [
     {
@@ -64,26 +57,26 @@ list: "FJCARE ",
 url: "/ServicesSubPages/6",
 },
   ];
-
+  const MInfo = [
+    {
+      id: "",
+  
+      style: "paragraph3",
+      text: "We are committed to deliver high quality mechanical, electrical and plumbing equipment with its services in a timely manner to the agreed specifications. We understand the importance of having excellent service backup and workshop facilities. We have also ensured that our technicians are experienced and well-equipped with tools and machinery to execute quality work, time and again. We keep adequate spares, enabling us to attend to after-sales service and guarantee the quality of our supplied equipment. We are also committed to continuously measure, review, and improve our working and quality objectives to maximize our customers’ satisfaction, with optimal utilization of resources.",
+    },
+  ];
+  const MTitle = [
+    {
+      style: "1",
+      text: "",
+    },
+  ];
 const ServicesMain = () => {
   return (
     <Fragment>
       <CustomHeader backgroundImage={SERVICES} headerTitle={"SERVICES"}  charHeader={"S"} />
-      <div className={"MEPSPage"} style={{ backgroundImage: `url(${S1})` }}>
-      <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col></Col>
-            <Col lg={8}>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <TextBoxes textParagraph={MInfo} />
-            </Col>
-          </Row>
-        </Container>
-      </div>
+      <CustomSubHeader backgroundImage={SERVICES} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
+
       <Container style={{ maxWidth: "3040px" }}>
         <Row><Col></Col><Col></Col>
           <Col style={{ display: "inline" }}>

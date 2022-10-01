@@ -1,0 +1,204 @@
+.divSubDataHeader{
+ background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 0.3s ease-in-out;
+
+}
+.divSubDataHeader:hover {
+    background-size: 105%;
+}
+.divTextSubPage{
+    width:100%;
+    height: 400px;
+
+} 
+
+.divHeader1Left:hover{
+    background-color: #e6eff6;
+}
+.divHeader1Right:hover{
+    background-color: #e6eff6;
+}
+
+
+
+@media (min-width: 3000px) {
+    .divTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }.divSubDataHeader{ 
+        height: 500px;
+      } 
+      .divSubHeaderSize{ transition: all 0.5s;
+        width: 65%;
+     }  
+     .divHeader1Left{
+        padding:1.5% 3%;
+        width:37%;
+        height: 500px;
+        background-color: white;
+    }
+    .divHeader1Right{
+        width:63%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+}@media (min-width: 2200px) and (max-width: 3000px) {
+    .divTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }.divSubDataHeader{  height: 500px;
+      } 
+      .divSubHeaderSize{ transition: all 0.5s;
+        width: 65%;
+     }
+     .divHeader1Left{
+        padding:3% 3%;
+        width:37%;
+        height: 500px;
+        background-color: white;
+    }
+    .divHeader1Right{
+        width:63%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+}
+@media (min-width: 1500px) and (max-width: 2200px) {
+    .divTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }.divSubDataHeader{  height: 420px;
+      } .divSubHeaderSize{ transition: all 0.5s;
+        width: 65%;
+     }
+     .divHeader1Left{
+        padding:2% 4%;
+        width:37%;
+        height: 420px;
+        background-color: white;
+    }
+    .divHeader1Right{
+        width:63%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+}@media (min-width: 1200px) and (max-width: 1500px) {
+    .divTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }.divSubDataHeader{  height: 400px;
+      } 
+      .divHeader1Left{
+        padding:3% 3%;
+        width:37%;
+        height: 400px;
+        background-color: white;
+    }
+    .divHeader1Right{
+        width:63%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+    .divTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }.divSubDataHeader{
+        height: 400px;
+     } 
+     .divSubHeaderSize{
+       width: 65%;
+       height: auto;
+    } 
+    .divHeader1Left{
+        padding:3% 3%;
+        width:37%;
+        height: 400px;
+        background-color: white;
+    }
+    .divHeader1Right{
+        width:63%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .divTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    }.divSubDataHeader{ 
+        height: 350px;
+     }  
+     .divHeader1Left{
+        padding:3% 3%;
+        width:50%;
+        height: 350px;
+        background-color: white;
+    }
+    .divHeader1Right{
+        width:50%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+}
+@media (max-width: 768px) {
+    .divTextDivSubHeader{
+    width: 100%;
+    display: flex; flex-direction: column;
+    }
+     .divSubDataHeader{
+        height: 300px;
+    }
+    
+    .divTextSubPage{
+        width:100%;
+        height: 200px;
+
+    }
+    .divHeader1Left{
+        padding:5% 20%;
+        width:100%;
+        height: 300px;
+        background-color: #F7F9FA;
+    }
+    .divHeader1Right{
+        width:100%;
+    }
+    .divLogo{
+        height: 100px; width:auto;
+    }
+    #d1{
+        order: 2;
+    }#d2{
+        order: 1;
+    }
+    
+}
