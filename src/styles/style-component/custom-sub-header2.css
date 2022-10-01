@@ -1,0 +1,122 @@
+.subDataHeader2{
+height: auto;
+background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.textSubPage{
+    width:100%;
+    height: 400px;
+
+} 
+
+.textDivSubHeader{
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+padding: 2% 5%;
+
+}
+.subHeaderSize{ 
+    transition: all 0.5s;
+padding: 200px 0% 100px 0px; }  
+@media (min-width: 3000px) {
+    .subDataHeader2{
+        float:right;
+         position:absolute;
+          width:37%;
+           transition: all 0.5s;
+          opacity: 0.95;
+          background-color: #032A5E;
+      height: 400px;
+      } 
+      .subHeaderSize{  
+        width: 65%;
+     }  
+}@media (min-width: 2200px) and (max-width: 3000px) {
+    .subDataHeader2{
+        float:right;
+         position:absolute;
+          width:37%;
+           transition: all 0.5s;
+          opacity: 0.95;
+          background-color: #032A5E;
+      height: 400px;
+      } 
+      .subHeaderSize{  
+        width: 65%;
+     }
+}
+@media (min-width: 1500px) and (max-width: 2200px) {
+    .subDataHeader2{
+        float:right;
+         position:absolute;
+          width:37%;
+           transition: all 0.5s;
+          opacity: 0.95;
+          background-color: #032A5E;
+      height: 400px;
+      } .subHeaderSize{ 
+        width: 65%;
+     }
+}@media (min-width: 1200px) and (max-width: 1500px) {
+    .subDataHeader2{
+        float:right;
+         position:absolute;
+          width:37%;
+           transition: all 0.5s;
+          opacity: 0.95;
+          background-color: #032A5E;
+      height: 400px;
+      } 
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+    .subDataHeader2{
+        position:absolute;
+         width:37%;
+         opacity: 0.95;
+     height: 530px;
+     } 
+     .subHeaderSize{
+       width: 65%;
+       height: auto;
+    } 
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .subDataHeader2{
+         position:absolute;
+          width:35%;
+          opacity: 0.95;
+      height: 400px;
+      } 
+      .subHeaderSize{
+        width: 65%;
+        height: 100px;
+     }  
+}
+@media (max-width: 768px) {
+   
+    .subDataHeader2{
+        width:100%; 
+    height: 250px;
+    }.subDataHeader2Color{
+        width:100%; 
+    height: 250px;
+    background-color: #032A5E; opacity: 0.95;display: none;
+    }
+    .subDataHeader2Color:hover{
+        width:100%; 
+    height: 250px;
+    background-color: #365989;
+    opacity: 0.95;
+    }
+    
+    .textSubPage{
+        width:100%;
+        height: 200px;
+
+    }
+    
+}

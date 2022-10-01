@@ -1,0 +1,267 @@
+.productsTextDivSubHeader{
+ background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+
+}
+.productsTextDivSubHeader:hover {
+    
+}
+.productsTextSubPage{
+    width:100%;
+    height: 400px;
+
+} 
+
+.productsHeader1Left{
+    opacity: 0.95;
+          background-color: #032A5E;
+}
+.productsHeader1Right{
+}
+.productsHeader1Left:hover{
+    opacity: 0.95;
+
+    background-color: #365989;
+
+}
+
+.productsHeader1Left:hover .charHeaderProducts{
+    color: #032A5E;
+
+}
+.productsHeader1Right:hover{
+
+}
+
+.charHeaderProducts{
+    text-align: justify  ;
+  text-align-last: center;
+  font-family: "Montserrat";
+  font-weight: lighter;
+  color: #5A7496;
+  margin-top: -10%;
+    margin-bottom: -12%;
+
+}
+
+@media (min-width: 3000px) {
+    .productsTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    background-size: 100%;
+
+    }.productsTextDivSubHeader:hover {
+    
+        background-size: 15%;
+    }.productsSubDataHeader{ 
+        height: 500px;
+      } 
+      .productsSubHeaderSize{ transition: all 0.5s;
+        width: 65%;
+     }  
+     .productsHeader1Left{
+        padding:0% 3%;
+        width:37%;
+        height: 500px;
+    }
+    .productsHeader1Right{
+        width:63%;
+    }
+    .productsLogo{
+        height: 100px; width:auto;
+    }
+    .charHeaderProducts{
+      font-size: 200px;
+    }
+}@media (min-width: 2200px) and (max-width: 3000px) {
+    .productsTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;background-size: 100%;
+
+}.productsTextDivSubHeader:hover {
+
+    background-size: 105%;
+}.productsSubDataHeader{  height: 500px;
+      } 
+      .productsSubHeaderSize{ transition: all 0.5s;
+        width: 65%;
+     }
+     .productsHeader1Left{
+        padding:0% 3%;
+        width:37%;
+        height: 500px;
+    }
+    .productsHeader1Right{
+        width:63%;
+    }
+    .productsLogo{
+        height: 100px; width:auto;
+    }.charHeaderProducts{
+        font-size: 200px;
+      }
+}
+@media (min-width: 1500px) and (max-width: 2200px) {
+    .productsTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    background-size: 100%;
+
+}.productsTextDivSubHeader:hover {
+
+    background-size: 105%;
+}.productsSubDataHeader{  height: 420px;
+      } .productsSubHeaderSize{ transition: all 0.5s;
+        width: 65%;
+     }
+     .productsHeader1Left{
+        padding:2% 4%;
+        width:37%;
+        height: 500px;
+    }
+    .productsHeader1Right{
+        width:63%;
+    }
+    .productsLogo{
+        height: 100px; width:auto;
+    }.charHeaderProducts{
+        font-size: 200px;
+      }
+}@media (min-width: 1200px) and (max-width: 1500px) {
+    .productsTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    background-size: 100%;
+
+}.productsTextDivSubHeader:hover {
+
+    background-size: 105%;
+}.productsSubDataHeader{  height: 400px;
+      } 
+      .productsHeader1Left{
+        padding:0% 3%;
+        width:37%;
+        height: 400px;
+    }
+    .productsHeader1Right{
+        width:63%;
+    }
+    .productsLogo{
+        height: 100px; width:auto;
+    }.charHeaderProducts{
+        font-size: 200px;
+      }
+}
+@media (min-width: 992px) and (max-width: 1500px) {
+    .productsTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    background-size: 140%;
+
+    }.productsTextDivSubHeader:hover {
+    
+        background-size: 145%;
+    }.productsSubDataHeader{
+        height: 400px;
+     } 
+     .productsSubHeaderSize{
+       width: 65%;
+       height: auto;
+    } 
+    .productsHeader1Left{
+        padding:0% 4%;
+        width:37%;
+        height: 500px;
+    }
+    .productsHeader1Right{
+        width:63%;
+    }
+    .productsLogo{
+        height: 100px; width:auto;
+    }.charHeaderProducts{
+        padding-top: 30px;
+        font-size: 150px;
+      }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+    .productsTextDivSubHeader{
+     
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    width: 100%;
+    background-size: 130%;
+
+    }.productsTextDivSubHeader:hover {
+    
+        background-size: 135%;
+    }.productsSubDataHeader{ 
+        height: 350px;
+     }  
+     .productsHeader1Left{
+        padding:2.5% 3%;
+        width:50%;
+        height: 350px;
+    }
+    .productsHeader1Right{
+        width:50%;
+    }
+    .productsLogo{
+        height: 100px; width:auto;
+    }.charHeaderProducts{
+        font-size: 100px;
+      }
+}
+@media (max-width: 768px) {
+    .productsTextDivSubHeader{
+    width: 100%;
+    margin-top: 20px;
+ background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;    }
+     .productsSubDataHeader{
+        height: 100%;
+    }
+    .productsTextDivSubHeader:hover {
+    
+        background-size: 225%;
+    }
+    .productsTextSubPage{
+        width:100%;
+        height: 200px;
+
+    }
+    .productsHeader1Left{
+        padding:0% 20%;
+        width:100%;
+        height: 350px;
+    }
+    .productsHeader1Right{
+        width:100%;
+    }
+    #d1{
+        order: 2;
+    }#d2{
+        order: 1;
+    }.charHeaderProducts{
+        font-size: 90px;
+        margin-bottom: -10%;
+      }
+    
+}

@@ -4,7 +4,7 @@
 }
 
 .divisionLogo{
-    width: 250px; height: auto;
+    width: 200px; height: auto;
     align-items: center;
     padding: 0% 10% 0% 10%;
     transition: all 0.5s;
@@ -46,7 +46,13 @@ padding: -5%;
     transition: all 0.5s;
 
   }
+  @media (min-width: 1400px) {
+    .divisionLogoRow{
+      padding: 100px;
+  
+  }}
   @media (min-width: 1300px) and (max-width: 1400px) {
+  
     .flag{
          
      width: 150px;
@@ -148,7 +154,7 @@ padding: -5%;
     
       }
       .divisionLogo{
-        width: 0px;
+        width: 100px;
         margin-left: 12px;
       
     }

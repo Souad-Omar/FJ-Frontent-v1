@@ -1,9 +1,11 @@
 .Products{
-    width: 70%;
+    width: 300px;
     height: auto;
-    margin-left: 15%;
-    margin-top: 20%;    transition: all 0.5s;
-
+     transition: all 0.5s;
+     padding: 10%;
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
     
 }
   
@@ -42,8 +44,7 @@
 
   @media (min-width: 992px) and (max-width: 1500px) {
     .Products{
-      margin-top: 80%;   
-      
+       
   }
   .dropdown-content a {
     font-size: 15px;
@@ -56,8 +57,7 @@
 }
 @media (max-width: 992px) {
   .Products{
-    margin-top: 20%;   
-    
+     
 }
 .dropdown-content a {
   font-size: 12px;

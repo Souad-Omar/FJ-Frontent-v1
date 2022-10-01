@@ -7,15 +7,15 @@ import { Col, Row, Container } from "react-bootstrap";
 import "../styles/style-component/page-info.css";
 import TextBoxes from "../components/text-boxes";
 import "../styles/style-component/miniDrobdownList.css";
-import VentilationEquipment from "../assets/Mechanical/VentilationEquipment.png";
-import Pumps from "../assets/Mechanical/Pumps.png";
-import AIRHANDLING from "../assets/Mechanical/AIRHANDLING.png";
-import AIRCONDITIONINGEquipment from "../assets/Mechanical/AIRCONDITIONINGEquipment.png";
-import DISTRICTCOOLINGEQUIPMENT from "../assets/Mechanical/DISTRICTCOOLINGEQUIPMENT.png";
-import DuctingInsulation from "../assets/Mechanical/DuctingInsulation.png";
-import AirDISTRIBUTION from "../assets/Mechanical/AirDISTRIBUTION.png";
+import VentilationEquipment from "../assets/m/VENTILATIONEquipment.jpg";
+import Pumps from "../assets/m/PumpSSYSTEMS.jpg";
+import AIRHANDLING from "../assets/m/AIRHANDLINGUNITSFANCOILUNITS.jpg";
+import AIRCONDITIONINGEquipment from "../assets/m/AIRCONDITIONINGEquipment.jpg";
+import DISTRICTCOOLINGEQUIPMENT from "../assets/m/DISTRICTCOOLINGEQUIPMENT.jpg";
+import DuctingInsulation from "../assets/m/DuctingInsulationProducts.jpg";
+import AirDISTRIBUTION from "../assets/m/AIRDISTRIBUTION.jpg";
 import MiniDrobdownList from "../components/miniDrobdownList";
-import ELECTRICAL from "../assets/Group779.jpg";
+import ELECTRICAL from "../assets/Mechanical.jpg";
 import CustomSubHeader from "../components/custom-sub-header";
 
 const MInfo = [
@@ -32,19 +32,19 @@ const miniListVentilationEquipment = [
     mechanicalImg: VentilationEquipment,
     mechanicalTitle: "VENTILATION EQUIPMENT",
     list: "POLLRICH",
-    url: "/MechanicalSubPages/",
+    url: "/MechanicalSubPages/8",
   },
   {
     mechanicalImg: VentilationEquipment,
     mechanicalTitle: "VENTILATION EQUIPMENT",
     list: "GREENHECK",
-    url: "/MechanicalSubPages/2",
+    url: "/MechanicalSubPages/7",
   },
   {
     mechanicalImg: VentilationEquipment,
     mechanicalTitle: "VENTILATION EQUIPMENT",
     list: "Flowtech Division ",
-    url: "/MechanicalSubPages/3",
+    url: "/MechanicalSubPages/6",
   },
 ];
 
@@ -53,37 +53,37 @@ const miniListAIRCONDITIONINGEquipment = [
     mechanicalImg: AIRCONDITIONINGEquipment,
     mechanicalTitle: "AIR CONDITIONING EQUIPMENT ",
     list: "HVAC SYSTEM DESIGN AND INSTALLTION",
-    url: "/MechanicalSubPages/4",
+    url: "/MechanicalSubPages/48",
   },
   {
     mechanicalImg: AIRCONDITIONINGEquipment,
     mechanicalTitle: "AIR CONDITIONING EQUIPMENT ",
     list: "HVAC PARTS & ACCESSORIES",
-    url: "/MechanicalSubPages/5",
+    url: "/MechanicalSubPages/47",
   },
   {
     mechanicalImg: AIRCONDITIONINGEquipment,
     mechanicalTitle: "AIR CONDITIONING EQUIPMENT ",
     list: "SERVICE SOLUTIONS",
-    url: "/MechanicalSubPages/6",
+    url: "/MechanicalSubPages/46",
   },
   {
     mechanicalImg: AIRCONDITIONINGEquipment,
     mechanicalTitle: "AIR CONDITIONING EQUIPMENT ",
     list: "FJCARE ",
-    url: "/MechanicalSubPages/7",
+    url: "/MechanicalSubPages/45",
   },
   {
     mechanicalImg: AIRCONDITIONINGEquipment,
     mechanicalTitle: "AIR CONDITIONING EQUIPMENT ",
     list: "JOHNSON CONTROLS (YORK VRF & MINI SPLIT SYSTEMS)",
-    url: "/MechanicalSubPages/8",
+    url: "/MechanicalSubPages/16",
   },
   {
     mechanicalImg: AIRCONDITIONINGEquipment,
     mechanicalTitle: "AIR CONDITIONING EQUIPMENT ",
     list: "SAMSUNG (VRF & MINI SPLIT SYSTEMS)",
-    url: "/MechanicalSubPages/9",
+    url: "/MechanicalSubPages/15",
   },
 ];
 
@@ -92,7 +92,7 @@ const miniListAIRHANDLING = [
     mechanicalImg: AIRHANDLING,
     mechanicalTitle: "AIR HANDLING UNITS & FAN COIL UNITS",
     list: "Euroclima",
-    url: "/MechanicalSubPages/10",
+    url: "/MechanicalSubPages/14",
   },
 ];
 
@@ -101,67 +101,67 @@ const miniListPumps = [
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
     list: "AFTER SALES SERVICE & MAINTENANCE",
-    url: "/MechanicalSubPages/11",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "PRODUCTION PLANNING & CONTROL",
-    url: "/MechanicalSubPages/12",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "QUALITY ASSURANCE & CONTROL",
-    url: "/MechanicalSubPages/13",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "xylem",
-    url: "/MechanicalSubPages/14",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "flygt",
-    url: "/MechanicalSubPages/15",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "Wedeco",
-    url: "/MechanicalSubPages/16",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "A-C FIRE PUMP",
-    url: "/MechanicalSubPages/17",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "BELL & GOSSETT",
-    url: "/MechanicalSubPages/18",
-  },
-  {
-    mechanicalImg: Pumps,
-    mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "GOULDS",
     url: "/MechanicalSubPages/19",
   },
   {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "AQUAFLOW",
+    list: "PRODUCTION PLANNING & CONTROL",
+    url: "/MechanicalSubPages/25",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "QUALITY ASSURANCE & CONTROL",
     url: "/MechanicalSubPages/20",
   },
   {
     mechanicalImg: Pumps,
     mechanicalTitle: "PUMPS & SYSTEMS",
-    list: "REFLEX",
+    list: "xylem",
+    url: "/MechanicalSubPages/23",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "flygt",
+    url: "/MechanicalSubPages/22",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "Wedeco",
     url: "/MechanicalSubPages/21",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "A-C FIRE PUMP",
+    url: "",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "BELL & GOSSETT",
+    url: "/MechanicalSubPages/4",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "GOULDS",
+    url: "/MechanicalSubPages/3",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "AQUAFLOW",
+    url: "/MechanicalSubPages/2",
+  },
+  {
+    mechanicalImg: Pumps,
+    mechanicalTitle: "PUMPS & SYSTEMS",
+    list: "REFLEX",
+    url: "/MechanicalSubPages/1",
   },
 ];
 
@@ -170,7 +170,7 @@ const miniListAirDISTRIBUTION = [
     mechanicalImg: AirDISTRIBUTION,
     mechanicalTitle: "AIR DISTRIBUTION",
     list: "FLOWTECH",
-    url: "/MechanicalSubPages/23",
+    url: "/MechanicalSubPages/6",
   },
 ];
 
@@ -179,25 +179,25 @@ const miniListDuctingInsulation = [
     mechanicalImg: DuctingInsulation,
     mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
     list: "FLOWTECH",
-    url: "/MechanicalSubPages/24",
+    url: "/MechanicalSubPages/9",
   },
   {
     mechanicalImg: DuctingInsulation,
     mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
     list: "ARMACELL",
-    url: "/MechanicalSubPages/25",
+    url: "/MechanicalSubPages/17",
   },
   {
     mechanicalImg: DuctingInsulation,
     mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
     list: "PRODUCTION, PLANNING & CONTROL",
-    url: "/MechanicalSubPages/26",
+    url: "/MechanicalSubPages/25",
   },
   {
     mechanicalImg: DuctingInsulation,
     mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
     list: "OUR SERVICE TEAM",
-    url: "/MechanicalSubPages/27",
+    url: "/MechanicalSubPages/26",
   },
 ];
 
@@ -206,37 +206,37 @@ const miniListDISTRICTCOOLINGEQUIPMENT = [
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "DCSERVE",
-    url: "/MechanicalSubPages/28",
+    url: "/MechanicalSubPages/10",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "PAHARPUR",
-    url: "/MechanicalSubPages/29",
+    url: "/MechanicalSubPages/43",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "MARLEY SPX",
-    url: "/MechanicalSubPages/30",
+    url: "/MechanicalSubPages/11",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "HAWLE",
-    url: "/MechanicalSubPages/31",
+    url: "/MechanicalSubPages/38",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "OZKAN",
-    url: "/MechanicalSubPages/32",
+    url: "/MechanicalSubPages/42",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "NOVA SIRIA",
-    url: "/MechanicalSubPages/33",
+    url: "/MechanicalSubPages/41",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
@@ -248,13 +248,13 @@ const miniListDISTRICTCOOLINGEQUIPMENT = [
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "GWS",
-    url: "/MechanicalSubPages/35",
+    url: "",
   },
   {
     mechanicalImg: DISTRICTCOOLINGEQUIPMENT,
     mechanicalTitle: "DISTRICT COOLING EQUIPMENT",
     list: "BRANNAN",
-    url: "/MechanicalSubPages/36",
+    url: "/MechanicalSubPages/31",
   },
 ];
 const MTitle = [

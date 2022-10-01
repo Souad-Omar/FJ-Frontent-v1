@@ -2,12 +2,10 @@
  background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-size: 100%;
     transition: all 0.3s ease-in-out;
 
 }
 .divSubDataHeader:hover {
-    background-size: 105%;
 }
 .divTextSubPage{
     width:100%;
@@ -62,7 +60,7 @@
         width: 65%;
      }
      .divHeader1Left{
-        padding:3% 3%;
+        padding:3% 7%;
         width:37%;
         height: 500px;
         background-color: white;
@@ -86,7 +84,7 @@
         width: 65%;
      }
      .divHeader1Left{
-        padding:2% 4%;
+        padding:2% 6%;
         width:37%;
         height: 420px;
         background-color: white;
@@ -105,10 +103,15 @@
         align-items: center;
     width: 100%;
     }.divSubDataHeader{  height: 400px;
-      } 
+        background-size: 170%;
+
+    }
+    .divSubDataHeader:hover {
+        background-size: 175%;
+    }
       .divHeader1Left{
         padding:3% 3%;
-        width:37%;
+        width:50%;
         height: 400px;
         background-color: white;
     }
@@ -119,7 +122,7 @@
         height: 100px; width:auto;
     }
 }
-@media (min-width: 992px) and (max-width: 1500px) {
+@media (min-width: 992px) and (max-width: 1200px) {
     .divTextDivSubHeader{
      
         display: flex;
@@ -127,16 +130,21 @@
         align-items: center;
     width: 100%;
     }.divSubDataHeader{
-        height: 400px;
-     } 
+        height: 450px;
+        background-size: 210%;
+
+    }
+    .divSubDataHeader:hover {
+        background-size: 215%;
+    }
      .divSubHeaderSize{
-       width: 65%;
+       width: 50%;
        height: auto;
     } 
     .divHeader1Left{
-        padding:3% 3%;
-        width:37%;
-        height: 400px;
+        padding:3% 5%;
+        width:50%;
+        height: 450px;
         background-color: white;
     }
     .divHeader1Right{
@@ -155,9 +163,14 @@
     width: 100%;
     }.divSubDataHeader{ 
         height: 350px;
-     }  
+        background-size: 210%;
+
+    }
+    .divSubDataHeader:hover {
+        background-size: 215%;
+    }
      .divHeader1Left{
-        padding:3% 3%;
+        padding:3% 7%;
         width:50%;
         height: 350px;
         background-color: white;
@@ -176,7 +189,12 @@
     }
      .divSubDataHeader{
         height: 300px;
-    }
+    background-size: 120%;
+
+}
+.divSubDataHeader:hover {
+    background-size: 125%;
+}
     
     .divTextSubPage{
         width:100%;

@@ -1,46 +1,47 @@
 import React, { Fragment } from "react";
 import BasicHeader from "../components/basic-header";
 import OurProductsHeader from "../assets/OurProductsHeader.jpg";
-import OurProductsMain1 from "../assets/OurProductsMain1.jpg";
-import OurProductsMain2 from "../assets/OurProductsMain2.jpg";
-import OurProductsMain3 from "../assets/OurProductsMain3.jpg";
-import OurProductsMain4 from "../assets/OurProductsMain4.jpg";
+import OurProductsMain1 from "../assets/Mechanical.jpg";
+import OurProductsMain2 from "../assets/ELECTRICAL.jpg";
+import OurProductsMain3 from "../assets/PLUMPING.jpg";
+import OurProductsMain4 from "../assets/SERVICES.jpg";
 import Footer from "../components/footer";
 import { Col, Row, Container } from "react-bootstrap";
 import "../styles/style-component/page-info.css";
  import TextTitleBox from "../components/text-title-box";
  import ExploreMoreLink from './../components/explore-more copy';
+import ProductsSubHeader from "../components/products-sub-header";
 
 const info = [
   {
-    id: "1",
+    id: "1",    backgroundDivImage:OurProductsMain1,
     title: "MECHANICAL",
     text: "Through strong relationships with our principals and partners, our teams have fashioned prominent innovations and breakthroughs.",
     url: "/MechanicalMain",
-    char: "M",
+    char: "M",style:'1'
   },
   {
-    id: "2",
+    id: "2",    backgroundDivImage:OurProductsMain2,
     title: "ELECTRICAL",
     text: "We have been persistent in serving the building services industry with dedication, commitment, and perseverance.",
     url: "/ElectricalMain",
-    char: "E",
+    char: "E",style:'2'
   },
   {
-    id: "3",
+    id: "3",    backgroundDivImage:OurProductsMain3,
     title: "PLUMPING",
     text: "We provide turnkey solutions for steam, water-heating and plumbing systems from design all the way to completion.",
 
     url: "/PlumbingMain",
-    char: "P",
+    char: "P",style:'1'
   },
   {
-    id: "4",
+    id: "4",    backgroundDivImage:OurProductsMain4,
     title: "SERVICES",
     text: "We deliver high quality mechanical, electrical and plumbing equipment with excellent service back-up and workshop facilities.  ",
 
     url: "/ServicesMain",
-    char: "S",
+    char: "S",style:'2'
   },
 ];
 
@@ -55,153 +56,25 @@ const OurProducts = () => {
         backgroundImage={OurProductsHeader}
         headerTitle={["OUR","PRODUCTS"]}
       />
+      
       <div
-        className={"division"}
-        style={{
-          backgroundImage: `url(${OurProductsMain1})`,
-          fontFamily: "Montserrat",
-          color: "white",
+        style={{       
           textAlign: "center",
         }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={3}>
-              {" "}
-              <p className="MEPSMainPageStyle">M</p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <p style={{ fontSize: "45px" }}>MECHANICAL</p>
-              <p style={{ fontSize: "20px" }}>{info[0].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[0].url}/>
-            </Col>
-            <Col lg={9}>
-              {" "}
-              <br />
-            </Col>
-          </Row>{" "}
-        </Container>
-      </div>
-      <div
-        className={"division"}
-        style={{
-          backgroundImage: `url(${OurProductsMain2})`,
-          fontFamily: "Montserrat",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={9}></Col>
-            <Col lg={3}>
-            <p className="MEPSMainPageStyle">E</p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <p style={{ fontSize: "45px" }}>ELECTRICAL</p>
-              <p style={{ fontSize: "20px" }}>{info[1].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[1].url}/>
+      > 
+      <ProductsSubHeader productsProps={info} /></div>
 
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div
-        className={"division"}
-        style={{
-          backgroundImage: `url(${OurProductsMain3})`,
-          fontFamily: "Montserrat",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={3}>
-              <br /><p className="MEPSMainPageStyle">P</p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <p style={{ fontSize: "45px" }}>PLUMBING</p>
-              <p style={{ fontSize: "20px" }}>{info[2].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[2].url}/>
-
-            </Col>
-            <Col lg={9}>
-              {" "}
-              <br />
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div
-        className={"division"}
-        style={{
-          backgroundImage: `url(${OurProductsMain4})`,
-          fontFamily: "Montserrat",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <Container style={{ maxWidth: "2040px" }}>
-          <Row>
-            <Col lg={9}></Col>
-            <Col lg={3}>
-              {" "}
-              <br /><p className="MEPSMainPageStyle">S</p>
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <p style={{ fontSize: "45px" }}>SERVICES</p>
-              <p style={{ fontSize: "20px" }}>{info[3].text}</p>
-              <ExploreMoreLink buutonText="EXPLORE MORE" link={info[3].url}/>
-
-            </Col>
-          </Row>
-        </Container>
-      </div>
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <Container style={{ maxWidth: "2040px" }}>
+      <Container style={{ maxWidth: "1740px" }}>
         <Row>
-          <Col lg={3}>
+          <Col lg={4}>
             <TextTitleBox title={title1} />
           </Col>
           <Col></Col>
-          <Col lg={8}>
+          <Col lg={7}>
             <TextTitleBox text={text1} />
           </Col>
         </Row>

@@ -7,7 +7,7 @@ import { Col, Row, Container } from "react-bootstrap";
 import "../styles/style-component/page-info.css";
 import "../styles/style-component/miniDrobdownList.css";
 import MiniDrobdownList from "../components/miniDrobdownList";
-import PLUMBINGProductsSolutions from "../assets/p/PLUMBINGProducts&Solutions.png"
+import PLUMBINGProductsSolutions from "../assets/p/PLUMBINGProducts&Solutions.jpg"
 import TextBoxes from "../components/text-boxes";
 import CustomSubHeader from "../components/custom-sub-header";
 

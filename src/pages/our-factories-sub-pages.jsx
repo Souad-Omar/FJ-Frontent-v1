@@ -14,9 +14,9 @@ import OurFactory4 from "../assets/OurFactory4.jpg";
 import OurFactory5 from "../assets/OurFactory5.jpg";
 import OurFactory6 from "../assets/OurFactory6.jpg";
 
-import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.png";
+import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.jpg";
 import OurFactoryLogo2 from "../assets/Logos/AlphaDuctsLogo.png";
-import OurFactoryLogo3 from "../assets/Logos/MutliplastDubaillcLogo.png";
+import OurFactoryLogo3 from "../assets/Logos/MultiplastDubailogo.PNG";
 import OurFactoryLogo4 from "../assets/Logos/ProMasterLogo.png";
 import OurFactoryLogo5 from "../assets/Logos/FlowTechLogo.png";
 import OurFactoryLogo6 from "../assets/Logos/PumbsLogo.png";

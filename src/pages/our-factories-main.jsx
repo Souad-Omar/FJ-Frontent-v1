@@ -13,9 +13,9 @@ import "../styles/style-component/page-info.css";
  import TextTitleBox from "../components/text-title-box";
  import ExploreMoreLink from './../components/explore-more copy';
 
- import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.png";
+ import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.jpg";
  import OurFactoryLogo2 from "../assets/Logos/AlphaDuctsLogo.png";
- import OurFactoryLogo3 from "../assets/Logos/MutliplastDubaillcLogo.png";
+ import OurFactoryLogo3 from "../assets/Logos/MultiplastDubailogo.PNG";
  import OurFactoryLogo4 from "../assets/Logos/ProMasterLogo.png";
  import OurFactoryLogo5 from "../assets/Logos/FlowTechLogo.png";
  import OurFactoryLogo6 from "../assets/Logos/PumbsLogo.png";

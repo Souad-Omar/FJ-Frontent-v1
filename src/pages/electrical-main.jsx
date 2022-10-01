@@ -7,9 +7,9 @@ import { Col, Row, Container } from "react-bootstrap";
 import "../styles/style-component/page-info.css";
 import "../styles/style-component/miniDrobdownList.css";
 import MiniDrobdownList from "../components/miniDrobdownList";
-import BUSBARPOWERBARGULFVERTIV from "../assets/e/BUSBARPOWERBARGULF&VERTIV.png"
-import ELECTRICALSWITCHGEARCONTROLS from "../assets/e/ELECTRICALSWITCHGEAR&CONTROLS.png"
-import PVCELECTRICALCONDUITACCESSORIES from "../assets/e/PVCELECTRICALCONDUIT&ACCESSORIES.png"
+import BUSBARPOWERBARGULFVERTIV from "../assets/e/BUSBARPOWERBARGULF&VERTIV.jpg"
+import ELECTRICALSWITCHGEARCONTROLS from "../assets/e/ELECTRICALSWITCHGEAR&CONTROLS.jpg"
+import PVCELECTRICALCONDUITACCESSORIES from "../assets/e/PVCELECTRICALCONDUIT&ACCESSORIES.jpg"
 import TextBoxes from "../components/text-boxes";
 import CustomSubHeader from "../components/custom-sub-header";
 

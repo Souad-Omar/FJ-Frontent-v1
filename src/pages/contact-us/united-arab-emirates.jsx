@@ -10,12 +10,12 @@ import FlagOfOman from "../../assets/ContactUs/FlagOfOman.jpg";
 import FlagOfQatar from "../../assets/ContactUs/FlagOfQatar.jpg";
 import FlagOfSouthAfrica from "../../assets/ContactUs/FlagOfSouthAfrica.jpg";
 import FlagOfSaudiArabia from "../../assets/ContactUs/FlagOfSaudiArabia.jpg";
-import MutliplastDubaillcLogo from "../../assets/Logos/MutliplastDubaillcLogo.png";
+import MutliplastDubaillcLogo from "../../assets/Logos/MultiplastDubailogo.PNG";
 import FJGroupMain from "../../assets/Logos/FJGroupMain.png";
 import FJENGINEERINGTRADING from "../../assets/Logos/FJENGINEERINGTRADING.png";
-import FJEnergy from "../../assets/Logos/FJEnergy.png";
-import FJCareLogo from "../../assets/Logos/FJCareLogo.png";
-import EuroclimaLogo from "../../assets/Logos/EuroclimaLogo.png";
+import FJEnergy from "../../assets/Logos/FJEnergy.jpg";
+import FJCareLogo from "../../assets/Logos/FJCareLogo.jpg";
+import EuroclimaLogo from "../../assets/Logos/EuroclimaLogo.jpg";
 import DCServe from "../../assets/Logos/DCServe.png";
 import AlphaDuctsLogo from "../../assets/Logos/AlphaDuctsLogo.png";
 

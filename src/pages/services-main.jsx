@@ -7,10 +7,10 @@ import { Col, Row, Container } from "react-bootstrap";
 import "../styles/style-component/page-info.css";
 import "../styles/style-component/miniDrobdownList.css";
 import MiniDrobdownList from "../components/miniDrobdownList";
-import HVACPARTSACCESSORIES from "../assets/s/HVACPARTS&ACCESSORIES.png"
-import HVACPRODUCTS from "../assets/s/HVACPRODUCTS.png"
-import Pumps from "../assets/s/Pumps.png"
-import SERVICESOLUTIONS from "../assets/s/SERVICESOLUTIONS.png"
+import HVACPARTSACCESSORIES from "../assets/s/HVACPARTS&ACCESSORIES.jpg"
+import HVACPRODUCTS from "../assets/s/HVACPRODUCTS.jpg"
+import Pumps from "../assets/s/Pumps.jpg"
+import SERVICESOLUTIONS from "../assets/s/SERVICESOLUTIONS.jpg"
 import TextBoxes from "../components/text-boxes";
 import CustomSubHeader from "../components/custom-sub-header";
 
@@ -37,20 +37,20 @@ const HVACPARTSACCESSORIESinfo = [
       ELECTRICALTitle: "SERVICE SOLUTIONS",
       list: "SERVICE SOLUTIONS",
       url: "/ServicesSubPages/1",
-    },
-  ];
-  const HVACPRODUCTSinfo = [
-    {
-      ELECTRICALImg: HVACPRODUCTS,
-    ELECTRICALTitle: "HVAC PRODUCTS",
+    }, {
+      ELECTRICALImg: SERVICESOLUTIONS,
+    ELECTRICALTitle: "SERVICE SOLUTIONS",
     list: "FJ ENERGY SOLUTIONS",
     url: "/ServicesSubPages/4",
   },{
-    ELECTRICALImg: HVACPRODUCTS,
-  ELECTRICALTitle: "HVAC PRODUCTS",
+    ELECTRICALImg: SERVICESOLUTIONS,
+  ELECTRICALTitle: "SERVICE SOLUTIONS",
   list: "DCServe",
   url: "/ServicesSubPages/5",
-},{
+},
+  ];
+  const HVACPRODUCTSinfo = [
+   {
   ELECTRICALImg: HVACPRODUCTS,
 ELECTRICALTitle: "HVAC PRODUCTS",
 list: "FJCARE ",
