@@ -20,7 +20,7 @@ import ArmacellLogo from "../assets/Logos/ArmacellLogo.png";
 import BellAndGossettLogo from "../assets/Logos/BellAndGossettLogo.png";
 import CleaverBrooksLogo from "../assets/Logos/CleaverBrooksLogo.png";
 import CraneLogo from "../assets/Logos/CraneLogo.png";
-import EuroclimaLogo from "../assets/Logos/EuroclimaLogo.jpg";
+import EuroclimaLogo from "../assets/Logos/EuroclimaLogo.png";
 import FJCareLogo from "../assets/Logos/FJCareLogo.jpg";
 import FlowTechLogo from "../assets/Logos/FlowTechLogo.png";
 import GFLogo from "../assets/Logos/GFLogo.png";
@@ -288,17 +288,18 @@ const Home = () => {
 
   return (
     <Fragment>
-      <ImageSliderHeader />      <div className="bodyContentTexts">
+      <ImageSliderHeader />  
       <Container>
+          <div className="bodyContentTexts">
         <Row>
           <Col></Col>
-          <Col sm={9} lg={11}> 
+          <Col sm={9} lg={8}> 
             <TextBoxes textParagraph={paragraphs} />
             
           </Col>
           <Col></Col>
         </Row>
-
+        <div style={{padding:"2%"}}></div>
         <Row>
           <Col lg={4}></Col>
           <Col lg={4}>
@@ -360,8 +361,8 @@ const Home = () => {
             <br />
             <br />
           </Col>
-        </Row>
- 
+        </Row></div>
+        <div className="bodyContentTextsLogo">
         <Row style={{ marginTop:'0px'}}>
     <Col> 
       <ArrowArray  arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
@@ -391,8 +392,10 @@ const Home = () => {
             />
     </div>
   </div>
-      </Container>
       </div>
+      </Container>
+      
+      <div style={{padding:"8%"}}></div>
       <Footer />
     </Fragment>
   );

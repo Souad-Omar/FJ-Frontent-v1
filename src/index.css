@@ -31,3 +31,10 @@
     padding:8% 20px 8% 20px;
 
   }
+
+  @media (max-width: 468px) {
+    .bodyContentTextsLogo{
+      padding:8% 25px 8% 0px;
+  
+    }
+}

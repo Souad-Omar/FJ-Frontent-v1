@@ -74,3 +74,20 @@
         padding: 0% 1%;
       }
     }
+
+    
+@media (max-width:568px) {
+  .PresidentImg {
+      width: 80%;
+      margin-left: 10%;
+    }
+    .loglRow{
+      margin-top: -60px;
+    }
+    .logo1img, .logo2img, .logo3img{
+      width: 80px;
+    
+    }.logoCol{
+      padding: 0% 1%;
+    }
+  }

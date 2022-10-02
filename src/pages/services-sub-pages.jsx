@@ -30,6 +30,7 @@ import HVACPARTSACCESSORIES1 from "../assets/s/HVACPARTS&ACCESSORIES.jpg"
 import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 import CustomSubHeader2 from "../components/custom-sub-header2";
+import CustomHeader from "../components/custom-header";
 
 const ServicesSubPages = ({}) => {
 
@@ -225,10 +226,8 @@ const ServicesSubPages = ({}) => {
 
         return (
           <>
-            <BasicHeader
-              backgroundImage={SERVICES}
-              headerTitle={["SERVICES"]}
-            />
+                  <CustomHeader backgroundImage={SERVICES} headerTitle={"SERVICES"}  charHeader={"S"} />
+
       <CustomSubHeader2 backgroundImage={factoryImage} headerTitle={"PLUMPING"}  charHeader={"P"} text={factoryText} title={factoryTitle}/>
 
             <Container>

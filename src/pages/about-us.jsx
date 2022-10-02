@@ -124,7 +124,7 @@ const AboutUs = () => {
       <Container style={{ maxWidth: "100%" }}>
         <Row style={{backgroundColor:"#F7F9FA"}}>
           <Col></Col>
-          <Col sm={9} lg={8} style={{padding:'8% 20px 8% 20px'}} >
+          <Col sm={9} lg={6} style={{padding:'8% 20px 8% 20px'}} >
              <TextBoxes textParagraph={paragraphs} />
            </Col>
           <Col></Col>
@@ -133,7 +133,7 @@ const AboutUs = () => {
       <Container style={{ maxWidth: "100%" }}>
         
         <Row>
-          <Col lg={6} style={{padding:'0px 2%'}}>
+          <Col lg={6} style={{padding:'0px 7%'}}>
              <TextTitle textTitle={vision} />
             <TextBoxes textParagraph={visionParagraphs} />
             <img
@@ -146,7 +146,7 @@ const AboutUs = () => {
              <TextTitle textTitle={mission} />
             <TextBoxes textParagraph={missionParagraphs} />
           </Col>
-        </Row>
+        </Row><div style={{padding:"4%"}}></div>
         <Row>
           <Col> 
             <br /> <TextTitle textTitle={ourCoreValue} /> <br /><br />

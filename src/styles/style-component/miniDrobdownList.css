@@ -2,7 +2,7 @@
     width: 300px;
     height: auto;
      transition: all 0.5s;
-     padding: 10%;
+     padding: 0% 10% 0% 10%;
      display: block;
      margin-left: auto;
      margin-right: auto;
@@ -41,7 +41,15 @@
     display: block;    text-align: center;
 
   } 
-
+.productIcons{
+  width: 50%;
+}
+.rowProductIcons{
+  width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   @media (min-width: 992px) and (max-width: 1500px) {
     .Products{
        
@@ -66,5 +74,16 @@
 
 .dropdown-content a:hover {
   font-size: 15px; 
+}
+}
+
+@media (max-width: 468px) {
+  .Products{
+    width: 200px;
+    margin-top: 30px;
+}
+.productRow{
+  padding:15%;
+  margin-top:-200px;
 }
 }

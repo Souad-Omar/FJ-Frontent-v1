@@ -17,6 +17,9 @@ import AirDISTRIBUTION from "../assets/m/AIRDISTRIBUTION.jpg";
 import MiniDrobdownList from "../components/miniDrobdownList";
 import ELECTRICAL from "../assets/Mechanical.jpg";
 import CustomSubHeader from "../components/custom-sub-header";
+import {useEffect, useState} from 'react';
+import "../styles/style-component/accreditations.css";
+import ArrowArray from "../components/arrowArray";
 
 const MInfo = [
   {
@@ -170,17 +173,12 @@ const miniListAirDISTRIBUTION = [
     mechanicalImg: AirDISTRIBUTION,
     mechanicalTitle: "AIR DISTRIBUTION",
     list: "FLOWTECH",
-    url: "/MechanicalSubPages/6",
+    url: "/MechanicalSubPages/9",
   },
 ];
 
 const miniListDuctingInsulation = [
-  {
-    mechanicalImg: DuctingInsulation,
-    mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
-    list: "FLOWTECH",
-    url: "/MechanicalSubPages/9",
-  },
+  
   {
     mechanicalImg: DuctingInsulation,
     mechanicalTitle: "DUCTING & INSULATION PRODUCTS",
@@ -264,177 +262,192 @@ const MTitle = [
   },
 ];
 const MechanicalMain = () => {
+
+
+
+  const [state, setState] = useState(2);
+  const arrayData = [<><div className="dropdown">
+  <img className="Products" src={VentilationEquipment} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListVentilationEquipment[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListVentilationEquipment} />
+  </div>
+</div></>,<><div className="dropdown">
+  <img className="Products" src={Pumps} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListPumps[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListPumps} />
+  </div>
+</div></>,<><div className="dropdown">
+  <img className="Products" src={AIRCONDITIONINGEquipment} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListAIRCONDITIONINGEquipment[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListAIRCONDITIONINGEquipment} />
+  </div>
+</div></>,<><div className="dropdown">
+  <img className="Products" src={AIRHANDLING} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListAIRHANDLING[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListAIRHANDLING} />
+  </div>
+</div></>,<><div className="dropdown">
+  <img className="Products" src={AirDISTRIBUTION} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListAirDISTRIBUTION[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListAirDISTRIBUTION} />
+  </div>
+</div></>,<><div className="dropdown">
+  <img className="Products" src={DISTRICTCOOLINGEQUIPMENT} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListDISTRICTCOOLINGEQUIPMENT[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListDISTRICTCOOLINGEQUIPMENT} />
+  </div>
+</div></>,<> <div className="dropdown">
+  <img className="Products" src={DuctingInsulation} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+       
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {miniListDuctingInsulation[0].mechanicalTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={miniListDuctingInsulation} />
+  </div>
+</div></>,];
+  function arrowArrayRight(){
+    setState((prevState)=>{
+         return prevState=prevState >=arrayData.length ? 1: prevState+1;
+
+    });}
+    function arrowArrayLeft(){
+      setState((prevState)=>{
+           return prevState=prevState <= 1 ? arrayData.length-1: state-1;
+  
+      });}
+
   return (
     <Fragment>
       <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"MECHANICAL" }  charHeader={"M"} />
       <CustomSubHeader backgroundImage={ELECTRICAL} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
 
-      <Container style={{ maxWidth: "3040px" }}>
-        <Row>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={VentilationEquipment} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListVentilationEquipment[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListVentilationEquipment} />
-              </div>
-            </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={Pumps} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListPumps[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListPumps} />
-              </div>
-            </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={AIRCONDITIONINGEquipment} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListAIRCONDITIONINGEquipment[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListAIRCONDITIONINGEquipment} />
-              </div>
-            </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={AIRHANDLING} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListAIRHANDLING[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListAIRHANDLING} />
-              </div>
-            </div>
-          </Col>
 
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={AirDISTRIBUTION} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListAirDISTRIBUTION[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListAirDISTRIBUTION} />
-              </div>
-            </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={DISTRICTCOOLINGEQUIPMENT} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListDISTRICTCOOLINGEQUIPMENT[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListDISTRICTCOOLINGEQUIPMENT} />
-              </div>
-            </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={DuctingInsulation} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                   
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {miniListDuctingInsulation[0].mechanicalTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={miniListDuctingInsulation} />
-              </div>
-            </div>
-          </Col>
-        </Row>
-      </Container>
+
+      
+      <Container>
+<Row style={{ marginTop:'350px'}}>
+    <Col> 
+      <ArrowArray  arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
+    </Col> <Col>
+    <Col> 
+      <ArrowArray directions={"."} arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
+    </Col>
+    </Col>
+  </Row> 
+  <Row className="productRow">
+    <Col lg={4}     className="cerificate11"
+>{state >= arrayData.length ? arrayData[0]: arrayData[state]}
+    </Col>
+    <Col lg={4}    className="cerificate22"
+>{arrayData[state-1]}
+    </Col>
+    <Col lg={4}     className="cerificate33">
+    {state <= 1 ? arrayData[arrayData.length-1]: arrayData[state-2]}
+    </Col>
+  </Row>
+</Container>
       <br />
       <br />
       <br />

@@ -66,3 +66,17 @@
     
     }
 } 
+@media (max-width: 468px) {
+    .MPESChar{
+        margin: -10px 0% 20px 0%;
+       font-size:60px; 
+    } 
+    .MEPSStyle{
+       margin:2px;
+       height:80px;
+    } 
+    .titleLink{
+       font-size:7px; 
+   
+   }
+}

@@ -16,6 +16,7 @@ import PVCELECTRICALCONDUITACCESSORIES1 from "../assets/e/PVCELECTRICALCONDUIT&A
 import BasicHeader from "../components/basic-header";
 import Arrow from "../components/arrow";
 import CustomSubHeader2 from "../components/custom-sub-header2";
+import CustomHeader from "../components/custom-header";
 
 const ElectricalSubPages = ({}) => {
 
@@ -198,10 +199,8 @@ logo: MutliplastDubaillcLogo,
 
         return (
           <>
-            <BasicHeader
-              backgroundImage={ELECTRICAL}
-              headerTitle={["ELECTRICAL"]}
-            />
+                  <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"ELECTRICAL"}  charHeader={"E"}  />
+
       <CustomSubHeader2 backgroundImage={factoryImage} headerTitle={"PLUMPING"}  charHeader={"P"} text={factoryText} title={factoryTitle}/>
 
             <Container>
@@ -258,6 +257,9 @@ logo: MutliplastDubaillcLogo,
                 <Col lg={1}></Col>
               </Row>
             </Container>
+
+
+            
             <Footer />
           </>
         );

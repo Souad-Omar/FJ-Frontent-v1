@@ -44,3 +44,9 @@
 
      }
 }
+@media (max-width: 468px) {
+    .logoSupPage{
+        height: 40px;        margin-top: 40px;
+
+     }
+}

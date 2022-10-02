@@ -68,9 +68,9 @@ const OurProducts = () => {
       <br />
       <br />
       <br />
-      <Container style={{ maxWidth: "1740px" }}>
+      <Container style={{ maxWidth: "1540px" }}>
         <Row>
-          <Col lg={4}>
+          <Col lg={4} style={{marginTop:"15px"}}> 
             <TextTitleBox title={title1} />
           </Col>
           <Col></Col>

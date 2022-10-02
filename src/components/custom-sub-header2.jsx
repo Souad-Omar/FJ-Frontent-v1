@@ -31,8 +31,7 @@ const CustomSubHeader2 = (props) => {
       </div><div
         className="subDataHeader2Color"
       ><div className="subMPESHeaderChar">
-
-            A         </div>
+ </div>
       </div>
         <div
           className="textDivSubHeader"

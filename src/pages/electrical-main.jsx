@@ -5,6 +5,8 @@ import E1 from "../assets/E1.jpg";
 import Footer from "../components/footer";
 import { Col, Row, Container } from "react-bootstrap";
 import "../styles/style-component/page-info.css";
+import "../styles/style-component/accreditations.css";
+
 import "../styles/style-component/miniDrobdownList.css";
 import MiniDrobdownList from "../components/miniDrobdownList";
 import BUSBARPOWERBARGULFVERTIV from "../assets/e/BUSBARPOWERBARGULF&VERTIV.jpg"
@@ -12,6 +14,8 @@ import ELECTRICALSWITCHGEARCONTROLS from "../assets/e/ELECTRICALSWITCHGEAR&CONTR
 import PVCELECTRICALCONDUITACCESSORIES from "../assets/e/PVCELECTRICALCONDUIT&ACCESSORIES.jpg"
 import TextBoxes from "../components/text-boxes";
 import CustomSubHeader from "../components/custom-sub-header";
+import ArrowArray from "../components/arrowArray";
+import {useEffect, useState} from 'react';
 
 
 const MInfo = [
@@ -73,15 +77,30 @@ const BUSBARPOWERBARGULFVERTIVinfo = [
     },
   ];
 const ElectricalMain = () => {
-  return (
-    <Fragment>
-      <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"ELECTRICAL"}  charHeader={"E"}  />
-      <CustomSubHeader backgroundImage={ELECTRICAL} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
 
-      <Container style={{ maxWidth: "3040px" }}>
-        <Row><Col></Col><Col></Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
+  const [state, setState] = useState(2);
+  const arrayData = [<><div className="dropdown">
+  <img className="Products" src={PVCELECTRICALCONDUITACCESSORIES} alt="" />
+  <br />
+  <br />
+  <br />
+  <p
+    style={{
+      textAlign: "justify",
+      textAlign: 'center',
+      fontFamily: "Montserrat",
+      fontSize: "20px",
+      color: "black",
+      fontWeight: "light",
+    }}
+  >
+    {PVCELECTRICALCONDUITACCESSORIESinfo[0].ELECTRICALTitle}
+  </p>
+  <div className="dropdown-content">
+    <MiniDrobdownList miniList={PVCELECTRICALCONDUITACCESSORIESinfo} />
+  </div>
+</div></>,
+<><div className="dropdown">
               <img className="Products" src={ELECTRICALSWITCHGEARCONTROLS} alt="" />
               <br />
               <br />
@@ -102,9 +121,8 @@ const ElectricalMain = () => {
                 <MiniDrobdownList miniList={ELECTRICALSWITCHGEARCONTROLSinfo} />
               </div>
             </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
+</>,
+<><div className="dropdown">
               <img className="Products" src={BUSBARPOWERBARGULFVERTIV} alt="" />
               <br />
               <br />
@@ -125,32 +143,52 @@ const ElectricalMain = () => {
                 <MiniDrobdownList miniList={BUSBARPOWERBARGULFVERTIVinfo} />
               </div>
             </div>
-          </Col>
-          <Col style={{ display: "inline" }}>
-            <div className="dropdown">
-              <img className="Products" src={PVCELECTRICALCONDUITACCESSORIES} alt="" />
-              <br />
-              <br />
-              <br />
-              <p
-                style={{
-                  textAlign: "justify",
-                  textAlign: 'center',
-                  fontFamily: "Montserrat",
-                  fontSize: "20px",
-                  color: "black",
-                  fontWeight: "light",
-                }}
-              >
-                {PVCELECTRICALCONDUITACCESSORIESinfo[0].ELECTRICALTitle}
-              </p>
-              <div className="dropdown-content">
-                <MiniDrobdownList miniList={PVCELECTRICALCONDUITACCESSORIESinfo} />
-              </div>
-            </div>
-          </Col><Col></Col><Col></Col>
-        </Row>
-      </Container>
+</>
+
+];
+  function arrowArrayRight(){
+    setState((prevState)=>{
+         return prevState=prevState >=arrayData.length ? 1: prevState+1;
+
+    });}
+    function arrowArrayLeft(){
+      setState((prevState)=>{
+           return prevState=prevState <= 1 ? arrayData.length-1: state-1;
+  
+      });}
+  return (
+    <Fragment>
+      <CustomHeader backgroundImage={ELECTRICAL} headerTitle={"ELECTRICAL"}  charHeader={"E"}  />
+      <CustomSubHeader backgroundImage={ELECTRICAL} headerTitle={"PLUMPING"}  charHeader={"P"} text={MInfo} title={MTitle}/>
+
+     
+
+
+
+
+      
+<Container>
+<Row style={{ marginTop:'350px'}}>
+    <Col> 
+      <ArrowArray  arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
+    </Col> <Col>
+    <Col> 
+      <ArrowArray directions={"."} arrowArrayLeft={arrowArrayLeft} arrowArrayRight={arrowArrayRight}/>
+    </Col>
+    </Col>
+  </Row> 
+  <Row className="productRow">
+    <Col lg={4}     className="cerificate11"
+>{state >= arrayData.length ? arrayData[0]: arrayData[state]}
+    </Col>
+    <Col lg={4}    className="cerificate22"
+>{arrayData[state-1]}
+    </Col>
+    <Col lg={4}     className="cerificate33">
+    {state <= 1 ? arrayData[arrayData.length-1]: arrayData[state-2]}
+    </Col>
+  </Row>
+</Container>
       <br />
       <br />
       <br />

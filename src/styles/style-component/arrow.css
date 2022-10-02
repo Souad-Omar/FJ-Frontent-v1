@@ -71,3 +71,16 @@
     
     }
 }
+
+@media (max-width: 468px) {
+    .arrow{
+        width:30px;
+        height:30px;
+        padding: 0% 5% 5% 4%;
+        margin-left: 5%;
+
+    }.arrowStyleRight{
+        margin-left: 80%;
+    
+    }
+}

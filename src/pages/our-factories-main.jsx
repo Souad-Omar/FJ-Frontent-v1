@@ -13,7 +13,7 @@ import "../styles/style-component/page-info.css";
  import TextTitleBox from "../components/text-title-box";
  import ExploreMoreLink from './../components/explore-more copy';
 
- import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.jpg";
+ import OurFactoryLogo1 from "../assets/Logos/EuroclimaLogo.png";
  import OurFactoryLogo2 from "../assets/Logos/AlphaDuctsLogo.png";
  import OurFactoryLogo3 from "../assets/Logos/MultiplastDubailogo.PNG";
  import OurFactoryLogo4 from "../assets/Logos/ProMasterLogo.png";
@@ -53,7 +53,7 @@ const info = [
     logo: OurFactoryLogo5,
     id: "4",
     title: "FLOWTECH LLC (warehouse & service centre)",
-    text: "Our layout of separate production lines for air terminal and air control devices equipped with state-of-the-art tools and machineries... ",
+    text: "Our layout of separate production lines for air terminal and air control devices equipped with state-of-the-art tools... ",
     url: "/OurFactoriesSupPages/5",
         backgroundDivImage:ourFactory4,
 

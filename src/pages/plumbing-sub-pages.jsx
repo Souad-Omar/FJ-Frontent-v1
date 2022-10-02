@@ -32,6 +32,7 @@ import Arrow from "../components/arrow";
 import CustomSubHeader2 from "../components/custom-sub-header2";
 
 import PLUMBINGProductsSolutions from "../assets/p/PLUMBINGProducts&Solutions.jpg";
+import CustomHeader from "../components/custom-header";
 
 const PlumbingSubPages = ({}) => {
   const MechanicalSub = [
@@ -330,7 +331,7 @@ factoryImage:PLUMBINGProductsSolutions,
 
         return (
           <>
-            <BasicHeader backgroundImage={PLUMPING} headerTitle={["PLUMPING"]} />
+      <CustomHeader backgroundImage={PLUMPING} headerTitle={"PLUMPING"}  charHeader={"P"} />
             <CustomSubHeader2 backgroundImage={factoryImage} headerTitle={"PLUMPING"}  charHeader={"P"} text={factoryText} title={factoryTitle}/>
 
             <Container>
@@ -383,6 +384,7 @@ factoryImage:PLUMBINGProductsSolutions,
                 <Col lg={1}></Col>
               </Row>
             </Container>
+            
             <Footer />
           </>
         );
