@@ -7,6 +7,5 @@ import Routess from './routes/routes';
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 root.render(  <BrowserRouter>
     <Routess />
-    <p>1234</p>
 </BrowserRouter>
     );
