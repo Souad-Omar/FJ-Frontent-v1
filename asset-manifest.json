@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FJ-Frontent-v1/static/css/main.08600b60.css",
-    "main.js": "/FJ-Frontent-v1/static/js/main.275cb948.js",
+    "main.js": "/FJ-Frontent-v1/static/js/main.7f12e714.js",
     "static/media/AboutUsVissionImg.jpg": "/FJ-Frontent-v1/static/media/AboutUsVissionImg.2be18d430b2c7d4691b5.jpg",
     "static/media/RaphaelKhlatPresidentImage.jpg": "/FJ-Frontent-v1/static/media/RaphaelKhlatPresidentImage.ec8e4c29f55d63d577da.jpg",
     "static/media/RaphaelKhlatPresidentSmallImage.jpg": "/FJ-Frontent-v1/static/media/RaphaelKhlatPresidentSmallImage.e35ad30b81fb14844544.jpg",
@@ -167,10 +167,10 @@
     "static/media/PollrichProduct1.png": "/FJ-Frontent-v1/static/media/PollrichProduct1.878af9923e98d1337162.png",
     "index.html": "/FJ-Frontent-v1/index.html",
     "main.08600b60.css.map": "/FJ-Frontent-v1/static/css/main.08600b60.css.map",
-    "main.275cb948.js.map": "/FJ-Frontent-v1/static/js/main.275cb948.js.map"
+    "main.7f12e714.js.map": "/FJ-Frontent-v1/static/js/main.7f12e714.js.map"
   },
   "entrypoints": [
     "static/css/main.08600b60.css",
-    "static/js/main.275cb948.js"
+    "static/js/main.7f12e714.js"
   ]
 }
